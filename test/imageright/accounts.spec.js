@@ -12,7 +12,7 @@ const rec = new Recorder('accounts');
 
 let lib;
 
-describe('Given an ImageRight API instance', () => {
+describe('ImageRight API - Accounts', () => {
   before(() => {
     rec.before();
     lib = new Library(baseurl).connect(username, password);

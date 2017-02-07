@@ -13,7 +13,7 @@ const rec = new Recorder('drawers');
 
 let lib;
 
-describe('Given an ImageRight API instance', () => {
+describe('ImageRight API - Drawers', () => {
   before(() => {
     rec.before();
     lib = new Library(baseurl).connect(username, password);

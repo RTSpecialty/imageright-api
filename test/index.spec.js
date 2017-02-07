@@ -11,24 +11,24 @@ const rec = new Recorder('authentication');
 let lib;
 let connected;
 
-describe('Given an instance of my library', () => {
+describe('Given an instance of the library', () => {
   before(() => {
     lib = new Library(baseurl);
   });
 
-  describe('when I need the version', () => {
-    it('should return the version', () => {
+  describe('the property version', () => {
+    it('should return the library\'s version', () => {
       expect(lib.version).to.be.equal(version);
     });
   });
 
-  describe('when I need the baseUrl', () => {
+  describe('the property baseUrl', () => {
     it('should return the BaseUrl', () => {
       expect(lib.baseUrl).to.be.equal(baseurl);
     });
   });
 
-  describe('when I am connected', () => {
+  describe('when connected', () => {
     before(() => {
       rec.before();
       connected = lib.connect(username, password);
@@ -39,8 +39,8 @@ describe('Given an instance of my library', () => {
     });
 
     it('the promise should return an api', () => connected.then(api => expect(api).to.exist));
-    it('api should have a version', () => connected.then(api => expect(api.version).to.be.equal(apiVersion)));
-    it('api should have the BaseUrl', () => connected.then(api => expect(api.baseUrl).to.be.equal(baseurl)));
-    it('api should have an AccessToken', () => connected.then(api => expect(api.AccessToken).to.exist));
+    it('the api should have a version', () => connected.then(api => expect(api.version).to.be.equal(apiVersion)));
+    it('the api should have the BaseUrl', () => connected.then(api => expect(api.baseUrl).to.be.equal(baseurl)));
+    it('the api should have an AccessToken', () => connected.then(api => expect(api.AccessToken).to.exist));
   });
 });
