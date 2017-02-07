@@ -26,7 +26,7 @@ describe('Given an ImageRight API instance', () => {
   describe('the method getDrawers', () => {
     it('should return an array of drawer objects',
       () => lib.then(api => api.getDrawers()
-        .then(data => expect(data).to.exist)));
+        .then(data => expect(data).to.be.instanceof(Array))));
   });
 
   describe('the method getDrawerById', () => {
@@ -44,7 +44,7 @@ describe('Given an ImageRight API instance', () => {
   describe('the method getDrawersInContainer', () => {
     it('should return an array of drawers when passed a valid container id',
       () => lib.then(api => api.getDrawersInContainer(containerId)
-        .then(data => expect(data).to.exist)));
+        .then(data => expect(data).to.be.instanceof(Array))));
   });
 
   describe('the method getDrawersInContainerByName', () => {

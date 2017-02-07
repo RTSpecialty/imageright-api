@@ -37,6 +37,6 @@ describe('Given an ImageRight API instance', () => {
   describe('the method getAttributeByObject', () => {
     it('should return an array of attribute objects given a valid object ID',
       () => lib.then(api => api.getAttributeByObject(objId)
-        .then(data => expect(data).to.exist)));
+        .then(data => expect(data).to.be.instanceof(Array))));
   });
 });

@@ -1,13 +1,14 @@
 {
   "name": "imageright-api",
   "version": "0.0.1",
+  "apiVersion": "6.2",
   "description": "JavaScript Library for the ImageRight API",
   "main": "index.js",
   "scripts": {
     "build": "webpack --progress --colors",
     "build:watch": "webpack --progress --colors --watch",
-    "test": "mocha --reporter progress --colors scripts/setup.js \"test/**/*.spec.js\"",
-    "test:watch": "yarn run test -- --watch",
+    "test": "mocha --colors scripts/setup.js \"test/**/*.spec.js\"",
+    "test:watch": "yarn run test -- --reporter progress --watch",
     "security-check": "nsp check",
     "clean": "rimraf lib",
     "start": "npm-run-all --parallel build:watch test:watch"

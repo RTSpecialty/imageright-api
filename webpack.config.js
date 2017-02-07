@@ -3,7 +3,7 @@ const path = require('path');
 const libraryName = require('./package.json').name;
 
 const UglifyJsPlugin = webpack.optimize.UglifyJsPlugin;
-const outputFile = `${libraryName}.js`;
+const outputFile = `${libraryName}.min.js`;
 
 const config = {
   entry: path.join(__dirname, 'src/index.js'),
@@ -14,6 +14,9 @@ const config = {
     library: libraryName,
     libraryTarget: 'umd',
     umdNamedDefine: true,
+  },
+  externals: {
+    axios: 'axios',
   },
   module: {
     rules: [

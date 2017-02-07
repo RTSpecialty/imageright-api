@@ -2,7 +2,7 @@ import axios from 'axios';
 import * as attributes from './api/attributes';
 import * as drawers from './api/drawers';
 
-const VERSION = 'ImageRight 6.2';
+const VERSION = '6.2';
 
 export { authenticate } from './api/authentication';
 

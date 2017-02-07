@@ -1,6 +1,6 @@
 import { expect } from 'chai'; // eslint-disable-line import/no-extraneous-dependencies
 import Library from '../src';
-import { version } from '../package.json';
+import { version, apiVersion } from '../package.json';
 import Recorder from '../scripts/recorder';
 
 const baseurl = process.env.IMAGERIGHT_BASEURL || 'https://localhost:8093';
@@ -39,6 +39,7 @@ describe('Given an instance of my library', () => {
     });
 
     it('the promise should return an api', () => connected.then(api => expect(api).to.exist));
+    it('api should have a version', () => connected.then(api => expect(api.version).to.be.equal(apiVersion)));
     it('api should have the BaseUrl', () => connected.then(api => expect(api.baseUrl).to.be.equal(baseurl)));
     it('api should have an AccessToken', () => connected.then(api => expect(api.AccessToken).to.exist));
   });
