@@ -2,12 +2,13 @@ import { expect } from 'chai'; // eslint-disable-line import/no-extraneous-depen
 import Library from '../../src';
 import Recorder from '../../scripts/recorder';
 
+const rec = new Recorder('containers');
+
 const baseurl = process.env.IMAGERIGHT_BASEURL || 'https://localhost:8093';
-const username = process.env.IMAGERIGHT_USERNAME || 'tester';
-const password = process.env.IMAGERIGHT_PASSWORD || 'password';
+const username = process.env.IMAGERIGHT_USERNAME || '<username>';
+const password = process.env.IMAGERIGHT_PASSWORD || '<password>';
 
 const containerId = 2586;
-const rec = new Recorder('containers');
 
 let lib;
 

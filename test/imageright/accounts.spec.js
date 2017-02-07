@@ -2,13 +2,14 @@ import { expect } from 'chai'; // eslint-disable-line import/no-extraneous-depen
 import Library from '../../src';
 import Recorder from '../../scripts/recorder';
 
+const rec = new Recorder('accounts');
+
 const baseurl = process.env.IMAGERIGHT_BASEURL || 'https://localhost:8093';
-const username = process.env.IMAGERIGHT_USERNAME || 'tester';
-const password = process.env.IMAGERIGHT_PASSWORD || 'password';
+const username = process.env.IMAGERIGHT_USERNAME || '<username>';
+const password = process.env.IMAGERIGHT_PASSWORD || '<password>';
 
 const accountId = 201;
 const type = 'list';
-const rec = new Recorder('accounts');
 
 let lib;
 
