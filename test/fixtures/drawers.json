@@ -1,0 +1,108 @@
+[{
+  "scope": "https://localhost:8093",
+  "method": "post",
+  "path": "/api/authenticate",
+  "body": {
+    "UserName": "<username>",
+    "Password": "<password>"
+  },
+  "status": 200,
+  "response": "XXXXXXXX",
+  "rawHeaders": ["Content-Length", "384", "Content-Type", "text/plaintext; charset=utf-8", "Server", "Microsoft-HTTPAPI/2.0", "Date", "Tue, 07 Feb 2017 02:04:04 GMT", "Connection", "close"]
+}, {
+  "scope": "https://localhost:8093",
+  "method": "get",
+  "path": "/api/drawers",
+  "body": "",
+  "status": 200,
+  "response": [{
+    "id": 2335,
+    "drawerTypeId": 2334,
+    "parentId": -1,
+    "name": "ACCOUNTING",
+    "description": "Accounting",
+    "created": "2015-02-02T21:42:54.067",
+    "lastModified": "2015-02-02T21:43:09.313"
+  }, {
+    "id": 2377,
+    "drawerTypeId": 2376,
+    "parentId": -1,
+    "name": "TRAINING",
+    "description": "TRAINING",
+    "created": "2015-02-03T16:07:54.18",
+    "lastModified": "2015-02-03T16:07:54.227"
+  }],
+  "rawHeaders": ["Content-Length", "4290", "Content-Type", "application/json; charset=utf-8", "Server", "Microsoft-HTTPAPI/2.0", "Date", "Tue, 07 Feb 2017 02:04:04 GMT", "Connection", "close"]
+}, {
+  "scope": "https://localhost:8093",
+  "method": "get",
+  "path": "/api/drawers/2377",
+  "body": "",
+  "status": 200,
+  "response": {
+    "id": 2377,
+    "drawerTypeId": 2376,
+    "parentId": -1,
+    "name": "TRAINING",
+    "description": "TRAINING",
+    "created": "2015-02-03T16:07:54.18",
+    "lastModified": "2015-02-03T16:07:54.227"
+  },
+  "rawHeaders": ["Content-Length", "164", "Content-Type", "application/json; charset=utf-8", "Server", "Microsoft-HTTPAPI/2.0", "Date", "Tue, 07 Feb 2017 02:04:04 GMT", "Connection", "close"]
+}, {
+  "scope": "https://localhost:8093",
+  "method": "get",
+  "path": "/api/drawers/TRAINING",
+  "body": "",
+  "status": 200,
+  "response": [{
+    "id": 2377,
+    "drawerTypeId": 2376,
+    "parentId": -1,
+    "name": "TRAINING",
+    "description": "TRAINING",
+    "created": "2015-02-03T16:07:54.18",
+    "lastModified": "2015-02-03T16:07:54.227"
+  }],
+  "rawHeaders": ["Content-Length", "166", "Content-Type", "application/json; charset=utf-8", "Server", "Microsoft-HTTPAPI/2.0", "Date", "Tue, 07 Feb 2017 02:04:04 GMT", "Connection", "close"]
+}, {
+  "scope": "https://localhost:8093",
+  "method": "get",
+  "path": "/api/containers/-1/drawers",
+  "body": "",
+  "status": 200,
+  "response": [{
+    "id": 2335,
+    "drawerTypeId": 2334,
+    "parentId": -1,
+    "name": "ACCOUNTING",
+    "description": "RT Premium Accounting",
+    "created": "2015-02-02T21:42:54.067",
+    "lastModified": "2015-02-02T21:43:09.313"
+  },{
+    "id": 2377,
+    "drawerTypeId": 2376,
+    "parentId": -1,
+    "name": "TRAINING",
+    "description": "TRAINING",
+    "created": "2015-02-03T16:07:54.18",
+    "lastModified": "2015-02-03T16:07:54.227"
+  }],
+  "rawHeaders": ["Content-Length", "4290", "Content-Type", "application/json; charset=utf-8", "Server", "Microsoft-HTTPAPI/2.0", "Date", "Tue, 07 Feb 2017 02:04:04 GMT", "Connection", "close"]
+}, {
+  "scope": "https://localhost:8093",
+  "method": "get",
+  "path": "/api/containers/-1/drawers/TRAINING",
+  "body": "",
+  "status": 200,
+  "response": [{
+    "id": 2377,
+    "drawerTypeId": 2376,
+    "parentId": -1,
+    "name": "TRAINING",
+    "description": "TRAINING",
+    "created": "2015-02-03T16:07:54.18",
+    "lastModified": "2015-02-03T16:07:54.227"
+  }],
+  "rawHeaders": ["Content-Length", "166", "Content-Type", "application/json; charset=utf-8", "Server", "Microsoft-HTTPAPI/2.0", "Date", "Tue, 07 Feb 2017 02:04:05 GMT", "Connection", "close"]
+}]
