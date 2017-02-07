@@ -1,10 +1,11 @@
 import axios from 'axios';
+import * as accounts from './api/accounts';
 import * as attributes from './api/attributes';
 import * as drawers from './api/drawers';
 
-const VERSION = '6.2';
-
 export { authenticate } from './api/authentication';
+
+const VERSION = '6.2';
 
 class ImageRight {
   constructor(baseURL, AccessToken) {
@@ -16,6 +17,27 @@ class ImageRight {
       AccessToken,
       headers: { Authorization: `AccessToken ${AccessToken}` },
     });
+  }
+
+  // Accounts
+  getAccount(accountId, type) {
+    return accounts.getAccount(this.api, accountId, type);
+  }
+
+  getAccountGroups(accountId) {
+    return accounts.getAccountGroups(this.api, accountId);
+  }
+
+  getAllAccounts() {
+    return accounts.getAllAccounts(this.api);
+  }
+
+  getCurrentUserAccount() {
+    return accounts.getCurrentUserAccount(this.api);
+  }
+
+  getCurrentUserGroups() {
+    return accounts.getCurrentUserGroups(this.api);
   }
 
   // Attributes

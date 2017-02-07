@@ -1,0 +1,193 @@
+[{
+  "scope": "https://localhost:8093",
+  "method": "post",
+  "path": "/api/authenticate",
+  "body": {
+    "UserName": "<username>",
+    "Password": "<password>"
+  },
+  "status": 200,
+  "response": "XXXXXXXX",
+  "rawHeaders": ["Content-Length", "384", "Content-Type", "text/plaintext; charset=utf-8", "Server", "Microsoft-HTTPAPI/2.0", "Date", "Tue, 07 Feb 2017 04:26:25 GMT", "Connection", "close"]
+}, {
+  "scope": "https://localhost:8093",
+  "method": "get",
+  "path": "/api/accounts/201?type=list",
+  "body": "",
+  "status": 200,
+  "response": {
+    "members": [],
+    "id": 201,
+    "externalId": "3b917cd36046ca4dbe34610910e08414",
+    "name": "jeremy.fowler",
+    "friendlyName": "Fowler, Jeremy",
+    "type": 0,
+    "enabled": true
+  },
+  "rawHeaders": ["Content-Length", "150", "Content-Type", "application/json; charset=utf-8", "Server", "Microsoft-HTTPAPI/2.0", "Date", "Tue, 07 Feb 2017 04:26:25 GMT", "Connection", "close"]
+}, {
+  "scope": "https://localhost:8093",
+  "method": "get",
+  "path": "/api/accounts/201/groups",
+  "body": "",
+  "status": 200,
+  "response": [{
+    "id": -3,
+    "externalId": null,
+    "name": "Administrators",
+    "friendlyName": "Administrators group",
+    "type": 1,
+    "enabled": true
+  }, {
+    "id": -1,
+    "externalId": null,
+    "name": "Everyone",
+    "friendlyName": "Everyone",
+    "type": 1,
+    "enabled": true
+  }, {
+    "id": 192,
+    "externalId": null,
+    "name": "FUNC - Desktop - Basic",
+    "friendlyName": "FUNC - Desktop - Basic",
+    "type": 2,
+    "enabled": true
+  }, {
+    "id": 647,
+    "externalId": null,
+    "name": "IR Users",
+    "friendlyName": "IR Users",
+    "type": 1,
+    "enabled": true
+  }, {
+    "id": 762,
+    "externalId": null,
+    "name": "WF - Advanced",
+    "friendlyName": "WF - Advanced",
+    "type": 2,
+    "enabled": true
+  }, {
+    "id": 1570,
+    "externalId": null,
+    "name": "FILE TYPE - TRAINING",
+    "friendlyName": "FILE TYPE - TRAINING",
+    "type": 2,
+    "enabled": true
+  }],
+  "rawHeaders": ["Content-Length", "8849", "Content-Type", "application/json; charset=utf-8", "Server", "Microsoft-HTTPAPI/2.0", "Date", "Tue, 07 Feb 2017 04:26:25 GMT", "Connection", "close"]
+}, {
+  "scope": "https://localhost:8093",
+  "method": "get",
+  "path": "/api/accounts",
+  "body": "",
+  "status": 200,
+  "response": [{
+    "id": null,
+    "externalId": "c82066570d4e8a42af9e0b6ea1271198",
+    "name": "Administrator",
+    "friendlyName": "Administrator",
+    "type": 0,
+    "enabled": true
+  }, {
+    "id": null,
+    "externalId": "b362ea8dc26ad74b9526cf9c72cfc9c7",
+    "name": "scanner",
+    "friendlyName": "Scanner",
+    "type": 0,
+    "enabled": true
+  }, {
+    "id": null,
+    "externalId": "10b1c772f3a57c4c8643b6024312f858",
+    "name": "training01",
+    "friendlyName": "Terrace1 Training",
+    "type": 0,
+    "enabled": true
+  }, {
+    "id": null,
+    "externalId": "3e663089966a71459cf03655d329f476",
+    "name": "training02",
+    "friendlyName": "Terrace2 Training",
+    "type": 0,
+    "enabled": true
+  }, {
+    "id": null,
+    "externalId": "8d517cf29e0de842b20d512d5876373a",
+    "name": "training03",
+    "friendlyName": "Terrace3 Training",
+    "type": 0,
+    "enabled": true
+  }, {
+    "id": 201,
+    "externalId": "3b917cd36046ca4dbe34610910e08414",
+    "name": "jeremy.fowler",
+    "friendlyName": "Fowler, Jeremy",
+    "type": 0,
+    "enabled": true
+  }],
+  "rawHeaders": ["Content-Length", "474606", "Content-Type", "application/json; charset=utf-8", "Server", "Microsoft-HTTPAPI/2.0", "Date", "Tue, 07 Feb 2017 04:26:25 GMT", "Connection", "close"]
+}, {
+  "scope": "https://localhost:8093",
+  "method": "get",
+  "path": "/api/accounts/current",
+  "body": "",
+  "status": 200,
+  "response": {
+    "id": 201,
+    "externalId": "3b917cd36046ca4dbe34610910e08414",
+    "name": "jeremy.fowler",
+    "friendlyName": "Fowler, Jeremy",
+    "type": 0,
+    "enabled": true
+  },
+  "rawHeaders": ["Content-Length", "137", "Content-Type", "application/json; charset=utf-8", "Server", "Microsoft-HTTPAPI/2.0", "Date", "Tue, 07 Feb 2017 04:26:26 GMT", "Connection", "close"]
+}, {
+  "scope": "https://localhost:8093",
+  "method": "get",
+  "path": "/api/accounts/current/groups",
+  "body": "",
+  "status": 200,
+  "response": [{
+    "id": -3,
+    "externalId": null,
+    "name": "Administrators",
+    "friendlyName": "Administrators group",
+    "type": 1,
+    "enabled": true
+  }, {
+    "id": -1,
+    "externalId": null,
+    "name": "Everyone",
+    "friendlyName": "Everyone",
+    "type": 1,
+    "enabled": true
+  }, {
+    "id": 192,
+    "externalId": null,
+    "name": "FUNC - Desktop - Basic",
+    "friendlyName": "FUNC - Desktop - Basic",
+    "type": 2,
+    "enabled": true
+  }, {
+    "id": 647,
+    "externalId": null,
+    "name": "IR Users",
+    "friendlyName": "IR Users",
+    "type": 1,
+    "enabled": true
+  }, {
+    "id": 762,
+    "externalId": null,
+    "name": "WF - Advanced",
+    "friendlyName": "WF - Advanced",
+    "type": 2,
+    "enabled": true
+  }, {
+    "id": 1570,
+    "externalId": null,
+    "name": "FILE TYPE - TRAINING",
+    "friendlyName": "FILE TYPE - TRAINING",
+    "type": 2,
+    "enabled": true
+  }],
+  "rawHeaders": ["Content-Length", "8849", "Content-Type", "application/json; charset=utf-8", "Server", "Microsoft-HTTPAPI/2.0", "Date", "Tue, 07 Feb 2017 04:26:26 GMT", "Connection", "close"]
+}]
