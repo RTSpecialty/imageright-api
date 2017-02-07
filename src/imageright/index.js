@@ -1,6 +1,7 @@
 import axios from 'axios';
 import * as accounts from './api/accounts';
 import * as attributes from './api/attributes';
+import * as containers from './api/containers';
 import * as drawers from './api/drawers';
 
 export { authenticate } from './api/authentication';
@@ -51,6 +52,11 @@ class ImageRight {
 
   getAttributeByObject(objId) {
     return attributes.getAttributeByObject(this.api, objId);
+  }
+
+  // Containers
+  getContainers(containerId, recursive) {
+    return containers.getContainers(this.api, containerId, recursive);
   }
 
   // Drawers
