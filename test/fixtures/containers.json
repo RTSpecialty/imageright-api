@@ -8,7 +8,7 @@
   },
   "status": 200,
   "response": "XXXXXXXX",
-  "rawHeaders": ["Content-Length", "384", "Content-Type", "text/plaintext; charset=utf-8", "Server", "Microsoft-HTTPAPI/2.0", "Date", "Fri, 10 Feb 2017 02:08:55 GMT", "Connection", "close"]
+  "rawHeaders": ["Content-Length", "384", "Content-Type", "text/plaintext; charset=utf-8", "Server", "Microsoft-HTTPAPI/2.0", "Date", "Thu, 23 Feb 2017 18:28:44 GMT", "Connection", "close"]
 }, {
   "scope": "https://localhost:8093",
   "method": "get",
@@ -25,16 +25,136 @@
         "folderTypeId": 91,
         "hasNotes": false,
         "isDeleted": false,
-        "lastModified": "2017-01-30T18:00:24.54",
+        "lastModified": "2017-02-23T18:28:30.463",
         "dateCreated": "2017-01-30T18:00:23.463",
         "attributes": null,
         "id": 5738547,
         "description": "Correspondence"
       },
       "childContainers": null
+    }, {
+      "$type": "ImageRight.Api.Models.Containers.ContainerDataResult, ImageRight.Api.Models",
+      "containerData": {
+        "$type": "ImageRight.Api.Models.Folders.FolderDataResult, ImageRight.Api.Models",
+        "parentFolderId": null,
+        "folderTypeId": 90,
+        "hasNotes": false,
+        "isDeleted": false,
+        "lastModified": "2017-02-10T19:05:37.847",
+        "dateCreated": "2017-02-10T19:05:36.77",
+        "attributes": null,
+        "id": 5738777,
+        "description": "Policy"
+      },
+      "childContainers": null
+    }, {
+      "$type": "ImageRight.Api.Models.Containers.ContainerDataResult, ImageRight.Api.Models",
+      "containerData": {
+        "$type": "ImageRight.Api.Models.Folders.FolderDataResult, ImageRight.Api.Models",
+        "parentFolderId": null,
+        "folderTypeId": 458,
+        "hasNotes": false,
+        "isDeleted": false,
+        "lastModified": "2017-02-11T04:18:03.583",
+        "dateCreated": "2017-02-11T04:18:03.583",
+        "attributes": null,
+        "id": 5738872,
+        "description": "New Mail"
+      },
+      "childContainers": null
+    }, {
+      "$type": "ImageRight.Api.Models.Containers.ContainerDataResult, ImageRight.Api.Models",
+      "containerData": {
+        "$type": "ImageRight.Api.Models.Folders.FolderDataResult, ImageRight.Api.Models",
+        "parentFolderId": null,
+        "folderTypeId": 458,
+        "hasNotes": false,
+        "isDeleted": false,
+        "lastModified": "2017-02-11T04:20:39.17",
+        "dateCreated": "2017-02-11T04:20:39.17",
+        "attributes": null,
+        "id": 5738874,
+        "description": "New Mail"
+      },
+      "childContainers": null
+    }, {
+      "$type": "ImageRight.Api.Models.Containers.ContainerDataResult, ImageRight.Api.Models",
+      "containerData": {
+        "$type": "ImageRight.Api.Models.Folders.FolderDataResult, ImageRight.Api.Models",
+        "parentFolderId": null,
+        "folderTypeId": 458,
+        "hasNotes": false,
+        "isDeleted": false,
+        "lastModified": "2017-02-11T06:29:26.257",
+        "dateCreated": "2017-02-11T06:29:24.977",
+        "attributes": null,
+        "id": 5738876,
+        "description": "New Mail"
+      },
+      "childContainers": null
+    }, {
+      "$type": "ImageRight.Api.Models.Containers.ContainerDataResult, ImageRight.Api.Models",
+      "containerData": {
+        "$type": "ImageRight.Api.Models.Folders.FolderDataResult, ImageRight.Api.Models",
+        "parentFolderId": null,
+        "folderTypeId": 1877,
+        "hasNotes": false,
+        "isDeleted": false,
+        "lastModified": "2017-02-15T23:47:00.023",
+        "dateCreated": "2017-02-15T23:46:57.947",
+        "attributes": null,
+        "id": 5739015,
+        "description": "Submission/Marketing"
+      },
+      "childContainers": null
+    }, {
+      "$type": "ImageRight.Api.Models.Containers.ContainerDataResult, ImageRight.Api.Models",
+      "containerData": {
+        "$type": "ImageRight.Api.Models.Folders.FolderDataResult, ImageRight.Api.Models",
+        "parentFolderId": null,
+        "folderTypeId": 3046,
+        "hasNotes": false,
+        "isDeleted": false,
+        "lastModified": "2017-02-16T00:02:28.713",
+        "dateCreated": "2017-02-16T00:02:26.323",
+        "attributes": null,
+        "id": 5739017,
+        "description": "Endorsements"
+      },
+      "childContainers": null
+    }, {
+      "$type": "ImageRight.Api.Models.Containers.ContainerDataResult, ImageRight.Api.Models",
+      "containerData": {
+        "$type": "ImageRight.Api.Models.Folders.FolderDataResult, ImageRight.Api.Models",
+        "parentFolderId": null,
+        "folderTypeId": 462,
+        "hasNotes": false,
+        "isDeleted": false,
+        "lastModified": "2017-02-20T00:12:27.597",
+        "dateCreated": "2017-02-20T00:12:26.207",
+        "attributes": null,
+        "id": 5739035,
+        "description": "Billing/Accounting"
+      },
+      "childContainers": null
+    }, {
+      "$type": "ImageRight.Api.Models.Containers.ContainerDataResult, ImageRight.Api.Models",
+      "containerData": {
+        "$type": "ImageRight.Api.Models.Folders.FolderDataResult, ImageRight.Api.Models",
+        "parentFolderId": null,
+        "folderTypeId": 1885,
+        "hasNotes": false,
+        "isDeleted": false,
+        "lastModified": "2017-02-20T00:21:13.853",
+        "dateCreated": "2017-02-20T00:21:12.4",
+        "attributes": null,
+        "id": 5739040,
+        "description": "Certificates"
+      },
+      "childContainers": null
     }]
   },
-  "rawHeaders": ["Content-Length", "572", "Content-Type", "application/json; charset=utf-8", "Server", "Microsoft-HTTPAPI/2.0", "Date", "Fri, 10 Feb 2017 02:08:55 GMT", "Connection", "close"]
+  "rawHeaders": ["Content-Length", "3974", "Content-Type", "application/json; charset=utf-8", "Server", "Microsoft-HTTPAPI/2.0", "Date", "Thu, 23 Feb 2017 18:28:44 GMT", "Connection", "close"]
 }, {
   "scope": "https://localhost:8093",
   "method": "get",
@@ -51,7 +171,7 @@
         "folderTypeId": 91,
         "hasNotes": false,
         "isDeleted": false,
-        "lastModified": "2017-01-30T18:00:24.54",
+        "lastModified": "2017-02-23T18:28:30.463",
         "dateCreated": "2017-01-30T18:00:23.463",
         "attributes": null,
         "id": 5738547,
@@ -63,9 +183,9 @@
           "$type": "ImageRight.Api.Models.Containers.ContainerDataResult, ImageRight.Api.Models",
           "containerData": {
             "$type": "ImageRight.Api.Models.Documents.DocumentDataResult, ImageRight.Api.Models",
-            "pageCount": 1,
+            "pageCount": 9,
             "dateCreated": "2017-01-30T18:00:23.633",
-            "dateLastModified": "2017-01-30T18:00:24.54",
+            "dateLastModified": "2017-02-23T18:28:30.463",
             "documentDate": "2017-01-30T00:00:00",
             "receivedDate": "2017-01-30T18:00:23.633",
             "deleted": false,
@@ -78,9 +198,438 @@
             "description": "Recvd E-Mail from John Kesler / Subj: RE: Dovetail and Agent Onboarding - Project Planning"
           },
           "childContainers": null
+        }, {
+          "$type": "ImageRight.Api.Models.Containers.ContainerDataResult, ImageRight.Api.Models",
+          "containerData": {
+            "$type": "ImageRight.Api.Models.Documents.DocumentDataResult, ImageRight.Api.Models",
+            "pageCount": 1,
+            "dateCreated": "2017-02-10T18:42:38.073",
+            "dateLastModified": "2017-02-10T18:42:38.743",
+            "documentDate": "2017-02-10T00:00:00",
+            "receivedDate": "2017-02-10T18:42:38.073",
+            "deleted": false,
+            "documentTypeId": 1856,
+            "attributes": {
+              "$type": "ImageRight.Api.Models.Attributes.AttributeDTO[], ImageRight.Api.Models",
+              "$values": []
+            },
+            "id": 5738773,
+            "description": "Recvd E-Mail from John Kesler / Subj: Email Down"
+          },
+          "childContainers": null
+        }, {
+          "$type": "ImageRight.Api.Models.Containers.ContainerDataResult, ImageRight.Api.Models",
+          "containerData": {
+            "$type": "ImageRight.Api.Models.Documents.DocumentDataResult, ImageRight.Api.Models",
+            "pageCount": 1,
+            "dateCreated": "2017-02-15T22:02:03.997",
+            "dateLastModified": "2017-02-15T22:02:05.01",
+            "documentDate": "2017-02-15T00:00:00",
+            "receivedDate": "2017-02-15T22:02:03.997",
+            "deleted": false,
+            "documentTypeId": 1857,
+            "attributes": {
+              "$type": "ImageRight.Api.Models.Attributes.AttributeDTO[], ImageRight.Api.Models",
+              "$values": []
+            },
+            "id": 5739009,
+            "description": "Recvd E-Mail from May, Kevin / Subj: RE: AIM license file"
+          },
+          "childContainers": null
+        }, {
+          "$type": "ImageRight.Api.Models.Containers.ContainerDataResult, ImageRight.Api.Models",
+          "containerData": {
+            "$type": "ImageRight.Api.Models.Documents.DocumentDataResult, ImageRight.Api.Models",
+            "pageCount": 1,
+            "dateCreated": "2017-02-15T22:32:13.933",
+            "dateLastModified": "2017-02-15T22:32:14.95",
+            "documentDate": "2017-02-15T00:00:00",
+            "receivedDate": "2017-02-15T22:32:13.933",
+            "deleted": false,
+            "documentTypeId": 5496183,
+            "attributes": {
+              "$type": "ImageRight.Api.Models.Attributes.AttributeDTO[], ImageRight.Api.Models",
+              "$values": []
+            },
+            "id": 5739010,
+            "description": "Recvd E-Mail from Peacock, Nancy / Subj: RE: AIM license file"
+          },
+          "childContainers": null
+        }, {
+          "$type": "ImageRight.Api.Models.Containers.ContainerDataResult, ImageRight.Api.Models",
+          "containerData": {
+            "$type": "ImageRight.Api.Models.Documents.DocumentDataResult, ImageRight.Api.Models",
+            "pageCount": 1,
+            "dateCreated": "2017-02-15T22:40:03.643",
+            "dateLastModified": "2017-02-15T22:40:04.737",
+            "documentDate": "2017-02-15T00:00:00",
+            "receivedDate": "2017-02-15T22:40:03.643",
+            "deleted": false,
+            "documentTypeId": 5496182,
+            "attributes": {
+              "$type": "ImageRight.Api.Models.Attributes.AttributeDTO[], ImageRight.Api.Models",
+              "$values": []
+            },
+            "id": 5739011,
+            "description": "Recvd E-Mail from Peacock, Nancy / Subj: RE: AIM license file"
+          },
+          "childContainers": null
+        }, {
+          "$type": "ImageRight.Api.Models.Containers.ContainerDataResult, ImageRight.Api.Models",
+          "containerData": {
+            "$type": "ImageRight.Api.Models.Documents.DocumentDataResult, ImageRight.Api.Models",
+            "pageCount": 1,
+            "dateCreated": "2017-02-15T22:45:16.52",
+            "dateLastModified": "2017-02-15T22:45:17.533",
+            "documentDate": "2017-02-15T00:00:00",
+            "receivedDate": "2017-02-15T22:45:16.52",
+            "deleted": false,
+            "documentTypeId": 1858,
+            "attributes": {
+              "$type": "ImageRight.Api.Models.Attributes.AttributeDTO[], ImageRight.Api.Models",
+              "$values": []
+            },
+            "id": 5739012,
+            "description": "Recvd E-Mail from Peacock, Nancy / Subj: RE: AIM license file"
+          },
+          "childContainers": null
+        }, {
+          "$type": "ImageRight.Api.Models.Containers.ContainerDataResult, ImageRight.Api.Models",
+          "containerData": {
+            "$type": "ImageRight.Api.Models.Documents.DocumentDataResult, ImageRight.Api.Models",
+            "pageCount": 1,
+            "dateCreated": "2017-02-15T22:51:26.72",
+            "dateLastModified": "2017-02-15T22:51:27.767",
+            "documentDate": "2017-02-15T00:00:00",
+            "receivedDate": "2017-02-15T22:51:26.72",
+            "deleted": false,
+            "documentTypeId": 63,
+            "attributes": {
+              "$type": "ImageRight.Api.Models.Attributes.AttributeDTO[], ImageRight.Api.Models",
+              "$values": []
+            },
+            "id": 5739013,
+            "description": "Recvd E-Mail from Peacock, Nancy / Subj: RE: AIM license file"
+          },
+          "childContainers": null
+        }, {
+          "$type": "ImageRight.Api.Models.Containers.ContainerDataResult, ImageRight.Api.Models",
+          "containerData": {
+            "$type": "ImageRight.Api.Models.Documents.DocumentDataResult, ImageRight.Api.Models",
+            "pageCount": 1,
+            "dateCreated": "2017-02-15T23:01:22.753",
+            "dateLastModified": "2017-02-15T23:01:23.923",
+            "documentDate": "2017-02-15T00:00:00",
+            "receivedDate": "2017-02-15T23:01:22.753",
+            "deleted": false,
+            "documentTypeId": 63,
+            "attributes": {
+              "$type": "ImageRight.Api.Models.Attributes.AttributeDTO[], ImageRight.Api.Models",
+              "$values": []
+            },
+            "id": 5739014,
+            "description": "Recvd E-Mail from Peacock, Nancy / Subj: RE: AIM license file"
+          },
+          "childContainers": null
+        }]
+      }
+    }, {
+      "$type": "ImageRight.Api.Models.Containers.ContainerDataResult, ImageRight.Api.Models",
+      "containerData": {
+        "$type": "ImageRight.Api.Models.Folders.FolderDataResult, ImageRight.Api.Models",
+        "parentFolderId": null,
+        "folderTypeId": 90,
+        "hasNotes": false,
+        "isDeleted": false,
+        "lastModified": "2017-02-10T19:05:37.847",
+        "dateCreated": "2017-02-10T19:05:36.77",
+        "attributes": null,
+        "id": 5738777,
+        "description": "Policy"
+      },
+      "childContainers": {
+        "$type": "System.Collections.Generic.List`1[[ImageRight.Api.Models.Containers.ContainerDataResult, ImageRight.Api.Models]], mscorlib",
+        "$values": [{
+          "$type": "ImageRight.Api.Models.Containers.ContainerDataResult, ImageRight.Api.Models",
+          "containerData": {
+            "$type": "ImageRight.Api.Models.Documents.DocumentDataResult, ImageRight.Api.Models",
+            "pageCount": 1,
+            "dateCreated": "2017-02-10T19:05:37.003",
+            "dateLastModified": "2017-02-10T19:05:37.847",
+            "documentDate": "2017-02-10T00:00:00",
+            "receivedDate": "2017-02-10T19:05:37.003",
+            "deleted": false,
+            "documentTypeId": 60,
+            "attributes": {
+              "$type": "ImageRight.Api.Models.Attributes.AttributeDTO[], ImageRight.Api.Models",
+              "$values": []
+            },
+            "id": 5738778,
+            "description": "Recvd E-Mail from John Kesler / Subj: Email Down"
+          },
+          "childContainers": null
+        }]
+      }
+    }, {
+      "$type": "ImageRight.Api.Models.Containers.ContainerDataResult, ImageRight.Api.Models",
+      "containerData": {
+        "$type": "ImageRight.Api.Models.Folders.FolderDataResult, ImageRight.Api.Models",
+        "parentFolderId": null,
+        "folderTypeId": 458,
+        "hasNotes": false,
+        "isDeleted": false,
+        "lastModified": "2017-02-11T04:18:03.583",
+        "dateCreated": "2017-02-11T04:18:03.583",
+        "attributes": null,
+        "id": 5738872,
+        "description": "New Mail"
+      },
+      "childContainers": {
+        "$type": "System.Collections.Generic.List`1[[ImageRight.Api.Models.Containers.ContainerDataResult, ImageRight.Api.Models]], mscorlib",
+        "$values": [{
+          "$type": "ImageRight.Api.Models.Containers.ContainerDataResult, ImageRight.Api.Models",
+          "containerData": {
+            "$type": "ImageRight.Api.Models.Documents.DocumentDataResult, ImageRight.Api.Models",
+            "pageCount": 0,
+            "dateCreated": "2017-02-11T04:18:03.753",
+            "dateLastModified": "2017-02-11T04:18:03.753",
+            "documentDate": "2017-02-10T00:00:00",
+            "receivedDate": "2017-02-11T04:18:03.753",
+            "deleted": false,
+            "documentTypeId": 438,
+            "attributes": {
+              "$type": "ImageRight.Api.Models.Attributes.AttributeDTO[], ImageRight.Api.Models",
+              "$values": []
+            },
+            "id": 5738873,
+            "description": "Recvd E-Mail from John Kesler / Subj: Document Feed - Metadata Schema"
+          },
+          "childContainers": null
+        }]
+      }
+    }, {
+      "$type": "ImageRight.Api.Models.Containers.ContainerDataResult, ImageRight.Api.Models",
+      "containerData": {
+        "$type": "ImageRight.Api.Models.Folders.FolderDataResult, ImageRight.Api.Models",
+        "parentFolderId": null,
+        "folderTypeId": 458,
+        "hasNotes": false,
+        "isDeleted": false,
+        "lastModified": "2017-02-11T04:20:39.17",
+        "dateCreated": "2017-02-11T04:20:39.17",
+        "attributes": null,
+        "id": 5738874,
+        "description": "New Mail"
+      },
+      "childContainers": {
+        "$type": "System.Collections.Generic.List`1[[ImageRight.Api.Models.Containers.ContainerDataResult, ImageRight.Api.Models]], mscorlib",
+        "$values": [{
+          "$type": "ImageRight.Api.Models.Containers.ContainerDataResult, ImageRight.Api.Models",
+          "containerData": {
+            "$type": "ImageRight.Api.Models.Documents.DocumentDataResult, ImageRight.Api.Models",
+            "pageCount": 0,
+            "dateCreated": "2017-02-11T04:20:39.327",
+            "dateLastModified": "2017-02-11T04:20:39.327",
+            "documentDate": "2017-02-10T00:00:00",
+            "receivedDate": "2017-02-11T04:20:39.327",
+            "deleted": false,
+            "documentTypeId": 438,
+            "attributes": {
+              "$type": "ImageRight.Api.Models.Attributes.AttributeDTO[], ImageRight.Api.Models",
+              "$values": []
+            },
+            "id": 5738875,
+            "description": "Recvd E-Mail from John Kesler / Subj: Document Feed - Metadata Schema"
+          },
+          "childContainers": null
+        }]
+      }
+    }, {
+      "$type": "ImageRight.Api.Models.Containers.ContainerDataResult, ImageRight.Api.Models",
+      "containerData": {
+        "$type": "ImageRight.Api.Models.Folders.FolderDataResult, ImageRight.Api.Models",
+        "parentFolderId": null,
+        "folderTypeId": 458,
+        "hasNotes": false,
+        "isDeleted": false,
+        "lastModified": "2017-02-11T06:29:26.257",
+        "dateCreated": "2017-02-11T06:29:24.977",
+        "attributes": null,
+        "id": 5738876,
+        "description": "New Mail"
+      },
+      "childContainers": {
+        "$type": "System.Collections.Generic.List`1[[ImageRight.Api.Models.Containers.ContainerDataResult, ImageRight.Api.Models]], mscorlib",
+        "$values": [{
+          "$type": "ImageRight.Api.Models.Containers.ContainerDataResult, ImageRight.Api.Models",
+          "containerData": {
+            "$type": "ImageRight.Api.Models.Documents.DocumentDataResult, ImageRight.Api.Models",
+            "pageCount": 1,
+            "dateCreated": "2017-02-11T06:29:25.273",
+            "dateLastModified": "2017-02-11T06:29:26.257",
+            "documentDate": "2017-02-11T00:00:00",
+            "receivedDate": "2017-02-11T06:29:25.273",
+            "deleted": false,
+            "documentTypeId": 438,
+            "attributes": {
+              "$type": "ImageRight.Api.Models.Attributes.AttributeDTO[], ImageRight.Api.Models",
+              "$values": []
+            },
+            "id": 5738877,
+            "description": "Recvd E-Mail from John Kesler / Subj: Document Feed - Metadata Schema"
+          },
+          "childContainers": null
+        }]
+      }
+    }, {
+      "$type": "ImageRight.Api.Models.Containers.ContainerDataResult, ImageRight.Api.Models",
+      "containerData": {
+        "$type": "ImageRight.Api.Models.Folders.FolderDataResult, ImageRight.Api.Models",
+        "parentFolderId": null,
+        "folderTypeId": 1877,
+        "hasNotes": false,
+        "isDeleted": false,
+        "lastModified": "2017-02-15T23:47:00.023",
+        "dateCreated": "2017-02-15T23:46:57.947",
+        "attributes": null,
+        "id": 5739015,
+        "description": "Submission/Marketing"
+      },
+      "childContainers": {
+        "$type": "System.Collections.Generic.List`1[[ImageRight.Api.Models.Containers.ContainerDataResult, ImageRight.Api.Models]], mscorlib",
+        "$values": [{
+          "$type": "ImageRight.Api.Models.Containers.ContainerDataResult, ImageRight.Api.Models",
+          "containerData": {
+            "$type": "ImageRight.Api.Models.Documents.DocumentDataResult, ImageRight.Api.Models",
+            "pageCount": 2,
+            "dateCreated": "2017-02-15T23:46:58.163",
+            "dateLastModified": "2017-02-15T23:47:00.023",
+            "documentDate": "2017-02-15T00:00:00",
+            "receivedDate": "2017-02-15T23:46:58.163",
+            "deleted": false,
+            "documentTypeId": 1849,
+            "attributes": {
+              "$type": "ImageRight.Api.Models.Attributes.AttributeDTO[], ImageRight.Api.Models",
+              "$values": []
+            },
+            "id": 5739016,
+            "description": "Recvd E-Mail from Sumner, Dave / Subj: SHS Conversion Document Query"
+          },
+          "childContainers": null
+        }]
+      }
+    }, {
+      "$type": "ImageRight.Api.Models.Containers.ContainerDataResult, ImageRight.Api.Models",
+      "containerData": {
+        "$type": "ImageRight.Api.Models.Folders.FolderDataResult, ImageRight.Api.Models",
+        "parentFolderId": null,
+        "folderTypeId": 3046,
+        "hasNotes": false,
+        "isDeleted": false,
+        "lastModified": "2017-02-16T00:02:28.713",
+        "dateCreated": "2017-02-16T00:02:26.323",
+        "attributes": null,
+        "id": 5739017,
+        "description": "Endorsements"
+      },
+      "childContainers": {
+        "$type": "System.Collections.Generic.List`1[[ImageRight.Api.Models.Containers.ContainerDataResult, ImageRight.Api.Models]], mscorlib",
+        "$values": [{
+          "$type": "ImageRight.Api.Models.Containers.ContainerDataResult, ImageRight.Api.Models",
+          "containerData": {
+            "$type": "ImageRight.Api.Models.Documents.DocumentDataResult, ImageRight.Api.Models",
+            "pageCount": 2,
+            "dateCreated": "2017-02-16T00:02:26.54",
+            "dateLastModified": "2017-02-16T00:02:28.713",
+            "documentDate": "2017-02-15T00:00:00",
+            "receivedDate": "2017-02-16T00:02:26.54",
+            "deleted": false,
+            "documentTypeId": 63,
+            "attributes": {
+              "$type": "ImageRight.Api.Models.Attributes.AttributeDTO[], ImageRight.Api.Models",
+              "$values": []
+            },
+            "id": 5739018,
+            "description": "Recvd E-Mail from Sumner, Dave / Subj: SHS Conversion Document Query"
+          },
+          "childContainers": null
+        }]
+      }
+    }, {
+      "$type": "ImageRight.Api.Models.Containers.ContainerDataResult, ImageRight.Api.Models",
+      "containerData": {
+        "$type": "ImageRight.Api.Models.Folders.FolderDataResult, ImageRight.Api.Models",
+        "parentFolderId": null,
+        "folderTypeId": 462,
+        "hasNotes": false,
+        "isDeleted": false,
+        "lastModified": "2017-02-20T00:12:27.597",
+        "dateCreated": "2017-02-20T00:12:26.207",
+        "attributes": null,
+        "id": 5739035,
+        "description": "Billing/Accounting"
+      },
+      "childContainers": {
+        "$type": "System.Collections.Generic.List`1[[ImageRight.Api.Models.Containers.ContainerDataResult, ImageRight.Api.Models]], mscorlib",
+        "$values": [{
+          "$type": "ImageRight.Api.Models.Containers.ContainerDataResult, ImageRight.Api.Models",
+          "containerData": {
+            "$type": "ImageRight.Api.Models.Documents.DocumentDataResult, ImageRight.Api.Models",
+            "pageCount": 1,
+            "dateCreated": "2017-02-20T00:12:26.503",
+            "dateLastModified": "2017-02-20T00:12:27.597",
+            "documentDate": "2017-02-19T00:00:00",
+            "receivedDate": "2017-02-20T00:12:26.503",
+            "deleted": false,
+            "documentTypeId": 455,
+            "attributes": {
+              "$type": "ImageRight.Api.Models.Attributes.AttributeDTO[], ImageRight.Api.Models",
+              "$values": []
+            },
+            "id": 5739036,
+            "description": "Recvd E-Mail from DC01RTSDB01 / Subj: [The job failed.] SQL Server Job System: 'CIS ImageRight Imports - FUP' completed on \\\\DC01RTSDB01."
+          },
+          "childContainers": null
+        }]
+      }
+    }, {
+      "$type": "ImageRight.Api.Models.Containers.ContainerDataResult, ImageRight.Api.Models",
+      "containerData": {
+        "$type": "ImageRight.Api.Models.Folders.FolderDataResult, ImageRight.Api.Models",
+        "parentFolderId": null,
+        "folderTypeId": 1885,
+        "hasNotes": false,
+        "isDeleted": false,
+        "lastModified": "2017-02-20T00:21:13.853",
+        "dateCreated": "2017-02-20T00:21:12.4",
+        "attributes": null,
+        "id": 5739040,
+        "description": "Certificates"
+      },
+      "childContainers": {
+        "$type": "System.Collections.Generic.List`1[[ImageRight.Api.Models.Containers.ContainerDataResult, ImageRight.Api.Models]], mscorlib",
+        "$values": [{
+          "$type": "ImageRight.Api.Models.Containers.ContainerDataResult, ImageRight.Api.Models",
+          "containerData": {
+            "$type": "ImageRight.Api.Models.Documents.DocumentDataResult, ImageRight.Api.Models",
+            "pageCount": 1,
+            "dateCreated": "2017-02-20T00:21:12.68",
+            "dateLastModified": "2017-02-20T00:21:13.853",
+            "documentDate": "2017-02-19T00:00:00",
+            "receivedDate": "2017-02-20T00:21:12.68",
+            "deleted": false,
+            "documentTypeId": 1876,
+            "attributes": {
+              "$type": "ImageRight.Api.Models.Attributes.AttributeDTO[], ImageRight.Api.Models",
+              "$values": []
+            },
+            "id": 5739041,
+            "description": "Recvd E-Mail from DC01RTSDB01 / Subj: [The job failed.] SQL Server Job System: 'CIS ImageRight Imports - FUP' completed on \\\\DC01RTSDB01."
+          },
+          "childContainers": null
         }]
       }
     }]
   },
-  "rawHeaders": ["Content-Length", "1370", "Content-Type", "application/json; charset=utf-8", "Server", "Microsoft-HTTPAPI/2.0", "Date", "Fri, 10 Feb 2017 02:08:55 GMT", "Connection", "close"]
+  "rawHeaders": ["Content-Length", "15477", "Content-Type", "application/json; charset=utf-8", "Server", "Microsoft-HTTPAPI/2.0", "Date", "Thu, 23 Feb 2017 18:28:44 GMT", "Connection", "close"]
 }]

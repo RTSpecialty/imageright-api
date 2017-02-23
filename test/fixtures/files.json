@@ -8,7 +8,7 @@
   },
   "status": 200,
   "response": "XXXXXXXX",
-  "rawHeaders": ["Content-Length", "384", "Content-Type", "text/plaintext; charset=utf-8", "Server", "Microsoft-HTTPAPI/2.0", "Date", "Fri, 10 Feb 2017 01:48:37 GMT", "Connection", "close"]
+  "rawHeaders": ["Content-Length", "384", "Content-Type", "text/plaintext; charset=utf-8", "Server", "Microsoft-HTTPAPI/2.0", "Date", "Thu, 23 Feb 2017 18:31:26 GMT", "Connection", "close"]
 }, {
   "scope": "https://localhost:8093",
   "method": "post",
@@ -33,8 +33,8 @@
     "fileNumberPart3": "",
     "isTemporary": false,
     "isDeleted": false,
-    "dateLastOpened": "2017-01-30T17:57:37.313",
-    "lastModified": "2017-01-30T18:00:24.54",
+    "dateLastOpened": "2017-02-22T20:46:39.79",
+    "lastModified": "2017-02-23T18:31:11.11",
     "dateCreated": "2017-01-27T20:34:19.177",
     "attributes": [{
       "displayName": "Agent",
@@ -95,5 +95,5 @@
     "effectivePermissions": -1,
     "isFrozen": false
   }],
-  "rawHeaders": ["Content-Length", "1462", "Content-Type", "application/json; charset=utf-8", "Server", "Microsoft-HTTPAPI/2.0", "Date", "Fri, 10 Feb 2017 01:48:37 GMT", "Connection", "close"]
+  "rawHeaders": ["Content-Length", "1461", "Content-Type", "application/json; charset=utf-8", "Server", "Microsoft-HTTPAPI/2.0", "Date", "Thu, 23 Feb 2017 18:31:26 GMT", "Connection", "close"]
 }]

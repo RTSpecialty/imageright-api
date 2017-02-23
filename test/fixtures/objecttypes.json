@@ -8,17 +8,7 @@
   },
   "status": 200,
   "response": "XXXXXXXX",
-  "rawHeaders": ["Content-Length", "384", "Content-Type", "text/plaintext; charset=utf-8", "Server", "Microsoft-HTTPAPI/2.0", "Date", "Fri, 10 Feb 2017 03:21:28 GMT", "Connection", "close"]
-}, {
-  "scope": "https://localhost:8093",
-  "method": "get",
-  "path": "/api/objecttypes/allowedtypes?type=2376",
-  "body": "",
-  "status": 404,
-  "response": {
-    "message": "No HTTP resource was found that matches the request URI 'https://t-dc01rtirapp01:8093/api/objecttypes/allowedtypes?type=2376'."
-  },
-  "rawHeaders": ["Content-Length", "140", "Content-Type", "application/json; charset=utf-8", "Server", "Microsoft-HTTPAPI/2.0", "Date", "Fri, 10 Feb 2017 03:21:28 GMT", "Connection", "close"]
+  "rawHeaders": ["Content-Length", "384", "Content-Type", "text/plaintext; charset=utf-8", "Server", "Microsoft-HTTPAPI/2.0", "Date", "Thu, 23 Feb 2017 18:34:14 GMT", "Connection", "close"]
 }, {
   "scope": "https://localhost:8093",
   "method": "get",
@@ -188,7 +178,7 @@
     "dateLastModified": "2015-12-09T02:26:45.363",
     "effectivePermissions": 2147483647
   }],
-  "rawHeaders": ["Content-Length", "3507", "Content-Type", "application/json; charset=utf-8", "Server", "Microsoft-HTTPAPI/2.0", "Date", "Fri, 10 Feb 2017 03:21:28 GMT", "Connection", "close"]
+  "rawHeaders": ["Content-Length", "3507", "Content-Type", "application/json; charset=utf-8", "Server", "Microsoft-HTTPAPI/2.0", "Date", "Thu, 23 Feb 2017 18:34:14 GMT", "Connection", "close"]
 }, {
   "scope": "https://localhost:8093",
   "method": "get",
@@ -220,7 +210,7 @@
       }]
     }
   },
-  "rawHeaders": ["Content-Length", "404", "Content-Type", "application/json; charset=utf-8", "Server", "Microsoft-HTTPAPI/2.0", "Date", "Fri, 10 Feb 2017 03:21:28 GMT", "Connection", "close"]
+  "rawHeaders": ["Content-Length", "404", "Content-Type", "application/json; charset=utf-8", "Server", "Microsoft-HTTPAPI/2.0", "Date", "Thu, 23 Feb 2017 18:34:14 GMT", "Connection", "close"]
 }, {
   "scope": "https://localhost:8093",
   "method": "get",
@@ -1065,5 +1055,5 @@
     }],
     "documentTypeDataResults": []
   },
-  "rawHeaders": ["Content-Length", "18518", "Content-Type", "application/json; charset=utf-8", "Server", "Microsoft-HTTPAPI/2.0", "Date", "Fri, 10 Feb 2017 03:21:28 GMT", "Connection", "close"]
+  "rawHeaders": ["Content-Length", "18518", "Content-Type", "application/json; charset=utf-8", "Server", "Microsoft-HTTPAPI/2.0", "Date", "Thu, 23 Feb 2017 18:34:14 GMT", "Connection", "close"]
 }]

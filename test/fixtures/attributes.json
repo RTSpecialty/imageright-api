@@ -8,7 +8,7 @@
   },
   "status": 200,
   "response": "XXXXXXXX",
-  "rawHeaders": ["Content-Length", "384", "Content-Type", "text/plaintext; charset=utf-8", "Server", "Microsoft-HTTPAPI/2.0", "Date", "Tue, 07 Feb 2017 02:03:46 GMT", "Connection", "close"]
+  "rawHeaders": ["Content-Length", "384", "Content-Type", "text/plaintext; charset=utf-8", "Server", "Microsoft-HTTPAPI/2.0", "Date", "Thu, 23 Feb 2017 18:28:26 GMT", "Connection", "close"]
 }, {
   "scope": "https://localhost:8093",
   "method": "get",
@@ -21,7 +21,7 @@
     "value": "C:\\Program Files (x86)\\ImageRight\\Functions Files",
     "attributeType": 2
   },
-  "rawHeaders": ["Content-Length", "147", "Content-Type", "application/json; charset=utf-8", "Server", "Microsoft-HTTPAPI/2.0", "Date", "Tue, 07 Feb 2017 02:03:46 GMT", "Connection", "close"]
+  "rawHeaders": ["Content-Length", "147", "Content-Type", "application/json; charset=utf-8", "Server", "Microsoft-HTTPAPI/2.0", "Date", "Thu, 23 Feb 2017 18:28:26 GMT", "Connection", "close"]
 }, {
   "scope": "https://localhost:8093",
   "method": "get",
@@ -34,5 +34,5 @@
     "value": "C:\\Program Files (x86)\\ImageRight\\Functions Files",
     "attributeType": 2
   }],
-  "rawHeaders": ["Content-Length", "149", "Content-Type", "application/json; charset=utf-8", "Server", "Microsoft-HTTPAPI/2.0", "Date", "Tue, 07 Feb 2017 02:03:46 GMT", "Connection", "close"]
+  "rawHeaders": ["Content-Length", "149", "Content-Type", "application/json; charset=utf-8", "Server", "Microsoft-HTTPAPI/2.0", "Date", "Thu, 23 Feb 2017 18:28:26 GMT", "Connection", "close"]
 }]

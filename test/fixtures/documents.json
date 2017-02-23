@@ -8,7 +8,7 @@
   },
   "status": 200,
   "response": "XXXXXXXX",
-  "rawHeaders": ["Content-Length", "384", "Content-Type", "text/plaintext; charset=utf-8", "Server", "Microsoft-HTTPAPI/2.0", "Date", "Fri, 10 Feb 2017 02:02:57 GMT", "Connection", "close"]
+  "rawHeaders": ["Content-Length", "384", "Content-Type", "text/plaintext; charset=utf-8", "Server", "Microsoft-HTTPAPI/2.0", "Date", "Thu, 23 Feb 2017 18:29:22 GMT", "Connection", "close"]
 }, {
   "scope": "https://localhost:8093",
   "method": "post",
@@ -18,9 +18,9 @@
   },
   "status": 200,
   "response": [{
-    "pageCount": 1,
+    "pageCount": 10,
     "dateCreated": "2017-01-30T18:00:23.633",
-    "dateLastModified": "2017-01-30T18:00:24.54",
+    "dateLastModified": "2017-02-23T18:28:47.1",
     "documentDate": "2017-01-30T00:00:00",
     "receivedDate": "2017-01-30T18:00:23.633",
     "deleted": false,
@@ -33,6 +33,246 @@
     }],
     "id": 5738548,
     "description": "Recvd E-Mail from John Kesler / Subj: RE: Dovetail and Agent Onboarding - Project Planning"
+  }, {
+    "pageCount": 1,
+    "dateCreated": "2017-02-10T18:42:38.073",
+    "dateLastModified": "2017-02-10T18:42:38.743",
+    "documentDate": "2017-02-10T00:00:00",
+    "receivedDate": "2017-02-10T18:42:38.073",
+    "deleted": false,
+    "documentTypeId": 1856,
+    "attributes": [{
+      "displayName": "AIMDocAttribute",
+      "name": "AIMDocAttribute",
+      "value": "D744EA0D-3581-49E6-8F9E-A28671BDC2C5",
+      "attributeType": 2
+    }],
+    "id": 5738773,
+    "description": "Recvd E-Mail from John Kesler / Subj: Email Down"
+  }, {
+    "pageCount": 1,
+    "dateCreated": "2017-02-15T22:02:03.997",
+    "dateLastModified": "2017-02-15T22:02:05.01",
+    "documentDate": "2017-02-15T00:00:00",
+    "receivedDate": "2017-02-15T22:02:03.997",
+    "deleted": false,
+    "documentTypeId": 1857,
+    "attributes": [{
+      "displayName": "AIMDocAttribute",
+      "name": "AIMDocAttribute",
+      "value": "A45A653D-4F36-4327-851D-D14255A3A38A",
+      "attributeType": 2
+    }],
+    "id": 5739009,
+    "description": "Recvd E-Mail from May, Kevin / Subj: RE: AIM license file"
+  }, {
+    "pageCount": 1,
+    "dateCreated": "2017-02-15T22:32:13.933",
+    "dateLastModified": "2017-02-15T22:32:14.95",
+    "documentDate": "2017-02-15T00:00:00",
+    "receivedDate": "2017-02-15T22:32:13.933",
+    "deleted": false,
+    "documentTypeId": 5496183,
+    "attributes": [{
+      "displayName": "AIMDocAttribute",
+      "name": "AIMDocAttribute",
+      "value": "36F4DFF3-8F34-46DE-ACCD-F589E3AC2C48",
+      "attributeType": 2
+    }],
+    "id": 5739010,
+    "description": "Recvd E-Mail from Peacock, Nancy / Subj: RE: AIM license file"
+  }, {
+    "pageCount": 1,
+    "dateCreated": "2017-02-15T22:40:03.643",
+    "dateLastModified": "2017-02-15T22:40:04.737",
+    "documentDate": "2017-02-15T00:00:00",
+    "receivedDate": "2017-02-15T22:40:03.643",
+    "deleted": false,
+    "documentTypeId": 5496182,
+    "attributes": [{
+      "displayName": "AIMDocAttribute",
+      "name": "AIMDocAttribute",
+      "value": "1C73C779-C6B4-4A1E-9732-8224195ED958",
+      "attributeType": 2
+    }],
+    "id": 5739011,
+    "description": "Recvd E-Mail from Peacock, Nancy / Subj: RE: AIM license file"
+  }, {
+    "pageCount": 1,
+    "dateCreated": "2017-02-15T22:45:16.52",
+    "dateLastModified": "2017-02-15T22:45:17.533",
+    "documentDate": "2017-02-15T00:00:00",
+    "receivedDate": "2017-02-15T22:45:16.52",
+    "deleted": false,
+    "documentTypeId": 1858,
+    "attributes": [{
+      "displayName": "AIMDocAttribute",
+      "name": "AIMDocAttribute",
+      "value": "88E42E16-1416-4E11-AE78-409C4F310F54",
+      "attributeType": 2
+    }],
+    "id": 5739012,
+    "description": "Recvd E-Mail from Peacock, Nancy / Subj: RE: AIM license file"
+  }, {
+    "pageCount": 1,
+    "dateCreated": "2017-02-15T22:51:26.72",
+    "dateLastModified": "2017-02-15T22:51:27.767",
+    "documentDate": "2017-02-15T00:00:00",
+    "receivedDate": "2017-02-15T22:51:26.72",
+    "deleted": false,
+    "documentTypeId": 63,
+    "attributes": [{
+      "displayName": "AIMDocAttribute",
+      "name": "AIMDocAttribute",
+      "value": "D7D0A797-0910-4C3F-9C44-7012CA70815D",
+      "attributeType": 2
+    }],
+    "id": 5739013,
+    "description": "Recvd E-Mail from Peacock, Nancy / Subj: RE: AIM license file"
+  }, {
+    "pageCount": 1,
+    "dateCreated": "2017-02-15T23:01:22.753",
+    "dateLastModified": "2017-02-15T23:01:23.923",
+    "documentDate": "2017-02-15T00:00:00",
+    "receivedDate": "2017-02-15T23:01:22.753",
+    "deleted": false,
+    "documentTypeId": 63,
+    "attributes": [{
+      "displayName": "AIMDocAttribute",
+      "name": "AIMDocAttribute",
+      "value": "BCD00217-E170-4BFA-9797-3632BE579413",
+      "attributeType": 2
+    }],
+    "id": 5739014,
+    "description": "Recvd E-Mail from Peacock, Nancy / Subj: RE: AIM license file"
+  }, {
+    "pageCount": 1,
+    "dateCreated": "2017-02-10T19:05:37.003",
+    "dateLastModified": "2017-02-10T19:05:37.847",
+    "documentDate": "2017-02-10T00:00:00",
+    "receivedDate": "2017-02-10T19:05:37.003",
+    "deleted": false,
+    "documentTypeId": 60,
+    "attributes": [{
+      "displayName": "AIMDocAttribute",
+      "name": "AIMDocAttribute",
+      "value": "647125F2-855B-4487-B5A3-106E01DA9C59",
+      "attributeType": 2
+    }],
+    "id": 5738778,
+    "description": "Recvd E-Mail from John Kesler / Subj: Email Down"
+  }, {
+    "pageCount": 0,
+    "dateCreated": "2017-02-11T04:18:03.753",
+    "dateLastModified": "2017-02-11T04:18:03.753",
+    "documentDate": "2017-02-10T00:00:00",
+    "receivedDate": "2017-02-11T04:18:03.753",
+    "deleted": false,
+    "documentTypeId": 438,
+    "attributes": [{
+      "displayName": "AIMDocAttribute",
+      "name": "AIMDocAttribute",
+      "value": "E49C2689-9A90-4F28-BF59-A3A57871558C",
+      "attributeType": 2
+    }],
+    "id": 5738873,
+    "description": "Recvd E-Mail from John Kesler / Subj: Document Feed - Metadata Schema"
+  }, {
+    "pageCount": 0,
+    "dateCreated": "2017-02-11T04:20:39.327",
+    "dateLastModified": "2017-02-11T04:20:39.327",
+    "documentDate": "2017-02-10T00:00:00",
+    "receivedDate": "2017-02-11T04:20:39.327",
+    "deleted": false,
+    "documentTypeId": 438,
+    "attributes": [{
+      "displayName": "AIMDocAttribute",
+      "name": "AIMDocAttribute",
+      "value": "C050B898-3AA7-45EE-A503-1F92D856F2F4",
+      "attributeType": 2
+    }],
+    "id": 5738875,
+    "description": "Recvd E-Mail from John Kesler / Subj: Document Feed - Metadata Schema"
+  }, {
+    "pageCount": 1,
+    "dateCreated": "2017-02-11T06:29:25.273",
+    "dateLastModified": "2017-02-11T06:29:26.257",
+    "documentDate": "2017-02-11T00:00:00",
+    "receivedDate": "2017-02-11T06:29:25.273",
+    "deleted": false,
+    "documentTypeId": 438,
+    "attributes": [{
+      "displayName": "AIMDocAttribute",
+      "name": "AIMDocAttribute",
+      "value": "A43DB989-2A0A-4A73-99E0-6236B6A67705",
+      "attributeType": 2
+    }],
+    "id": 5738877,
+    "description": "Recvd E-Mail from John Kesler / Subj: Document Feed - Metadata Schema"
+  }, {
+    "pageCount": 2,
+    "dateCreated": "2017-02-15T23:46:58.163",
+    "dateLastModified": "2017-02-15T23:47:00.023",
+    "documentDate": "2017-02-15T00:00:00",
+    "receivedDate": "2017-02-15T23:46:58.163",
+    "deleted": false,
+    "documentTypeId": 1849,
+    "attributes": [{
+      "displayName": "AIMDocAttribute",
+      "name": "AIMDocAttribute",
+      "value": "6BD47BF1-AD43-4AC0-8E07-D00789D214A0",
+      "attributeType": 2
+    }],
+    "id": 5739016,
+    "description": "Recvd E-Mail from Sumner, Dave / Subj: SHS Conversion Document Query"
+  }, {
+    "pageCount": 2,
+    "dateCreated": "2017-02-16T00:02:26.54",
+    "dateLastModified": "2017-02-16T00:02:28.713",
+    "documentDate": "2017-02-15T00:00:00",
+    "receivedDate": "2017-02-16T00:02:26.54",
+    "deleted": false,
+    "documentTypeId": 63,
+    "attributes": [{
+      "displayName": "AIMDocAttribute",
+      "name": "AIMDocAttribute",
+      "value": "7B1B213D-8D8A-4B33-BAB7-6903B921D4E8",
+      "attributeType": 2
+    }],
+    "id": 5739018,
+    "description": "Recvd E-Mail from Sumner, Dave / Subj: SHS Conversion Document Query"
+  }, {
+    "pageCount": 1,
+    "dateCreated": "2017-02-20T00:12:26.503",
+    "dateLastModified": "2017-02-20T00:12:27.597",
+    "documentDate": "2017-02-19T00:00:00",
+    "receivedDate": "2017-02-20T00:12:26.503",
+    "deleted": false,
+    "documentTypeId": 455,
+    "attributes": [{
+      "displayName": "AIMDocAttribute",
+      "name": "AIMDocAttribute",
+      "value": "9B46A278-3B96-403A-9FEA-69904B6A4A62",
+      "attributeType": 2
+    }],
+    "id": 5739036,
+    "description": "Recvd E-Mail from DC01RTSDB01 / Subj: [The job failed.] SQL Server Job System: 'CIS ImageRight Imports - FUP' completed on \\\\DC01RTSDB01."
+  }, {
+    "pageCount": 1,
+    "dateCreated": "2017-02-20T00:21:12.68",
+    "dateLastModified": "2017-02-20T00:21:13.853",
+    "documentDate": "2017-02-19T00:00:00",
+    "receivedDate": "2017-02-20T00:21:12.68",
+    "deleted": false,
+    "documentTypeId": 1876,
+    "attributes": [{
+      "displayName": "AIMDocAttribute",
+      "name": "AIMDocAttribute",
+      "value": "54B8A785-5594-4640-A468-5C346BEC543F",
+      "attributeType": 2
+    }],
+    "id": 5739041,
+    "description": "Recvd E-Mail from DC01RTSDB01 / Subj: [The job failed.] SQL Server Job System: 'CIS ImageRight Imports - FUP' completed on \\\\DC01RTSDB01."
   }],
-  "rawHeaders": ["Content-Length", "476", "Content-Type", "application/json; charset=utf-8", "Server", "Microsoft-HTTPAPI/2.0", "Date", "Fri, 10 Feb 2017 02:02:57 GMT", "Connection", "close"]
+  "rawHeaders": ["Content-Length", "7329", "Content-Type", "application/json; charset=utf-8", "Server", "Microsoft-HTTPAPI/2.0", "Date", "Thu, 23 Feb 2017 18:29:22 GMT", "Connection", "close"]
 }]

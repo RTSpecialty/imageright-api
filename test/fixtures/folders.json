@@ -8,7 +8,7 @@
   },
   "status": 200,
   "response": "XXXXXXXX",
-  "rawHeaders": ["Content-Length", "384", "Content-Type", "text/plaintext; charset=utf-8", "Server", "Microsoft-HTTPAPI/2.0", "Date", "Mon, 20 Feb 2017 00:57:33 GMT", "Connection", "close"]
+  "rawHeaders": ["Content-Length", "384", "Content-Type", "text/plaintext; charset=utf-8", "Server", "Microsoft-HTTPAPI/2.0", "Date", "Thu, 23 Feb 2017 18:31:56 GMT", "Connection", "close"]
 }, {
   "scope": "https://localhost:8093",
   "method": "post",
@@ -22,7 +22,7 @@
     "folderTypeId": 91,
     "hasNotes": null,
     "isDeleted": false,
-    "lastModified": "2017-02-15T23:01:23.923",
+    "lastModified": "2017-02-23T18:31:29.61",
     "dateCreated": "2017-01-30T18:00:23.463",
     "attributes": [],
     "id": 5738547,
@@ -108,5 +108,5 @@
     "id": 5739040,
     "description": "Certificates"
   }],
-  "rawHeaders": ["Content-Length", "1939", "Content-Type", "application/json; charset=utf-8", "Server", "Microsoft-HTTPAPI/2.0", "Date", "Mon, 20 Feb 2017 00:57:33 GMT", "Connection", "close"]
+  "rawHeaders": ["Content-Length", "1938", "Content-Type", "application/json; charset=utf-8", "Server", "Microsoft-HTTPAPI/2.0", "Date", "Thu, 23 Feb 2017 18:31:56 GMT", "Connection", "close"]
 }]
