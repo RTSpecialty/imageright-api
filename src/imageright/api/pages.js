@@ -4,7 +4,7 @@ export function checkReadPermissions(api, pageId) {
 }
 
 export function createPage(api, page) {
-  return api.post('api/pages', page)
+  return api.post('api/pages', page.data, { headers: page.headers })
     .then(res => Promise.resolve(res.data));
 }
 

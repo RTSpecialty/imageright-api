@@ -28,11 +28,14 @@ function replace(obj) {
 }
 
 // starts recording, one fixture at a time
-function record(name) {
+function record(name, reqheaders) {
   if (recording) return recording;
   recording = true;
   fixture = name;
-  nock.recorder.rec({ output_objects: true, dont_print: true });
+  nock.recorder.rec({
+    output_objects: true,
+    dont_print: true,
+    enable_reqheaders_recording: reqheaders });
   return recording;
 }
 
@@ -44,21 +47,22 @@ class Recorder {
     this.name = name;
     this.path = path.join(test, fixtures, `${name}.json`);
     this.reset = options.reset || false;
+    this.reqheaders = options.reqheaders || false;
     this.nocks = null;
   }
 
   // ensure the fixtures exist and load them
   before() {
-    if (this.reset) return record(this.name);
+    if (this.reset) return record(this.name, this.reqheaders);
     if (fs.existsSync(this.path)) {
       try {
         this.nocks = nock.define(nock.loadDefs(this.path).map(replace));
         return this.nocks;
       } catch (e) {
-        return record(this.name);
+        return record(this.name, this.reqheaders);
       }
     }
-    return record(this.name);
+    return record(this.name, this.reqheaders);
   }
 
   // saves our recording if fixtures didn't already exist

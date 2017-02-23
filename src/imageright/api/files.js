@@ -1,10 +1,10 @@
 export function createFile(api, fileObj) {
-  return api.post('api/files', fileObj.toJSON())
+  return api.post('api/files', fileObj)
     .then(res => Promise.resolve(res.data));
 }
 
 export function findFiles(api, searchObj) {
-  return api.post('api/files/find', searchObj.toJSON())
+  return api.post('api/files/find', searchObj)
     .then(res => Promise.resolve(res.data));
 }
 

@@ -1,10 +1,10 @@
 export function createDocument(api, docObj) {
-  return api.post('api/documents', docObj.toJSON())
+  return api.post('api/documents', docObj)
     .then(res => Promise.resolve(res.data));
 }
 
 export function findDocuments(api, searchObj) {
-  return api.post('api/documents/find', searchObj.toJSON())
+  return api.post('api/documents/find', searchObj)
     .then(res => Promise.resolve(res.data));
 }
 
@@ -14,19 +14,19 @@ export function getDocumentById(api, docId) {
 }
 
 export function moveDocument(api, moveObj) {
-  return api.post('api/documents/move', moveObj.toJSON())
+  return api.post('api/documents/move', moveObj)
     .then(res => Promise.resolve(res.data));
 }
 
 export function updateProperties(api, docId, propObj) {
-  return api.post(`api/documents/${docId}/properties`, propObj.toJSON())
+  return api.post(`api/documents/${docId}/properties`, propObj)
     .then(res => Promise.resolve(res.data));
 }
 
 // V2
 
 export function copyDocument(api, copyObj) {
-  return api.post('api/v2/documents/copy', copyObj.toJSON())
+  return api.post('api/v2/documents/copy', copyObj)
     .then(res => Promise.resolve(res.data));
 }
 
@@ -37,6 +37,6 @@ export function deleteDocument(api, docId, force) {
 }
 
 export function moveDocumentV2(api, moveObj) {
-  return api.post('api/v2/documents/move', moveObj.toJSON())
+  return api.post('api/v2/documents/move', moveObj)
     .then(res => Promise.resolve(res.data));
 }

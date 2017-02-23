@@ -1,0 +1,1069 @@
+[{
+  "scope": "https://localhost:8093",
+  "method": "post",
+  "path": "/api/authenticate",
+  "body": {
+    "UserName": "<username>",
+    "Password": "<password>"
+  },
+  "status": 200,
+  "response": "XXXXXXXX",
+  "rawHeaders": ["Content-Length", "384", "Content-Type", "text/plaintext; charset=utf-8", "Server", "Microsoft-HTTPAPI/2.0", "Date", "Fri, 10 Feb 2017 03:21:28 GMT", "Connection", "close"]
+}, {
+  "scope": "https://localhost:8093",
+  "method": "get",
+  "path": "/api/objecttypes/allowedtypes?type=2376",
+  "body": "",
+  "status": 404,
+  "response": {
+    "message": "No HTTP resource was found that matches the request URI 'https://t-dc01rtirapp01:8093/api/objecttypes/allowedtypes?type=2376'."
+  },
+  "rawHeaders": ["Content-Length", "140", "Content-Type", "application/json; charset=utf-8", "Server", "Microsoft-HTTPAPI/2.0", "Date", "Fri, 10 Feb 2017 03:21:28 GMT", "Connection", "close"]
+}, {
+  "scope": "https://localhost:8093",
+  "method": "get",
+  "path": "/api/containers/5738532/allowedtypes",
+  "body": "",
+  "status": 200,
+  "response": [{
+    "classId": -2,
+    "id": 458,
+    "name": "New Mail",
+    "description": "New Mail",
+    "overlayId": -1,
+    "automationId": "New Mail",
+    "dateLastModified": "2015-12-04T23:19:25.227",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -2,
+    "id": 90,
+    "name": "Policy",
+    "description": "Policy",
+    "overlayId": -1,
+    "automationId": "Policy",
+    "dateLastModified": "2015-12-04T23:19:25.243",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -2,
+    "id": 3046,
+    "name": "Endorsements",
+    "description": "Endorsements",
+    "overlayId": -1,
+    "automationId": "Endorsements",
+    "dateLastModified": "2015-12-04T23:19:25.18",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -2,
+    "id": 1877,
+    "name": "Submission/Marketing",
+    "description": "Submission/Marketing",
+    "overlayId": -1,
+    "automationId": "Submission/Marketing",
+    "dateLastModified": "2015-12-04T23:19:25.29",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -2,
+    "id": 189991,
+    "name": "Filings",
+    "description": "Filings",
+    "overlayId": -1,
+    "automationId": "Filings",
+    "dateLastModified": "2015-12-04T23:19:25.197",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -2,
+    "id": 91,
+    "name": "Correspondence",
+    "description": "Correspondence",
+    "overlayId": -1,
+    "automationId": "Correspondence",
+    "dateLastModified": "2015-12-04T23:19:25.133",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -2,
+    "id": 1878,
+    "name": "Inspection",
+    "description": "Inspection",
+    "overlayId": -1,
+    "automationId": "Inspection",
+    "dateLastModified": "2015-12-04T23:19:25.197",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -2,
+    "id": 3047,
+    "name": "MVR",
+    "description": "MVR",
+    "overlayId": -1,
+    "automationId": "MVR",
+    "dateLastModified": "2015-12-04T23:19:25.227",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -2,
+    "id": 1879,
+    "name": "SL Tax Filings",
+    "description": "SL Tax Filings",
+    "overlayId": -1,
+    "automationId": "SL Tax Filings",
+    "dateLastModified": "2015-12-04T23:19:25.273",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -2,
+    "id": 4225452,
+    "name": "X-Mod",
+    "description": "X-Mod",
+    "overlayId": -1,
+    "automationId": "X-Mod",
+    "dateLastModified": "2015-12-04T23:19:25.337",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -2,
+    "id": 1880,
+    "name": "Claims",
+    "description": "Claims",
+    "overlayId": -1,
+    "automationId": "Claims",
+    "dateLastModified": "2015-12-04T23:19:25.117",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -2,
+    "id": 462,
+    "name": "Billing/Accounting",
+    "description": "Billing/Accounting",
+    "overlayId": -1,
+    "automationId": "Billing/Accounting",
+    "dateLastModified": "2015-12-04T23:19:25.07",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -2,
+    "id": 1882,
+    "name": "Subjectivities",
+    "description": "Subjectivities",
+    "overlayId": -1,
+    "automationId": "Subjectivities",
+    "dateLastModified": "2015-12-04T23:19:25.29",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -2,
+    "id": 1883,
+    "name": "Notices",
+    "description": "Notices",
+    "overlayId": -1,
+    "automationId": "Notices",
+    "dateLastModified": "2015-12-04T23:19:25.227",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -2,
+    "id": 1884,
+    "name": "BOR",
+    "description": "BOR",
+    "overlayId": -1,
+    "automationId": "BOR",
+    "dateLastModified": "2015-12-04T23:19:25.087",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -2,
+    "id": 1885,
+    "name": "Certificates",
+    "description": "Certificates",
+    "overlayId": -1,
+    "automationId": "Certificates",
+    "dateLastModified": "2015-12-04T23:19:25.1",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -2,
+    "id": 1764,
+    "name": "Archived Documents",
+    "description": "Archived Documents",
+    "overlayId": -1,
+    "automationId": "Archived Documents",
+    "dateLastModified": "2015-12-08T13:29:05.627",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -2,
+    "id": 5615332,
+    "name": "File Note",
+    "description": "File Note",
+    "overlayId": -1,
+    "automationId": "File Note",
+    "dateLastModified": "2015-12-09T02:26:45.363",
+    "effectivePermissions": 2147483647
+  }],
+  "rawHeaders": ["Content-Length", "3507", "Content-Type", "application/json; charset=utf-8", "Server", "Microsoft-HTTPAPI/2.0", "Date", "Fri, 10 Feb 2017 03:21:28 GMT", "Connection", "close"]
+}, {
+  "scope": "https://localhost:8093",
+  "method": "get",
+  "path": "/api/objecttypes/1886/extensions",
+  "body": "",
+  "status": 200,
+  "response": {
+    "filePromptModel": {
+      "fileNumberPrompt": "Submission Number",
+      "fileNamePrompt": "Insured Name",
+      "fileNameDescription": "Last, First"
+    },
+    "fileNumberMaskModel": {
+      "fields": [{
+        "minimumFieldLength": 1,
+        "maximumFieldLength": 255,
+        "enabled": true,
+        "zeroPadding": 0
+      }, {
+        "minimumFieldLength": 4,
+        "maximumFieldLength": 4,
+        "enabled": false,
+        "zeroPadding": 0
+      }, {
+        "minimumFieldLength": 4,
+        "maximumFieldLength": 4,
+        "enabled": false,
+        "zeroPadding": 0
+      }]
+    }
+  },
+  "rawHeaders": ["Content-Length", "404", "Content-Type", "application/json; charset=utf-8", "Server", "Microsoft-HTTPAPI/2.0", "Date", "Fri, 10 Feb 2017 03:21:28 GMT", "Connection", "close"]
+}, {
+  "scope": "https://localhost:8093",
+  "method": "get",
+  "path": "/api/objecttypes/1886/template",
+  "body": "",
+  "status": 200,
+  "response": {
+    "id": 1886,
+    "notesAllowed": true,
+    "calculateNotesAllowed": false,
+    "effectivePermissions": 2147483647,
+    "folderTypeDataResults": [{
+      "isRepeatable": false,
+      "notesAllowed": false,
+      "calculateNotesAllowed": false,
+      "folderTypeDataResults": [],
+      "documentTypeDataResults": [{
+        "classId": -1,
+        "id": 438,
+        "name": "New Mail",
+        "description": "New Mail",
+        "overlayId": -1,
+        "automationId": "New Mail",
+        "dateLastModified": "2015-12-04T23:19:25.897",
+        "effectivePermissions": 2147483647
+      }],
+      "classId": -2,
+      "id": 458,
+      "name": "New Mail",
+      "description": "New Mail",
+      "overlayId": -1,
+      "automationId": "New Mail",
+      "dateLastModified": "2015-12-04T23:19:25.227",
+      "effectivePermissions": 2147483647
+    }, {
+      "isRepeatable": false,
+      "notesAllowed": false,
+      "calculateNotesAllowed": false,
+      "folderTypeDataResults": [],
+      "documentTypeDataResults": [{
+        "classId": -1,
+        "id": 1845,
+        "name": "Binder from Market",
+        "description": "Binder from Market",
+        "overlayId": -1,
+        "automationId": "Binder from Market",
+        "dateLastModified": "2015-12-04T23:19:25.507",
+        "effectivePermissions": 2147483647
+      }, {
+        "classId": -1,
+        "id": 1846,
+        "name": "Binder to Agent",
+        "description": "Binder to Agent",
+        "overlayId": -1,
+        "automationId": "Binder to Agent",
+        "dateLastModified": "2015-12-04T23:19:25.507",
+        "effectivePermissions": 2147483647
+      }, {
+        "classId": -1,
+        "id": 1848,
+        "name": "Binding Schedule",
+        "description": "Binding Schedule",
+        "overlayId": -1,
+        "automationId": "Binding Schedule",
+        "dateLastModified": "2015-12-04T23:19:25.523",
+        "effectivePermissions": 2147483647
+      }, {
+        "classId": -1,
+        "id": 60,
+        "name": "Policy",
+        "description": "Policy",
+        "overlayId": -1,
+        "automationId": "Policy",
+        "dateLastModified": "2015-12-04T23:19:25.943",
+        "effectivePermissions": 2147483647
+      }, {
+        "classId": -1,
+        "id": 1847,
+        "name": "Policy Checklist",
+        "description": "Policy Checklist",
+        "overlayId": -1,
+        "automationId": "Policy Checklist",
+        "dateLastModified": "2015-12-04T23:19:25.943",
+        "effectivePermissions": 2147483647
+      }, {
+        "classId": -1,
+        "id": 1844,
+        "name": "Renewal Cert",
+        "description": "Renewal Cert",
+        "overlayId": -1,
+        "automationId": "Renewal Cert",
+        "dateLastModified": "2015-12-04T23:19:26.04",
+        "effectivePermissions": 2147483647
+      }],
+      "classId": -2,
+      "id": 90,
+      "name": "Policy",
+      "description": "Policy",
+      "overlayId": -1,
+      "automationId": "Policy",
+      "dateLastModified": "2015-12-04T23:19:25.243",
+      "effectivePermissions": 2147483647
+    }, {
+      "isRepeatable": false,
+      "notesAllowed": false,
+      "calculateNotesAllowed": false,
+      "folderTypeDataResults": [],
+      "documentTypeDataResults": [{
+        "classId": -1,
+        "id": 1856,
+        "name": "Audit",
+        "description": "Audit",
+        "overlayId": -1,
+        "automationId": "Audit",
+        "dateLastModified": "2015-12-04T23:19:25.43",
+        "effectivePermissions": 2147483647
+      }, {
+        "classId": -1,
+        "id": 63,
+        "name": "Endorsement",
+        "description": "Endorsement",
+        "overlayId": -1,
+        "automationId": "Endorsement",
+        "dateLastModified": "2015-12-04T23:19:25.663",
+        "effectivePermissions": 2147483647
+      }],
+      "classId": -2,
+      "id": 3046,
+      "name": "Endorsements",
+      "description": "Endorsements",
+      "overlayId": -1,
+      "automationId": "Endorsements",
+      "dateLastModified": "2015-12-04T23:19:25.18",
+      "effectivePermissions": 2147483647
+    }, {
+      "isRepeatable": false,
+      "notesAllowed": false,
+      "calculateNotesAllowed": false,
+      "folderTypeDataResults": [],
+      "documentTypeDataResults": [{
+        "classId": -1,
+        "id": 133020,
+        "name": "Application",
+        "description": "Application",
+        "overlayId": -1,
+        "automationId": "Application",
+        "dateLastModified": "2015-12-04T23:19:25.397",
+        "effectivePermissions": 2147483647
+      }, {
+        "classId": -1,
+        "id": 1849,
+        "name": "Bind Req from Agent",
+        "description": "Bind Req from Agent",
+        "overlayId": -1,
+        "automationId": "Bind Req from Agent",
+        "dateLastModified": "2015-12-04T23:19:25.477",
+        "effectivePermissions": 2147483647
+      }, {
+        "classId": -1,
+        "id": 1850,
+        "name": "Bind Req to Market",
+        "description": "Bind Req to Market",
+        "overlayId": -1,
+        "automationId": "Bind Req to Market",
+        "dateLastModified": "2015-12-04T23:19:25.477",
+        "effectivePermissions": 2147483647
+      }, {
+        "classId": -1,
+        "id": 5051913,
+        "name": "Declinations",
+        "description": "Declinations",
+        "overlayId": -1,
+        "automationId": "Declinations",
+        "dateLastModified": "2015-12-04T23:19:25.647",
+        "effectivePermissions": 2147483647
+      }, {
+        "classId": -1,
+        "id": 3021879,
+        "name": "Financials",
+        "description": "Financials",
+        "overlayId": -1,
+        "automationId": "Financials",
+        "dateLastModified": "2015-12-04T23:19:25.71",
+        "effectivePermissions": 2147483647
+      }, {
+        "classId": -1,
+        "id": 3021862,
+        "name": "IFTAS",
+        "description": "IFTAS",
+        "overlayId": -1,
+        "automationId": "IFTAS",
+        "dateLastModified": "2015-12-04T23:19:25.79",
+        "effectivePermissions": 2147483647
+      }, {
+        "classId": -1,
+        "id": 78,
+        "name": "Loss Runs",
+        "description": "Loss Runs",
+        "overlayId": -1,
+        "automationId": "Loss Runs",
+        "dateLastModified": "2015-12-04T23:19:25.837",
+        "effectivePermissions": 2147483647
+      }, {
+        "classId": -1,
+        "id": 440,
+        "name": "Misc",
+        "description": "Misc",
+        "overlayId": -1,
+        "automationId": "Misc",
+        "dateLastModified": "2017-01-30T17:13:20.07",
+        "effectivePermissions": 2147483647
+      }, {
+        "classId": -1,
+        "id": 1854,
+        "name": "Program Structure",
+        "description": "Program Structure",
+        "overlayId": -1,
+        "automationId": "Program Structure",
+        "dateLastModified": "2015-12-04T23:19:25.977",
+        "effectivePermissions": 2147483647
+      }, {
+        "classId": -1,
+        "id": 1852,
+        "name": "Quote from Market",
+        "description": "Quote from Market",
+        "overlayId": -1,
+        "automationId": "Quote from Market",
+        "dateLastModified": "2015-12-04T23:19:25.993",
+        "effectivePermissions": 2147483647
+      }, {
+        "classId": -1,
+        "id": 1851,
+        "name": "Quote to Agent",
+        "description": "Quote to Agent",
+        "overlayId": -1,
+        "automationId": "Quote to Agent",
+        "dateLastModified": "2017-02-08T20:25:15.26",
+        "effectivePermissions": 2147483647
+      }, {
+        "classId": -1,
+        "id": 1853,
+        "name": "Rating",
+        "description": "Rating",
+        "overlayId": -1,
+        "automationId": "Rating",
+        "dateLastModified": "2015-12-04T23:19:26.007",
+        "effectivePermissions": 2147483647
+      }, {
+        "classId": -1,
+        "id": 5051914,
+        "name": "Referrals",
+        "description": "Referrals",
+        "overlayId": -1,
+        "automationId": "Referrals",
+        "dateLastModified": "2015-12-04T23:19:26.007",
+        "effectivePermissions": 2147483647
+      }],
+      "classId": -2,
+      "id": 1877,
+      "name": "Submission/Marketing",
+      "description": "Submission/Marketing",
+      "overlayId": -1,
+      "automationId": "Submission/Marketing",
+      "dateLastModified": "2015-12-04T23:19:25.29",
+      "effectivePermissions": 2147483647
+    }, {
+      "isRepeatable": false,
+      "notesAllowed": false,
+      "calculateNotesAllowed": false,
+      "folderTypeDataResults": [],
+      "documentTypeDataResults": [{
+        "classId": -1,
+        "id": 189990,
+        "name": "Filings",
+        "description": "Filings",
+        "overlayId": -1,
+        "automationId": "Filings",
+        "dateLastModified": "2015-12-04T23:19:25.697",
+        "effectivePermissions": 2147483647
+      }],
+      "classId": -2,
+      "id": 189991,
+      "name": "Filings",
+      "description": "Filings",
+      "overlayId": -1,
+      "automationId": "Filings",
+      "dateLastModified": "2015-12-04T23:19:25.197",
+      "effectivePermissions": 2147483647
+    }, {
+      "isRepeatable": false,
+      "notesAllowed": false,
+      "calculateNotesAllowed": false,
+      "folderTypeDataResults": [],
+      "documentTypeDataResults": [{
+        "classId": -1,
+        "id": 1856,
+        "name": "Audit",
+        "description": "Audit",
+        "overlayId": -1,
+        "automationId": "Audit",
+        "dateLastModified": "2015-12-04T23:19:25.43",
+        "effectivePermissions": 2147483647
+      }, {
+        "classId": -1,
+        "id": 1857,
+        "name": "Billing",
+        "description": "Billing",
+        "overlayId": -1,
+        "automationId": "Billing",
+        "dateLastModified": "2015-12-04T23:19:25.46",
+        "effectivePermissions": 2147483647
+      }, {
+        "classId": -1,
+        "id": 5496180,
+        "name": "Claims",
+        "description": "Claims",
+        "overlayId": -1,
+        "automationId": "Claims",
+        "dateLastModified": "2015-12-04T23:19:25.6",
+        "effectivePermissions": 2147483647
+      }, {
+        "classId": -1,
+        "id": 63,
+        "name": "Endorsement",
+        "description": "Endorsement",
+        "overlayId": -1,
+        "automationId": "Endorsement",
+        "dateLastModified": "2015-12-04T23:19:25.663",
+        "effectivePermissions": 2147483647
+      }, {
+        "classId": -1,
+        "id": 1855,
+        "name": "General",
+        "description": "General",
+        "overlayId": -1,
+        "automationId": "General",
+        "dateLastModified": "2017-01-30T16:36:31.943",
+        "effectivePermissions": 2147483647
+      }, {
+        "classId": -1,
+        "id": 1858,
+        "name": "Inspection",
+        "description": "Inspection",
+        "overlayId": -1,
+        "automationId": "Inspection",
+        "dateLastModified": "2015-12-04T23:19:25.79",
+        "effectivePermissions": 2147483647
+      }, {
+        "classId": -1,
+        "id": 5496182,
+        "name": "Marketing",
+        "description": "Marketing",
+        "overlayId": -1,
+        "automationId": "Marketing",
+        "dateLastModified": "2015-12-04T23:19:25.85",
+        "effectivePermissions": 2147483647
+      }, {
+        "classId": -1,
+        "id": 5496183,
+        "name": "NOC",
+        "description": "NOC",
+        "overlayId": -1,
+        "automationId": "NOC",
+        "dateLastModified": "2015-12-04T23:19:25.913",
+        "effectivePermissions": 2147483647
+      }, {
+        "classId": -1,
+        "id": 5496181,
+        "name": "Policy Issuance",
+        "description": "Policy Issuance",
+        "overlayId": -1,
+        "automationId": "Policy Issuance",
+        "dateLastModified": "2015-12-04T23:19:25.96",
+        "effectivePermissions": 2147483647
+      }],
+      "classId": -2,
+      "id": 91,
+      "name": "Correspondence",
+      "description": "Correspondence",
+      "overlayId": -1,
+      "automationId": "Correspondence",
+      "dateLastModified": "2015-12-04T23:19:25.133",
+      "effectivePermissions": 2147483647
+    }, {
+      "isRepeatable": false,
+      "notesAllowed": false,
+      "calculateNotesAllowed": false,
+      "folderTypeDataResults": [],
+      "documentTypeDataResults": [{
+        "classId": -1,
+        "id": 1859,
+        "name": "Report",
+        "description": "Report",
+        "overlayId": -1,
+        "automationId": "Report",
+        "dateLastModified": "2015-12-04T23:19:26.053",
+        "effectivePermissions": 2147483647
+      }],
+      "classId": -2,
+      "id": 1878,
+      "name": "Inspection",
+      "description": "Inspection",
+      "overlayId": -1,
+      "automationId": "Inspection",
+      "dateLastModified": "2015-12-04T23:19:25.197",
+      "effectivePermissions": 2147483647
+    }, {
+      "isRepeatable": false,
+      "notesAllowed": false,
+      "calculateNotesAllowed": false,
+      "folderTypeDataResults": [],
+      "documentTypeDataResults": [{
+        "classId": -1,
+        "id": 1859,
+        "name": "Report",
+        "description": "Report",
+        "overlayId": -1,
+        "automationId": "Report",
+        "dateLastModified": "2015-12-04T23:19:26.053",
+        "effectivePermissions": 2147483647
+      }],
+      "classId": -2,
+      "id": 3047,
+      "name": "MVR",
+      "description": "MVR",
+      "overlayId": -1,
+      "automationId": "MVR",
+      "dateLastModified": "2015-12-04T23:19:25.227",
+      "effectivePermissions": 2147483647
+    }, {
+      "isRepeatable": false,
+      "notesAllowed": false,
+      "calculateNotesAllowed": false,
+      "folderTypeDataResults": [],
+      "documentTypeDataResults": [{
+        "classId": -1,
+        "id": 1860,
+        "name": "Affidavit",
+        "description": "Affidavit",
+        "overlayId": -1,
+        "automationId": "Affidavit",
+        "dateLastModified": "2015-12-04T23:19:25.383",
+        "effectivePermissions": 2147483647
+      }],
+      "classId": -2,
+      "id": 1879,
+      "name": "SL Tax Filings",
+      "description": "SL Tax Filings",
+      "overlayId": -1,
+      "automationId": "SL Tax Filings",
+      "dateLastModified": "2015-12-04T23:19:25.273",
+      "effectivePermissions": 2147483647
+    }, {
+      "isRepeatable": false,
+      "notesAllowed": false,
+      "calculateNotesAllowed": false,
+      "folderTypeDataResults": [],
+      "documentTypeDataResults": [{
+        "classId": -1,
+        "id": 1859,
+        "name": "Report",
+        "description": "Report",
+        "overlayId": -1,
+        "automationId": "Report",
+        "dateLastModified": "2015-12-04T23:19:26.053",
+        "effectivePermissions": 2147483647
+      }],
+      "classId": -2,
+      "id": 4225452,
+      "name": "X-Mod",
+      "description": "X-Mod",
+      "overlayId": -1,
+      "automationId": "X-Mod",
+      "dateLastModified": "2015-12-04T23:19:25.337",
+      "effectivePermissions": 2147483647
+    }, {
+      "isRepeatable": false,
+      "notesAllowed": false,
+      "calculateNotesAllowed": false,
+      "folderTypeDataResults": [{
+        "isRepeatable": true,
+        "notesAllowed": false,
+        "calculateNotesAllowed": false,
+        "folderTypeDataResults": [],
+        "documentTypeDataResults": [{
+          "classId": -1,
+          "id": 1862,
+          "name": "Acknowledgements",
+          "description": "Acknowledgements",
+          "overlayId": -1,
+          "automationId": "Acknowledgements",
+          "dateLastModified": "2015-12-04T23:19:25.367",
+          "effectivePermissions": 2147483647
+        }, {
+          "classId": -1,
+          "id": 1866,
+          "name": "Adjuster Assignment",
+          "description": "Adjuster Assignment",
+          "overlayId": -1,
+          "automationId": "Adjuster Assignment",
+          "dateLastModified": "2015-12-04T23:19:25.367",
+          "effectivePermissions": 2147483647
+        }, {
+          "classId": -1,
+          "id": 1865,
+          "name": "Adjuster Reports",
+          "description": "Adjuster Reports",
+          "overlayId": -1,
+          "automationId": "Adjuster Reports",
+          "dateLastModified": "2015-12-04T23:19:25.383",
+          "effectivePermissions": 2147483647
+        }, {
+          "classId": -1,
+          "id": 64,
+          "name": "Correspondence",
+          "description": "Correspondence",
+          "overlayId": -1,
+          "automationId": "Correspondence",
+          "dateLastModified": "2015-12-04T23:19:25.617",
+          "effectivePermissions": 2147483647
+        }, {
+          "classId": -1,
+          "id": 1864,
+          "name": "Deductible",
+          "description": "Deductible",
+          "overlayId": -1,
+          "automationId": "Deductible",
+          "dateLastModified": "2015-12-04T23:19:25.663",
+          "effectivePermissions": 2147483647
+        }, {
+          "classId": -1,
+          "id": 1861,
+          "name": "FNOL",
+          "description": "FNOL",
+          "overlayId": -1,
+          "automationId": "FNOL",
+          "dateLastModified": "2015-12-04T23:19:25.727",
+          "effectivePermissions": 2147483647
+        }, {
+          "classId": -1,
+          "id": 1868,
+          "name": "Payments",
+          "description": "Payments",
+          "overlayId": -1,
+          "automationId": "Payments",
+          "dateLastModified": "2015-12-04T23:19:25.93",
+          "effectivePermissions": 2147483647
+        }, {
+          "classId": -1,
+          "id": 1867,
+          "name": "Status",
+          "description": "Status",
+          "overlayId": -1,
+          "automationId": "Status",
+          "dateLastModified": "2015-12-04T23:19:26.1",
+          "effectivePermissions": 2147483647
+        }, {
+          "classId": -1,
+          "id": 1863,
+          "name": "Subrogation",
+          "description": "Subrogation",
+          "overlayId": -1,
+          "automationId": "Subrogation",
+          "dateLastModified": "2015-12-04T23:19:26.133",
+          "effectivePermissions": 2147483647
+        }],
+        "classId": -2,
+        "id": 1881,
+        "name": "Claim",
+        "description": "Claim - Date of Loss/Claim#",
+        "overlayId": -1,
+        "automationId": "Claim",
+        "dateLastModified": "2015-12-04T23:19:25.117",
+        "effectivePermissions": 2147483647
+      }],
+      "documentTypeDataResults": [],
+      "classId": -2,
+      "id": 1880,
+      "name": "Claims",
+      "description": "Claims",
+      "overlayId": -1,
+      "automationId": "Claims",
+      "dateLastModified": "2015-12-04T23:19:25.117",
+      "effectivePermissions": 2147483647
+    }, {
+      "isRepeatable": false,
+      "notesAllowed": false,
+      "calculateNotesAllowed": false,
+      "folderTypeDataResults": [],
+      "documentTypeDataResults": [{
+        "classId": -1,
+        "id": 455,
+        "name": "Invoice",
+        "description": "Invoice",
+        "overlayId": -1,
+        "automationId": "Invoice",
+        "dateLastModified": "2015-12-04T23:19:25.79",
+        "effectivePermissions": 2147483647
+      }, {
+        "classId": -1,
+        "id": 1869,
+        "name": "Premium Finance",
+        "description": "Premium Finance",
+        "overlayId": -1,
+        "automationId": "Premium Finance",
+        "dateLastModified": "2015-12-04T23:19:25.96",
+        "effectivePermissions": 2147483647
+      }],
+      "classId": -2,
+      "id": 462,
+      "name": "Billing/Accounting",
+      "description": "Billing/Accounting",
+      "overlayId": -1,
+      "automationId": "Billing/Accounting",
+      "dateLastModified": "2015-12-04T23:19:25.07",
+      "effectivePermissions": 2147483647
+    }, {
+      "isRepeatable": false,
+      "notesAllowed": false,
+      "calculateNotesAllowed": false,
+      "folderTypeDataResults": [],
+      "documentTypeDataResults": [{
+        "classId": -1,
+        "id": 440,
+        "name": "Misc",
+        "description": "Misc",
+        "overlayId": -1,
+        "automationId": "Misc",
+        "dateLastModified": "2017-01-30T17:13:20.07",
+        "effectivePermissions": 2147483647
+      }, {
+        "classId": -1,
+        "id": 1870,
+        "name": "Signed Forms",
+        "description": "Signed Forms",
+        "overlayId": -1,
+        "automationId": "Signed Forms",
+        "dateLastModified": "2015-12-04T23:19:26.087",
+        "effectivePermissions": 2147483647
+      }, {
+        "classId": -1,
+        "id": 1871,
+        "name": "UL Policies",
+        "description": "UL Policies",
+        "overlayId": -1,
+        "automationId": "UL Policies",
+        "dateLastModified": "2015-12-04T23:19:26.163",
+        "effectivePermissions": 2147483647
+      }],
+      "classId": -2,
+      "id": 1882,
+      "name": "Subjectivities",
+      "description": "Subjectivities",
+      "overlayId": -1,
+      "automationId": "Subjectivities",
+      "dateLastModified": "2015-12-04T23:19:25.29",
+      "effectivePermissions": 2147483647
+    }, {
+      "isRepeatable": false,
+      "notesAllowed": false,
+      "calculateNotesAllowed": false,
+      "folderTypeDataResults": [],
+      "documentTypeDataResults": [{
+        "classId": -1,
+        "id": 1872,
+        "name": "Cancellations",
+        "description": "Cancellations",
+        "overlayId": -1,
+        "automationId": "Cancellations",
+        "dateLastModified": "2015-12-04T23:19:25.553",
+        "effectivePermissions": 2147483647
+      }, {
+        "classId": -1,
+        "id": 1874,
+        "name": "Non-Renewal",
+        "description": "Non-Renewal",
+        "overlayId": -1,
+        "automationId": "Non-Renewal",
+        "dateLastModified": "2015-12-04T23:19:25.913",
+        "effectivePermissions": 2147483647
+      }, {
+        "classId": -1,
+        "id": 1873,
+        "name": "Reinstatement",
+        "description": "Reinstatement",
+        "overlayId": -1,
+        "automationId": "Reinstatement",
+        "dateLastModified": "2015-12-04T23:19:26.023",
+        "effectivePermissions": 2147483647
+      }],
+      "classId": -2,
+      "id": 1883,
+      "name": "Notices",
+      "description": "Notices",
+      "overlayId": -1,
+      "automationId": "Notices",
+      "dateLastModified": "2015-12-04T23:19:25.227",
+      "effectivePermissions": 2147483647
+    }, {
+      "isRepeatable": false,
+      "notesAllowed": false,
+      "calculateNotesAllowed": false,
+      "folderTypeDataResults": [],
+      "documentTypeDataResults": [{
+        "classId": -1,
+        "id": 1875,
+        "name": "Letter",
+        "description": "Letter",
+        "overlayId": -1,
+        "automationId": "Letter",
+        "dateLastModified": "2015-12-04T23:19:25.82",
+        "effectivePermissions": 2147483647
+      }],
+      "classId": -2,
+      "id": 1884,
+      "name": "BOR",
+      "description": "BOR",
+      "overlayId": -1,
+      "automationId": "BOR",
+      "dateLastModified": "2015-12-04T23:19:25.087",
+      "effectivePermissions": 2147483647
+    }, {
+      "isRepeatable": false,
+      "notesAllowed": false,
+      "calculateNotesAllowed": false,
+      "folderTypeDataResults": [],
+      "documentTypeDataResults": [{
+        "classId": -1,
+        "id": 1876,
+        "name": "Certificate",
+        "description": "Certificate",
+        "overlayId": -1,
+        "automationId": "Certificate",
+        "dateLastModified": "2015-12-04T23:19:25.57",
+        "effectivePermissions": 2147483647
+      }],
+      "classId": -2,
+      "id": 1885,
+      "name": "Certificates",
+      "description": "Certificates",
+      "overlayId": -1,
+      "automationId": "Certificates",
+      "dateLastModified": "2015-12-04T23:19:25.1",
+      "effectivePermissions": 2147483647
+    }, {
+      "isRepeatable": false,
+      "notesAllowed": false,
+      "calculateNotesAllowed": false,
+      "folderTypeDataResults": [{
+        "isRepeatable": true,
+        "notesAllowed": false,
+        "calculateNotesAllowed": false,
+        "folderTypeDataResults": [],
+        "documentTypeDataResults": [{
+          "classId": -1,
+          "id": 1769,
+          "name": "ARCH",
+          "description": "Archived Document",
+          "overlayId": -1,
+          "automationId": "ARCH",
+          "dateLastModified": "2015-12-04T23:19:25.413",
+          "effectivePermissions": 2147483647
+        }],
+        "classId": -2,
+        "id": 1767,
+        "name": "Year",
+        "description": "Year",
+        "overlayId": -1,
+        "automationId": "Year",
+        "dateLastModified": "2015-12-04T23:19:25.337",
+        "effectivePermissions": 2147483647
+      }, {
+        "isRepeatable": true,
+        "notesAllowed": false,
+        "calculateNotesAllowed": false,
+        "folderTypeDataResults": [{
+          "isRepeatable": true,
+          "notesAllowed": false,
+          "calculateNotesAllowed": false,
+          "folderTypeDataResults": [],
+          "documentTypeDataResults": [{
+            "classId": -1,
+            "id": 1769,
+            "name": "ARCH",
+            "description": "Archived Document",
+            "overlayId": -1,
+            "automationId": "ARCH",
+            "dateLastModified": "2015-12-04T23:19:25.413",
+            "effectivePermissions": 2147483647
+          }],
+          "classId": -2,
+          "id": 1767,
+          "name": "Year",
+          "description": "Year",
+          "overlayId": -1,
+          "automationId": "Year",
+          "dateLastModified": "2015-12-04T23:19:25.337",
+          "effectivePermissions": 2147483647
+        }],
+        "documentTypeDataResults": [],
+        "classId": -2,
+        "id": 1764,
+        "name": "Archived Documents",
+        "description": "Archived Documents",
+        "overlayId": -1,
+        "automationId": "Archived Documents",
+        "dateLastModified": "2015-12-08T13:29:05.627",
+        "effectivePermissions": 2147483647
+      }],
+      "documentTypeDataResults": [],
+      "classId": -2,
+      "id": 1764,
+      "name": "Archived Documents",
+      "description": "Archived Documents",
+      "overlayId": -1,
+      "automationId": "Archived Documents",
+      "dateLastModified": "2015-12-08T13:29:05.627",
+      "effectivePermissions": 2147483647
+    }, {
+      "isRepeatable": false,
+      "notesAllowed": false,
+      "calculateNotesAllowed": false,
+      "folderTypeDataResults": [],
+      "documentTypeDataResults": [{
+        "classId": -1,
+        "id": 5615333,
+        "name": "File Note",
+        "description": "File Note",
+        "overlayId": -1,
+        "automationId": "File Note",
+        "dateLastModified": "2015-12-09T02:27:12.113",
+        "effectivePermissions": 2147483647
+      }],
+      "classId": -2,
+      "id": 5615332,
+      "name": "File Note",
+      "description": "File Note",
+      "overlayId": -1,
+      "automationId": "File Note",
+      "dateLastModified": "2015-12-09T02:26:45.363",
+      "effectivePermissions": 2147483647
+    }],
+    "documentTypeDataResults": []
+  },
+  "rawHeaders": ["Content-Length", "18518", "Content-Type", "application/json; charset=utf-8", "Server", "Microsoft-HTTPAPI/2.0", "Date", "Fri, 10 Feb 2017 03:21:28 GMT", "Connection", "close"]
+}]

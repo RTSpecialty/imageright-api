@@ -38,3 +38,6 @@ jspm_packages
 
 # Environment variables
 .env
+
+# NPM Dist
+dist

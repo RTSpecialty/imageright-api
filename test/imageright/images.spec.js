@@ -2,17 +2,18 @@ import { expect } from 'chai'; // eslint-disable-line import/no-extraneous-depen
 import Library from '../../src';
 import Recorder from '../../scripts/recorder';
 
-const rec = new Recorder('containers');
+const rec = new Recorder('images');
 
 const baseurl = process.env.IMAGERIGHT_BASEURL || 'https://localhost:8093';
 const username = process.env.IMAGERIGHT_USERNAME || '<username>';
 const password = process.env.IMAGERIGHT_PASSWORD || '<password>';
 
-const containerId = 5738532;
+const imageId = 28226516;
+const version = 0;
 
 let lib;
 
-describe('ImageRight API - Containers', () => {
+describe('ImageRight API - Images', () => {
   before(() => {
     rec.before();
     lib = new Library(baseurl).connect(username, password);
@@ -22,12 +23,9 @@ describe('ImageRight API - Containers', () => {
     rec.after(done);
   });
 
-  describe('the method getContainers', () => {
-    it('should return an array of container objects when passed a valid containerId, recursive = false',
-      () => lib.then(api => api.getContainers(containerId, false)
-        .then(data => expect(data).to.exist)));
-    it('should return an array of container objects when passed a valid containerId, recursive = true',
-      () => lib.then(api => api.getContainers(containerId, true)
+  describe('the method getImageById', () => {
+    it('should return a image object',
+      () => lib.then(api => api.getImageById(imageId, version)
         .then(data => expect(data).to.exist)));
   });
 });

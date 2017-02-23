@@ -1,45 +1,81 @@
 {
   "name": "imageright-api",
   "version": "0.0.1",
-  "apiVersion": "6.2",
+  "apiVersion": "6.2.23.1417",
   "description": "JavaScript Library for the ImageRight API",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --progress --colors",
+    "build": "babel-node scripts/build",
+    "build:webpack": "webpack --progress --colors",
     "build:watch": "webpack --progress --colors --watch",
+    "clean": "rimraf lib",
+    "coveralls": "cat ./coverage/lcov.info | coveralls",
+    "lint": "eslint scripts src test",
+    "security-check": "nsp check",
+    "start": "npm-run-all --parallel build:watch test:watch",
     "test": "mocha --colors scripts/setup.js \"test/**/*.spec.js\"",
     "test:watch": "yarn run test -- --reporter progress --watch",
-    "security-check": "nsp check",
-    "clean": "rimraf lib",
-    "start": "npm-run-all --parallel build:watch test:watch"
+    "test:cover": "babel-node ./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha"
   },
   "repository": "git@github.com:RTSpecialty/imageright-api.git",
   "author": "Jeremy Fowler <jeremy.f76@gmail.com>",
   "license": "MIT",
+  "keywords": [],
+  "jsnext:main": "index.es.js",
+  "babel": {
+    "presets": [
+      "latest",
+      "stage-0"
+    ],
+    "plugins": [
+      "transform-runtime"
+    ]
+  },
+  "eslintConfig": {
+    "parser": "babel-eslint",
+    "extends": "airbnb-base"
+  },
   "dependencies": {
     "axios": "^0.15.3",
-    "querystring": "^0.2.0"
+    "babel-runtime": "^6.22.0",
+    "form-data": "^2.1.2"
   },
   "devDependencies": {
     "babel-cli": "^6.22.2",
     "babel-core": "^6.22.1",
+    "babel-eslint": "^7.1.1",
     "babel-loader": "^6.2.10",
     "babel-plugin-add-module-exports": "^0.2.1",
     "babel-plugin-transform-object-rest-spread": "^6.22.0",
+    "babel-plugin-transform-runtime": "^6.22.0",
     "babel-preset-latest": "^6.22.0",
+    "babel-preset-stage-0": "^6.22.0",
     "babel-register": "^6.22.0",
     "chai": "^3.5.0",
+    "concat-stream": "^1.6.0",
+    "coveralls": "^2.11.16",
+    "del": "^2.2.2",
     "dotenv": "^4.0.0",
     "eslint": "^3.14.1",
     "eslint-config-airbnb-base": "^11.0.1",
     "eslint-loader": "^1.6.1",
     "eslint-plugin-import": "^2.2.0",
     "eslint-watch": "^2.1.14",
+    "istanbul": "^0.4.5",
     "mocha": "^3.2.0",
     "nock": "^9.0.3",
     "npm-run-all": "^4.0.1",
     "nsp": "^2.6.2",
     "rimraf": "^2.5.4",
+    "rollup": "^0.41.4",
+    "rollup-plugin-babel": "^2.7.1",
+    "rollup-plugin-commonjs": "^7.0.0",
+    "rollup-plugin-eslint": "^3.0.0",
+    "rollup-plugin-node-resolve": "^2.0.0",
+    "rollup-plugin-npm": "^2.0.0",
+    "rollup-plugin-replace": "^1.1.1",
+    "rollup-plugin-uglify": "^1.0.1",
+    "sinon": "^1.17.7",
     "webpack": "^2.2.1",
     "yargs": "^6.6.0"
   }

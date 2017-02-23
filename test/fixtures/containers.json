@@ -8,11 +8,11 @@
   },
   "status": 200,
   "response": "XXXXXXXX",
-  "rawHeaders": ["Content-Length", "384", "Content-Type", "text/plaintext; charset=utf-8", "Server", "Microsoft-HTTPAPI/2.0", "Date", "Tue, 07 Feb 2017 05:25:52 GMT", "Connection", "close"]
+  "rawHeaders": ["Content-Length", "384", "Content-Type", "text/plaintext; charset=utf-8", "Server", "Microsoft-HTTPAPI/2.0", "Date", "Fri, 10 Feb 2017 02:08:55 GMT", "Connection", "close"]
 }, {
   "scope": "https://localhost:8093",
   "method": "get",
-  "path": "/api/containers/2586?recursive=false",
+  "path": "/api/containers/5738532?recursive=false",
   "body": "",
   "status": 200,
   "response": {
@@ -22,23 +22,23 @@
       "containerData": {
         "$type": "ImageRight.Api.Models.Folders.FolderDataResult, ImageRight.Api.Models",
         "parentFolderId": null,
-        "folderTypeId": 460,
+        "folderTypeId": 91,
         "hasNotes": false,
         "isDeleted": false,
-        "lastModified": "2015-02-24T16:14:06.323",
-        "dateCreated": "2015-02-24T16:14:05.18",
+        "lastModified": "2017-01-30T18:00:24.54",
+        "dateCreated": "2017-01-30T18:00:23.463",
         "attributes": null,
-        "id": 3234355,
-        "description": ""
+        "id": 5738547,
+        "description": "Correspondence"
       },
       "childContainers": null
     }]
   },
-  "rawHeaders": ["Content-Length", "559", "Content-Type", "application/json; charset=utf-8", "Server", "Microsoft-HTTPAPI/2.0", "Date", "Tue, 07 Feb 2017 05:25:52 GMT", "Connection", "close"]
+  "rawHeaders": ["Content-Length", "572", "Content-Type", "application/json; charset=utf-8", "Server", "Microsoft-HTTPAPI/2.0", "Date", "Fri, 10 Feb 2017 02:08:55 GMT", "Connection", "close"]
 }, {
   "scope": "https://localhost:8093",
   "method": "get",
-  "path": "/api/containers/2586?recursive=true",
+  "path": "/api/containers/5738532?recursive=true",
   "body": "",
   "status": 200,
   "response": {
@@ -48,14 +48,14 @@
       "containerData": {
         "$type": "ImageRight.Api.Models.Folders.FolderDataResult, ImageRight.Api.Models",
         "parentFolderId": null,
-        "folderTypeId": 460,
+        "folderTypeId": 91,
         "hasNotes": false,
         "isDeleted": false,
-        "lastModified": "2015-02-24T16:14:06.323",
-        "dateCreated": "2015-02-24T16:14:05.18",
+        "lastModified": "2017-01-30T18:00:24.54",
+        "dateCreated": "2017-01-30T18:00:23.463",
         "attributes": null,
-        "id": 3234355,
-        "description": ""
+        "id": 5738547,
+        "description": "Correspondence"
       },
       "childContainers": {
         "$type": "System.Collections.Generic.List`1[[ImageRight.Api.Models.Containers.ContainerDataResult, ImageRight.Api.Models]], mscorlib",
@@ -64,23 +64,23 @@
           "containerData": {
             "$type": "ImageRight.Api.Models.Documents.DocumentDataResult, ImageRight.Api.Models",
             "pageCount": 1,
-            "dateCreated": "2015-02-24T16:14:05.93",
-            "dateLastModified": "2015-02-24T16:14:06.323",
-            "documentDate": "2015-02-24T00:00:00",
-            "receivedDate": "2014-07-16T19:02:25",
+            "dateCreated": "2017-01-30T18:00:23.633",
+            "dateLastModified": "2017-01-30T18:00:24.54",
+            "documentDate": "2017-01-30T00:00:00",
+            "receivedDate": "2017-01-30T18:00:23.633",
             "deleted": false,
-            "documentTypeId": 1765,
+            "documentTypeId": 1855,
             "attributes": {
               "$type": "ImageRight.Api.Models.Attributes.AttributeDTO[], ImageRight.Api.Models",
               "$values": []
             },
-            "id": 3234356,
-            "description": ""
+            "id": 5738548,
+            "description": "Recvd E-Mail from John Kesler / Subj: RE: Dovetail and Agent Onboarding - Project Planning"
           },
           "childContainers": null
         }]
       }
     }]
   },
-  "rawHeaders": ["Content-Length", "1263", "Content-Type", "application/json; charset=utf-8", "Server", "Microsoft-HTTPAPI/2.0", "Date", "Tue, 07 Feb 2017 05:25:52 GMT", "Connection", "close"]
+  "rawHeaders": ["Content-Length", "1370", "Content-Type", "application/json; charset=utf-8", "Server", "Microsoft-HTTPAPI/2.0", "Date", "Fri, 10 Feb 2017 02:08:55 GMT", "Connection", "close"]
 }]

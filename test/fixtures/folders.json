@@ -1,0 +1,112 @@
+[{
+  "scope": "https://localhost:8093",
+  "method": "post",
+  "path": "/api/authenticate",
+  "body": {
+    "UserName": "<username>",
+    "Password": "<password>"
+  },
+  "status": 200,
+  "response": "XXXXXXXX",
+  "rawHeaders": ["Content-Length", "384", "Content-Type", "text/plaintext; charset=utf-8", "Server", "Microsoft-HTTPAPI/2.0", "Date", "Mon, 20 Feb 2017 00:57:33 GMT", "Connection", "close"]
+}, {
+  "scope": "https://localhost:8093",
+  "method": "post",
+  "path": "/api/folders/find",
+  "body": {
+    "FileId": 5738532
+  },
+  "status": 200,
+  "response": [{
+    "parentFolderId": null,
+    "folderTypeId": 91,
+    "hasNotes": null,
+    "isDeleted": false,
+    "lastModified": "2017-02-15T23:01:23.923",
+    "dateCreated": "2017-01-30T18:00:23.463",
+    "attributes": [],
+    "id": 5738547,
+    "description": "Correspondence"
+  }, {
+    "parentFolderId": null,
+    "folderTypeId": 90,
+    "hasNotes": null,
+    "isDeleted": false,
+    "lastModified": "2017-02-10T19:05:37.847",
+    "dateCreated": "2017-02-10T19:05:36.77",
+    "attributes": [],
+    "id": 5738777,
+    "description": "Policy"
+  }, {
+    "parentFolderId": null,
+    "folderTypeId": 458,
+    "hasNotes": null,
+    "isDeleted": false,
+    "lastModified": "2017-02-11T04:18:03.583",
+    "dateCreated": "2017-02-11T04:18:03.583",
+    "attributes": [],
+    "id": 5738872,
+    "description": "New Mail"
+  }, {
+    "parentFolderId": null,
+    "folderTypeId": 458,
+    "hasNotes": null,
+    "isDeleted": false,
+    "lastModified": "2017-02-11T04:20:39.17",
+    "dateCreated": "2017-02-11T04:20:39.17",
+    "attributes": [],
+    "id": 5738874,
+    "description": "New Mail"
+  }, {
+    "parentFolderId": null,
+    "folderTypeId": 458,
+    "hasNotes": null,
+    "isDeleted": false,
+    "lastModified": "2017-02-11T06:29:26.257",
+    "dateCreated": "2017-02-11T06:29:24.977",
+    "attributes": [],
+    "id": 5738876,
+    "description": "New Mail"
+  }, {
+    "parentFolderId": null,
+    "folderTypeId": 1877,
+    "hasNotes": null,
+    "isDeleted": false,
+    "lastModified": "2017-02-15T23:47:00.023",
+    "dateCreated": "2017-02-15T23:46:57.947",
+    "attributes": [],
+    "id": 5739015,
+    "description": "Submission/Marketing"
+  }, {
+    "parentFolderId": null,
+    "folderTypeId": 3046,
+    "hasNotes": null,
+    "isDeleted": false,
+    "lastModified": "2017-02-16T00:02:28.713",
+    "dateCreated": "2017-02-16T00:02:26.323",
+    "attributes": [],
+    "id": 5739017,
+    "description": "Endorsements"
+  }, {
+    "parentFolderId": null,
+    "folderTypeId": 462,
+    "hasNotes": null,
+    "isDeleted": false,
+    "lastModified": "2017-02-20T00:12:27.597",
+    "dateCreated": "2017-02-20T00:12:26.207",
+    "attributes": [],
+    "id": 5739035,
+    "description": "Billing/Accounting"
+  }, {
+    "parentFolderId": null,
+    "folderTypeId": 1885,
+    "hasNotes": null,
+    "isDeleted": false,
+    "lastModified": "2017-02-20T00:21:13.853",
+    "dateCreated": "2017-02-20T00:21:12.4",
+    "attributes": [],
+    "id": 5739040,
+    "description": "Certificates"
+  }],
+  "rawHeaders": ["Content-Length", "1939", "Content-Type", "application/json; charset=utf-8", "Server", "Microsoft-HTTPAPI/2.0", "Date", "Mon, 20 Feb 2017 00:57:33 GMT", "Connection", "close"]
+}]

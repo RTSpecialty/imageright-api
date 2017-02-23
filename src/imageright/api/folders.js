@@ -1,10 +1,10 @@
 export function createFolder(api, folderObj) {
-  return api.post('api/folders', folderObj.toJSON())
+  return api.post('api/folders', folderObj)
     .then(res => Promise.resolve(res.data));
 }
 
 export function findFolders(api, searchObj) {
-  return api.post('api/folders/find', searchObj.toJSON())
+  return api.post('api/folders/find', searchObj)
     .then(res => Promise.resolve(res.data));
 }
 

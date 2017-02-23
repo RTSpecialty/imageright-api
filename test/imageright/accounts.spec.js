@@ -48,7 +48,7 @@ describe('ImageRight API - Accounts', () => {
   });
 
   describe('the method getCurrentUserGroups', () => {
-    it('should return an array of group objects for teh current user',
+    it('should return an array of group objects for the current user',
       () => lib.then(api => api.getCurrentUserGroups()
         .then(data => expect(data).to.be.instanceof(Array))));
   });

@@ -1,4 +1,4 @@
 {
-  "presets": ["latest"],
-  "plugins": ["babel-plugin-add-module-exports", "babel-plugin-transform-object-rest-spread"]
+  "presets": ["latest", "stage-0"],
+  "plugins": ["transform-runtime"]
 }

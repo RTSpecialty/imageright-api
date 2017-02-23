@@ -1,0 +1,38 @@
+[{
+  "scope": "https://localhost:8093",
+  "method": "post",
+  "path": "/api/authenticate",
+  "body": {
+    "UserName": "<username>",
+    "Password": "<password>"
+  },
+  "status": 200,
+  "response": "XXXXXXXX",
+  "rawHeaders": ["Content-Length", "384", "Content-Type", "text/plaintext; charset=utf-8", "Server", "Microsoft-HTTPAPI/2.0", "Date", "Fri, 10 Feb 2017 02:02:57 GMT", "Connection", "close"]
+}, {
+  "scope": "https://localhost:8093",
+  "method": "post",
+  "path": "/api/documents/find",
+  "body": {
+    "FileId": 5738532
+  },
+  "status": 200,
+  "response": [{
+    "pageCount": 1,
+    "dateCreated": "2017-01-30T18:00:23.633",
+    "dateLastModified": "2017-01-30T18:00:24.54",
+    "documentDate": "2017-01-30T00:00:00",
+    "receivedDate": "2017-01-30T18:00:23.633",
+    "deleted": false,
+    "documentTypeId": 1855,
+    "attributes": [{
+      "displayName": "AIMDocAttribute",
+      "name": "AIMDocAttribute",
+      "value": "18852CAF-95AA-4062-AD67-BD29FCE3EE5E",
+      "attributeType": 2
+    }],
+    "id": 5738548,
+    "description": "Recvd E-Mail from John Kesler / Subj: RE: Dovetail and Agent Onboarding - Project Planning"
+  }],
+  "rawHeaders": ["Content-Length", "476", "Content-Type", "application/json; charset=utf-8", "Server", "Microsoft-HTTPAPI/2.0", "Date", "Fri, 10 Feb 2017 02:02:57 GMT", "Connection", "close"]
+}]

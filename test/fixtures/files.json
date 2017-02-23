@@ -1,0 +1,99 @@
+[{
+  "scope": "https://localhost:8093",
+  "method": "post",
+  "path": "/api/authenticate",
+  "body": {
+    "UserName": "<username>",
+    "Password": "<password>"
+  },
+  "status": 200,
+  "response": "XXXXXXXX",
+  "rawHeaders": ["Content-Length", "384", "Content-Type", "text/plaintext; charset=utf-8", "Server", "Microsoft-HTTPAPI/2.0", "Date", "Fri, 10 Feb 2017 01:48:37 GMT", "Connection", "close"]
+}, {
+  "scope": "https://localhost:8093",
+  "method": "post",
+  "path": "/api/files/find",
+  "body": {
+    "FileNumberPart1": "WG165500"
+  },
+  "status": 200,
+  "response": [{
+    "id": 5738532,
+    "fileTypeId": 1886,
+    "fileTypeName": "RT",
+    "fileTypeDescription": "Broker / BA",
+    "drawerId": 1905,
+    "drawerName": "KCMO",
+    "drawerDescription": "Kansas City",
+    "hasNotes": null,
+    "notesId": 0,
+    "description": "William Orscheln",
+    "fileNumberPart1": "WG165500",
+    "fileNumberPart2": "",
+    "fileNumberPart3": "",
+    "isTemporary": false,
+    "isDeleted": false,
+    "dateLastOpened": "2017-01-30T17:57:37.313",
+    "lastModified": "2017-01-30T18:00:24.54",
+    "dateCreated": "2017-01-27T20:34:19.177",
+    "attributes": [{
+      "displayName": "Agent",
+      "name": "Agent",
+      "value": "The Insurance Group - Columbia",
+      "attributeType": 2
+    }, {
+      "displayName": "Policy Number",
+      "name": "Policy Number",
+      "value": "CS02176904-FT-01",
+      "attributeType": 2
+    }, {
+      "displayName": "Broker",
+      "name": "Broker",
+      "value": "Susan.Kutz",
+      "attributeType": 2
+    }, {
+      "displayName": "POC",
+      "name": "POC",
+      "value": "Mary Davidson",
+      "attributeType": 2
+    }, {
+      "displayName": "FEIN",
+      "name": "FEIN",
+      "value": "",
+      "attributeType": 2
+    }, {
+      "displayName": "Coverage",
+      "name": "Coverage",
+      "value": "CPK",
+      "attributeType": 2
+    }, {
+      "displayName": "Market",
+      "name": "Market",
+      "value": "Capitol Insurance Companies",
+      "attributeType": 2
+    }, {
+      "displayName": "Assistant",
+      "name": "Assistant",
+      "value": "Janet.McLaughlin",
+      "attributeType": 2
+    }, {
+      "displayName": "CustSvc",
+      "name": "CustSvc",
+      "value": "",
+      "attributeType": 2
+    }, {
+      "displayName": "Effective",
+      "name": "Effective",
+      "value": "2012-09-20T00:00:00",
+      "attributeType": 3
+    }, {
+      "displayName": "Expiration",
+      "name": "Expiration",
+      "value": "2013-09-20T00:00:00",
+      "attributeType": 3
+    }],
+    "effectivePermissions": -1,
+    "isFrozen": false
+  }],
+  "rawHeaders": ["Content-Length", "1462", "Content-Type", "application/json; charset=utf-8", "Server", "Microsoft-HTTPAPI/2.0", "Date", "Fri, 10 Feb 2017 01:48:37 GMT", "Connection", "close"]
+}]
