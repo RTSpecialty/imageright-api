@@ -1,7 +1,7 @@
 import { expect } from 'chai'; // eslint-disable-line import/no-extraneous-dependencies
-import FormData from 'form-data';
-import concat from 'concat-stream'; // eslint-disable-line import/no-extraneous-dependencies
-import fs from 'fs';
+// import FormData from 'form-data';
+// import concat from 'concat-stream'; // eslint-disable-line import/no-extraneous-dependencies
+// import fs from 'fs';
 import Library from '../../src';
 import Recorder from '../../scripts/recorder';
 
@@ -14,12 +14,13 @@ const password = process.env.IMAGERIGHT_PASSWORD || '<password>';
 
 const pageId = 27990255;
 const docId = 5738548;
-const newPage = new Promise((resolve) => {
-  const fd = new FormData();
-  fd.append('PageCreateData', JSON.stringify({ docId: 5738548 }), { contentType: 'application/json' });
-  fd.append('image0', fs.createReadStream('test/samples/sample.pdf'), 'sample.pdf');
-  fd.pipe(concat({ encoding: 'buffer' }, data => resolve({ data, headers: fd.getHeaders() })));
-});
+// const newPage = new Promise((resolve) => {
+//   const fd = new FormData();
+//   fd.append('PageCreateData', JSON.stringify({ docId: 5738548 }),
+//   { contentType: 'application/json' });
+//   fd.append('image0', fs.createReadStream('test/samples/sample.pdf'), 'sample.pdf');
+//   fd.pipe(concat({ encoding: 'buffer' }, data => resolve({ data, headers: fd.getHeaders() })));
+// });
 
 let lib;
 

@@ -20,10 +20,11 @@ function replace(obj) {
   restored.scope = process.env.IMAGERIGHT_BASEURL || 'https://localhost:8093';
   if (restored.path === '/api/authenticate') {
     restored.body = {
-      UserName: process.env.IMAGERIGHT_USERNAME || 'tester',
-      Password: process.env.IMAGERIGHT_PASSWORD || 'password',
+      UserName: process.env.IMAGERIGHT_USERNAME || '<username>',
+      Password: process.env.IMAGERIGHT_PASSWORD || '<password>',
     };
   }
+  delete restored.rawHeaders;
   return restored;
 }
 

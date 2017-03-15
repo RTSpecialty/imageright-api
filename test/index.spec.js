@@ -4,8 +4,8 @@ import { version, apiVersion } from '../package.json';
 import Recorder from '../scripts/recorder';
 
 const baseurl = process.env.IMAGERIGHT_BASEURL || 'https://localhost:8093';
-const username = process.env.IMAGERIGHT_USERNAME || 'tester';
-const password = process.env.IMAGERIGHT_PASSWORD || 'password';
+const username = process.env.IMAGERIGHT_USERNAME || '<username>';
+const password = process.env.IMAGERIGHT_PASSWORD || '<password>';
 const rec = new Recorder('authentication');
 
 let lib;
@@ -24,7 +24,6 @@ describe('Given an instance of the library', () => {
 
   describe('the property baseUrl', () => {
     it('should return the Base URL', () => {
-      console.log(lib, lib.baseUrl, baseurl);
       expect(lib.baseUrl).to.be.equal(baseurl);
     });
   });
