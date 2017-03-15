@@ -1,0 +1,1 @@
+[{"scope":"https://localhost:8093","method":"post","path":"/api/authenticate","body":"{\"UserName\":\"<username>\",\"Password\":\"<password>\"}","status":200,"response":"XXXXXXXX","rawHeaders":["Content-Length","384","Content-Type","text/plaintext; charset=utf-8","Server","Microsoft-HTTPAPI/2.0","Date","Wed, 15 Mar 2017 18:05:42 GMT","Connection","close"]}]

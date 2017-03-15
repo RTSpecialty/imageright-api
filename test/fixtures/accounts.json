@@ -2,10 +2,7 @@
   "scope": "https://localhost:8093",
   "method": "post",
   "path": "/api/authenticate",
-  "body": {
-    "UserName": "<username>",
-    "Password": "<password>"
-  },
+  "body": "{\"UserName\":\"<username>\",\"Password\":\"<password>\"}",
   "status": 200,
   "response": "XXXXXXXX",
   "rawHeaders": ["Content-Length", "384", "Content-Type", "text/plaintext; charset=utf-8", "Server", "Microsoft-HTTPAPI/2.0", "Date", "Thu, 23 Feb 2017 18:28:03 GMT", "Connection", "close"]

@@ -9,7 +9,7 @@ function cleanse(obj) {
   const clean = { ...obj };
   clean.scope = 'https://localhost:8093';
   if (clean.path === '/api/authenticate') {
-    clean.body = { UserName: '<username>', Password: '<password>' };
+    clean.body = '{"UserName":"<username>","Password":"<password>"}';
     clean.response = 'XXXXXXXX';
   }
   return clean;

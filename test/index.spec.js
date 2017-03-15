@@ -23,7 +23,8 @@ describe('Given an instance of the library', () => {
   });
 
   describe('the property baseUrl', () => {
-    it('should return the BaseUrl', () => {
+    it('should return the Base URL', () => {
+      console.log(lib, lib.baseUrl, baseurl);
       expect(lib.baseUrl).to.be.equal(baseurl);
     });
   });

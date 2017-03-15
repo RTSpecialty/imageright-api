@@ -39,11 +39,11 @@ describe('ImageRight API - Pages', () => {
         .then(data => expect(data).to.exist)));
   });
 
-  describe('the method createPage', () => {
-    it('should return a page object',
-      () => lib.then(api => newPage.then(page => api.createPage(page))
-        .then(res => expect(res).to.exist)));
-  });
+  // describe('the method createPage', () => {
+  //   it('should return a page object',
+  //     () => lib.then(api => newPage.then(page => api.createPage(page))
+  //       .then(res => expect(res).to.exist)));
+  // });
 
   describe('the method getAllPagesFromDocument', () => {
     it('should return an array of page objects',
