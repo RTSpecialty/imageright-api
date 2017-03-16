@@ -1,6 +1,6 @@
 {
   "name": "imageright-api",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "apiVersion": "6.2.23.1417",
   "description": "JavaScript Library for the ImageRight API",
   "main": "index.js",
@@ -21,7 +21,7 @@
   "author": "Jeremy Fowler <jeremy.f76@gmail.com>",
   "license": "MIT",
   "keywords": [],
-  "jsnext:main": "index.es.js",
+  "jsnext:main": "src/index.js",
   "babel": {
     "presets": [
       "latest",
