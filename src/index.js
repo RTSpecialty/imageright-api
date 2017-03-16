@@ -1,6 +1,6 @@
 import ImageRight, { authenticate } from './imageright';
 
-const VERSION = '0.0.1';
+const VERSION = '0.0.2';
 
 class Library {
   constructor(baseUrl) {

@@ -1,1 +1,1 @@
-module.exports = require('./lib/imageright-api');
+module.exports = require('./dist/index');

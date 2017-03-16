@@ -39,5 +39,5 @@ jspm_packages
 # Environment variables
 .env
 
-# NPM Dist
-dist
+# Webpack builds
+lib
