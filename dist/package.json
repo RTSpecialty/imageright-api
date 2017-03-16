@@ -8,7 +8,7 @@
   "author": "Jeremy Fowler <jeremy.f76@gmail.com>",
   "license": "MIT",
   "keywords": [],
-  "jsnext:main": "index.es.js",
+  "jsnext:main": "src/index.js",
   "dependencies": {
     "axios": "^0.15.3",
     "babel-runtime": "^6.22.0",

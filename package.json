@@ -22,7 +22,7 @@
   "author": "Jeremy Fowler <jeremy.f76@gmail.com>",
   "license": "MIT",
   "keywords": [],
-  "jsnext:main": "index.es.js",
+  "jsnext:main": "src/index.js",
   "babel": {
     "presets": [
       "latest",
