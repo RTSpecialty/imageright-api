@@ -2,13 +2,27 @@
   "scope": "https://localhost:8093",
   "method": "post",
   "path": "/api/authenticate",
-  "body": {
-    "UserName": "<username>",
-    "Password": "<password>"
-  },
+  "body": "{\"UserName\":\"<username>\",\"Password\":\"<password>\"}",
   "status": 200,
   "response": "XXXXXXXX",
-  "rawHeaders": ["Content-Length", "384", "Content-Type", "text/plaintext; charset=utf-8", "Server", "Microsoft-HTTPAPI/2.0", "Date", "Thu, 23 Feb 2017 18:34:14 GMT", "Connection", "close"]
+  "rawHeaders": ["Content-Length", "384", "Content-Type", "text/plaintext; charset=utf-8", "Server", "Microsoft-HTTPAPI/2.0", "Date", "Fri, 17 Mar 2017 22:04:22 GMT", "Connection", "close"]
+}, {
+  "scope": "https://localhost:8093",
+  "method": "get",
+  "path": "/api/objecttypes/allowedtypes?typeId=1904",
+  "body": "",
+  "status": 200,
+  "response": [{
+    "classId": -3,
+    "id": 1886,
+    "name": "RT",
+    "description": "Broker / BA",
+    "overlayId": -1,
+    "automationId": "RT",
+    "dateLastModified": "2017-02-23T20:36:32.787",
+    "effectivePermissions": 2147483647
+  }],
+  "rawHeaders": ["Content-Length", "180", "Content-Type", "application/json; charset=utf-8", "Server", "Microsoft-HTTPAPI/2.0", "Date", "Fri, 17 Mar 2017 22:04:22 GMT", "Connection", "close"]
 }, {
   "scope": "https://localhost:8093",
   "method": "get",
@@ -178,7 +192,437 @@
     "dateLastModified": "2015-12-09T02:26:45.363",
     "effectivePermissions": 2147483647
   }],
-  "rawHeaders": ["Content-Length", "3507", "Content-Type", "application/json; charset=utf-8", "Server", "Microsoft-HTTPAPI/2.0", "Date", "Thu, 23 Feb 2017 18:34:14 GMT", "Connection", "close"]
+  "rawHeaders": ["Content-Length", "3507", "Content-Type", "application/json; charset=utf-8", "Server", "Microsoft-HTTPAPI/2.0", "Date", "Fri, 17 Mar 2017 22:04:22 GMT", "Connection", "close"]
+}, {
+  "scope": "https://localhost:8093",
+  "method": "get",
+  "path": "/api/objecttypes/1904/attributes",
+  "body": "",
+  "status": 200,
+  "response": [{
+    "id": 589,
+    "type": 2,
+    "displayName": "GlobalFunctionsPath",
+    "name": "GlobalFunctionsPath",
+    "description": "GlobalFunctionsPath",
+    "mandatory": false,
+    "defaultValue": null,
+    "hasDefaultValue": false,
+    "disabled": false,
+    "visibility": false,
+    "validationRule": {
+      "controlType": 0,
+      "minValue": null,
+      "maxValue": null,
+      "mask": null,
+      "length": null,
+      "choices": null,
+      "validators": null,
+      "readonly": false,
+      "allowNew": false,
+      "nameVisible": true,
+      "descrVisible": false,
+      "separator": "-",
+      "order": 0,
+      "flags": 0,
+      "shouldSort": false,
+      "isDefaultChoices": true
+    }
+  }],
+  "rawHeaders": ["Content-Length", "499", "Content-Type", "application/json; charset=utf-8", "Server", "Microsoft-HTTPAPI/2.0", "Date", "Fri, 17 Mar 2017 22:04:22 GMT", "Connection", "close"]
+}, {
+  "scope": "https://localhost:8093",
+  "method": "get",
+  "path": "/api/objecttypes/1886/attributes",
+  "body": "",
+  "status": 200,
+  "response": [{
+    "id": 5039925,
+    "type": 2,
+    "displayName": "Coverage",
+    "name": "Coverage",
+    "description": "Coverage",
+    "mandatory": false,
+    "defaultValue": null,
+    "hasDefaultValue": false,
+    "disabled": false,
+    "visibility": false,
+    "validationRule": {
+      "controlType": 3,
+      "minValue": null,
+      "maxValue": null,
+      "mask": "",
+      "length": 255,
+      "choices": null,
+      "validators": null,
+      "readonly": false,
+      "allowNew": false,
+      "nameVisible": true,
+      "descrVisible": false,
+      "separator": "-",
+      "order": 0,
+      "flags": 0,
+      "shouldSort": false,
+      "isDefaultChoices": true
+    }
+  }, {
+    "id": 463,
+    "type": 2,
+    "displayName": "Policy Number",
+    "name": "Policy Number",
+    "description": "Policy Number",
+    "mandatory": false,
+    "defaultValue": null,
+    "hasDefaultValue": false,
+    "disabled": false,
+    "visibility": false,
+    "validationRule": {
+      "controlType": 0,
+      "minValue": null,
+      "maxValue": null,
+      "mask": null,
+      "length": null,
+      "choices": null,
+      "validators": null,
+      "readonly": false,
+      "allowNew": false,
+      "nameVisible": true,
+      "descrVisible": false,
+      "separator": "-",
+      "order": 0,
+      "flags": 0,
+      "shouldSort": false,
+      "isDefaultChoices": true
+    }
+  }, {
+    "id": 5496185,
+    "type": 2,
+    "displayName": "Risk",
+    "name": "Risk",
+    "description": "Risk",
+    "mandatory": false,
+    "defaultValue": null,
+    "hasDefaultValue": false,
+    "disabled": false,
+    "visibility": false,
+    "validationRule": {
+      "controlType": 0,
+      "minValue": null,
+      "maxValue": null,
+      "mask": null,
+      "length": null,
+      "choices": null,
+      "validators": null,
+      "readonly": false,
+      "allowNew": false,
+      "nameVisible": true,
+      "descrVisible": false,
+      "separator": "-",
+      "order": 0,
+      "flags": 0,
+      "shouldSort": false,
+      "isDefaultChoices": true
+    }
+  }, {
+    "id": 5496186,
+    "type": 2,
+    "displayName": "Market",
+    "name": "Market",
+    "description": "Market",
+    "mandatory": false,
+    "defaultValue": null,
+    "hasDefaultValue": false,
+    "disabled": false,
+    "visibility": false,
+    "validationRule": {
+      "controlType": 0,
+      "minValue": null,
+      "maxValue": null,
+      "mask": null,
+      "length": null,
+      "choices": null,
+      "validators": null,
+      "readonly": false,
+      "allowNew": false,
+      "nameVisible": true,
+      "descrVisible": false,
+      "separator": "-",
+      "order": 0,
+      "flags": 0,
+      "shouldSort": false,
+      "isDefaultChoices": true
+    }
+  }, {
+    "id": 468,
+    "type": 3,
+    "displayName": "Effective",
+    "name": "Effective",
+    "description": "Effective",
+    "mandatory": false,
+    "defaultValue": null,
+    "hasDefaultValue": false,
+    "disabled": false,
+    "visibility": false,
+    "validationRule": {
+      "controlType": 1,
+      "minValue": null,
+      "maxValue": null,
+      "mask": null,
+      "length": null,
+      "choices": null,
+      "validators": null,
+      "readonly": false,
+      "allowNew": false,
+      "nameVisible": true,
+      "descrVisible": false,
+      "separator": "-",
+      "order": 0,
+      "flags": 0,
+      "shouldSort": false,
+      "isDefaultChoices": true
+    }
+  }, {
+    "id": 469,
+    "type": 3,
+    "displayName": "Expiration",
+    "name": "Expiration",
+    "description": "Expiration",
+    "mandatory": false,
+    "defaultValue": null,
+    "hasDefaultValue": false,
+    "disabled": false,
+    "visibility": false,
+    "validationRule": {
+      "controlType": 1,
+      "minValue": null,
+      "maxValue": null,
+      "mask": null,
+      "length": null,
+      "choices": null,
+      "validators": null,
+      "readonly": false,
+      "allowNew": false,
+      "nameVisible": true,
+      "descrVisible": false,
+      "separator": "-",
+      "order": 0,
+      "flags": 0,
+      "shouldSort": false,
+      "isDefaultChoices": true
+    }
+  }, {
+    "id": 465,
+    "type": 2,
+    "displayName": "Broker",
+    "name": "Broker",
+    "description": "Broker",
+    "mandatory": false,
+    "defaultValue": null,
+    "hasDefaultValue": false,
+    "disabled": false,
+    "visibility": false,
+    "validationRule": {
+      "controlType": 0,
+      "minValue": null,
+      "maxValue": null,
+      "mask": null,
+      "length": null,
+      "choices": null,
+      "validators": null,
+      "readonly": false,
+      "allowNew": false,
+      "nameVisible": true,
+      "descrVisible": false,
+      "separator": "-",
+      "order": 0,
+      "flags": 0,
+      "shouldSort": false,
+      "isDefaultChoices": true
+    }
+  }, {
+    "id": 148,
+    "type": 2,
+    "displayName": "Agent",
+    "name": "Agent",
+    "description": "Agent",
+    "mandatory": false,
+    "defaultValue": null,
+    "hasDefaultValue": false,
+    "disabled": false,
+    "visibility": false,
+    "validationRule": {
+      "controlType": 3,
+      "minValue": null,
+      "maxValue": null,
+      "mask": null,
+      "length": 255,
+      "choices": null,
+      "validators": null,
+      "readonly": false,
+      "allowNew": false,
+      "nameVisible": true,
+      "descrVisible": false,
+      "separator": "-",
+      "order": 0,
+      "flags": 0,
+      "shouldSort": false,
+      "isDefaultChoices": true
+    }
+  }, {
+    "id": 1950,
+    "type": 2,
+    "displayName": "POC",
+    "name": "POC",
+    "description": "POC",
+    "mandatory": false,
+    "defaultValue": null,
+    "hasDefaultValue": false,
+    "disabled": false,
+    "visibility": false,
+    "validationRule": {
+      "controlType": 0,
+      "minValue": null,
+      "maxValue": null,
+      "mask": null,
+      "length": null,
+      "choices": null,
+      "validators": null,
+      "readonly": false,
+      "allowNew": false,
+      "nameVisible": true,
+      "descrVisible": false,
+      "separator": "-",
+      "order": 0,
+      "flags": 0,
+      "shouldSort": false,
+      "isDefaultChoices": true
+    }
+  }, {
+    "id": 2194,
+    "type": 2,
+    "displayName": "FEIN",
+    "name": "FEIN",
+    "description": "FEIN",
+    "mandatory": false,
+    "defaultValue": null,
+    "hasDefaultValue": false,
+    "disabled": false,
+    "visibility": false,
+    "validationRule": {
+      "controlType": 0,
+      "minValue": null,
+      "maxValue": null,
+      "mask": null,
+      "length": null,
+      "choices": null,
+      "validators": null,
+      "readonly": false,
+      "allowNew": false,
+      "nameVisible": true,
+      "descrVisible": false,
+      "separator": "-",
+      "order": 0,
+      "flags": 0,
+      "shouldSort": false,
+      "isDefaultChoices": true
+    }
+  }, {
+    "id": 5496187,
+    "type": 2,
+    "displayName": "Assistant",
+    "name": "Assistant",
+    "description": "Assistant",
+    "mandatory": false,
+    "defaultValue": null,
+    "hasDefaultValue": false,
+    "disabled": false,
+    "visibility": false,
+    "validationRule": {
+      "controlType": 0,
+      "minValue": null,
+      "maxValue": null,
+      "mask": null,
+      "length": null,
+      "choices": null,
+      "validators": null,
+      "readonly": false,
+      "allowNew": false,
+      "nameVisible": true,
+      "descrVisible": false,
+      "separator": "-",
+      "order": 0,
+      "flags": 0,
+      "shouldSort": false,
+      "isDefaultChoices": true
+    }
+  }, {
+    "id": 5496188,
+    "type": 2,
+    "displayName": "CustSvc",
+    "name": "CustSvc",
+    "description": "CustSvc",
+    "mandatory": false,
+    "defaultValue": null,
+    "hasDefaultValue": false,
+    "disabled": false,
+    "visibility": false,
+    "validationRule": {
+      "controlType": 0,
+      "minValue": null,
+      "maxValue": null,
+      "mask": null,
+      "length": null,
+      "choices": null,
+      "validators": null,
+      "readonly": false,
+      "allowNew": false,
+      "nameVisible": true,
+      "descrVisible": false,
+      "separator": "-",
+      "order": 0,
+      "flags": 0,
+      "shouldSort": false,
+      "isDefaultChoices": true
+    }
+  }],
+  "rawHeaders": ["Content-Length", "5563", "Content-Type", "application/json; charset=utf-8", "Server", "Microsoft-HTTPAPI/2.0", "Date", "Fri, 17 Mar 2017 22:04:22 GMT", "Connection", "close"]
+}, {
+  "scope": "https://localhost:8093",
+  "method": "get",
+  "path": "/api/objecttypes/91/attributes",
+  "body": "",
+  "status": 200,
+  "response": [{
+    "id": 5496217,
+    "type": 2,
+    "displayName": "MigrationDesc",
+    "name": "MigrationDesc",
+    "description": "Description for Migration",
+    "mandatory": false,
+    "defaultValue": null,
+    "hasDefaultValue": false,
+    "disabled": false,
+    "visibility": false,
+    "validationRule": {
+      "controlType": 0,
+      "minValue": null,
+      "maxValue": null,
+      "mask": null,
+      "length": null,
+      "choices": null,
+      "validators": null,
+      "readonly": false,
+      "allowNew": false,
+      "nameVisible": true,
+      "descrVisible": false,
+      "separator": "-",
+      "order": 0,
+      "flags": 0,
+      "shouldSort": false,
+      "isDefaultChoices": true
+    }
+  }],
+  "rawHeaders": ["Content-Length", "497", "Content-Type", "application/json; charset=utf-8", "Server", "Microsoft-HTTPAPI/2.0", "Date", "Fri, 17 Mar 2017 22:04:22 GMT", "Connection", "close"]
 }, {
   "scope": "https://localhost:8093",
   "method": "get",
@@ -210,7 +654,7 @@
       }]
     }
   },
-  "rawHeaders": ["Content-Length", "404", "Content-Type", "application/json; charset=utf-8", "Server", "Microsoft-HTTPAPI/2.0", "Date", "Thu, 23 Feb 2017 18:34:14 GMT", "Connection", "close"]
+  "rawHeaders": ["Content-Length", "404", "Content-Type", "application/json; charset=utf-8", "Server", "Microsoft-HTTPAPI/2.0", "Date", "Fri, 17 Mar 2017 22:04:22 GMT", "Connection", "close"]
 }, {
   "scope": "https://localhost:8093",
   "method": "get",
@@ -834,6 +1278,15 @@
       "folderTypeDataResults": [],
       "documentTypeDataResults": [{
         "classId": -1,
+        "id": 2337,
+        "name": "Forms",
+        "description": "Forms",
+        "overlayId": -1,
+        "automationId": "Forms",
+        "dateLastModified": "2015-12-04T23:19:25.743",
+        "effectivePermissions": 2147483647
+      }, {
+        "classId": -1,
         "id": 440,
         "name": "Misc",
         "description": "Misc",
@@ -1055,5 +1508,1721 @@
     }],
     "documentTypeDataResults": []
   },
-  "rawHeaders": ["Content-Length", "18518", "Content-Type", "application/json; charset=utf-8", "Server", "Microsoft-HTTPAPI/2.0", "Date", "Thu, 23 Feb 2017 18:34:14 GMT", "Connection", "close"]
+  "rawHeaders": ["Content-Length", "18697", "Content-Type", "application/json; charset=utf-8", "Server", "Microsoft-HTTPAPI/2.0", "Date", "Fri, 17 Mar 2017 22:04:22 GMT", "Connection", "close"]
+}, {
+  "scope": "https://localhost:8093",
+  "method": "get",
+  "path": "/api/objecttypes/1904",
+  "body": "",
+  "status": 200,
+  "response": {
+    "classId": -4,
+    "id": 1904,
+    "name": "KCMO",
+    "description": "Kansas City",
+    "overlayId": -1,
+    "automationId": "KCMO",
+    "dateLastModified": "2015-12-04T23:19:24.773",
+    "effectivePermissions": 2147483647
+  },
+  "rawHeaders": ["Content-Length", "182", "Content-Type", "application/json; charset=utf-8", "Server", "Microsoft-HTTPAPI/2.0", "Date", "Fri, 17 Mar 2017 22:04:22 GMT", "Connection", "close"]
+}, {
+  "scope": "https://localhost:8093",
+  "method": "get",
+  "path": "/api/objecttypes/1886",
+  "body": "",
+  "status": 200,
+  "response": {
+    "classId": -3,
+    "id": 1886,
+    "name": "RT",
+    "description": "Broker / BA",
+    "overlayId": -1,
+    "automationId": "RT",
+    "dateLastModified": "2017-02-23T20:36:32.787",
+    "effectivePermissions": 2147483647
+  },
+  "rawHeaders": ["Content-Length", "178", "Content-Type", "application/json; charset=utf-8", "Server", "Microsoft-HTTPAPI/2.0", "Date", "Fri, 17 Mar 2017 22:04:22 GMT", "Connection", "close"]
+}, {
+  "scope": "https://localhost:8093",
+  "method": "get",
+  "path": "/api/objecttypes/91",
+  "body": "",
+  "status": 200,
+  "response": {
+    "classId": -2,
+    "id": 91,
+    "name": "Correspondence",
+    "description": "Correspondence",
+    "overlayId": -1,
+    "automationId": "Correspondence",
+    "dateLastModified": "2015-12-04T23:19:25.133",
+    "effectivePermissions": 2147483647
+  },
+  "rawHeaders": ["Content-Length", "203", "Content-Type", "application/json; charset=utf-8", "Server", "Microsoft-HTTPAPI/2.0", "Date", "Fri, 17 Mar 2017 22:04:22 GMT", "Connection", "close"]
+}, {
+  "scope": "https://localhost:8093",
+  "method": "get",
+  "path": "/api/objecttypes/1886/sortoptions",
+  "body": "",
+  "status": 200,
+  "response": {
+    "sortOptions": "templateOrder ASC, documentDate DESC",
+    "repeatableFolderNaturalSort": false,
+    "repeatableFolderSortAscending": false
+  },
+  "rawHeaders": ["Content-Length", "128", "Content-Type", "application/json; charset=utf-8", "Server", "Microsoft-HTTPAPI/2.0", "Date", "Fri, 17 Mar 2017 22:04:22 GMT", "Connection", "close"]
+}, {
+  "scope": "https://localhost:8093",
+  "method": "get",
+  "path": "/api/objecttypes/91/sortoptions",
+  "body": "",
+  "status": 200,
+  "response": {
+    "sortOptions": null,
+    "repeatableFolderNaturalSort": false,
+    "repeatableFolderSortAscending": true
+  },
+  "rawHeaders": ["Content-Length", "93", "Content-Type", "application/json; charset=utf-8", "Server", "Microsoft-HTTPAPI/2.0", "Date", "Fri, 17 Mar 2017 22:04:22 GMT", "Connection", "close"]
+}, {
+  "scope": "https://localhost:8093",
+  "method": "get",
+  "path": "/api/objecttypes/RootContainer",
+  "body": "",
+  "status": 200,
+  "response": [],
+  "rawHeaders": ["Content-Length", "2", "Content-Type", "application/json; charset=utf-8", "Server", "Microsoft-HTTPAPI/2.0", "Date", "Fri, 17 Mar 2017 22:04:22 GMT", "Connection", "close"]
+}, {
+  "scope": "https://localhost:8093",
+  "method": "get",
+  "path": "/api/objecttypes/FileContainer",
+  "body": "",
+  "status": 200,
+  "response": [],
+  "rawHeaders": ["Content-Length", "2", "Content-Type", "application/json; charset=utf-8", "Server", "Microsoft-HTTPAPI/2.0", "Date", "Fri, 17 Mar 2017 22:04:22 GMT", "Connection", "close"]
+}, {
+  "scope": "https://localhost:8093",
+  "method": "get",
+  "path": "/api/objecttypes/Drawer",
+  "body": "",
+  "status": 200,
+  "response": [{
+    "classId": -4,
+    "id": 172,
+    "name": "IFIN",
+    "description": "SF-INTL",
+    "overlayId": -1,
+    "automationId": "IFIN",
+    "dateLastModified": "2015-12-04T23:19:24.743",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -4,
+    "id": 485,
+    "name": "IFIS",
+    "description": "LA-INTL",
+    "overlayId": -1,
+    "automationId": "IFIS",
+    "dateLastModified": "2015-12-04T23:19:24.757",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -4,
+    "id": 1904,
+    "name": "KCMO",
+    "description": "Kansas City",
+    "overlayId": -1,
+    "automationId": "KCMO",
+    "dateLastModified": "2015-12-04T23:19:24.773",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -4,
+    "id": 1907,
+    "name": "ATLANTA",
+    "description": "Atlanta",
+    "overlayId": -1,
+    "automationId": "ATLANTA",
+    "dateLastModified": "2015-12-04T23:19:24.647",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -4,
+    "id": 1908,
+    "name": "BOSTON",
+    "description": "Boston",
+    "overlayId": -1,
+    "automationId": "BOSTON",
+    "dateLastModified": "2015-12-04T23:19:24.647",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -4,
+    "id": 1909,
+    "name": "CHICAGO",
+    "description": "Chicago",
+    "overlayId": -1,
+    "automationId": "CHICAGO",
+    "dateLastModified": "2015-12-04T23:19:24.663",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -4,
+    "id": 1910,
+    "name": "DALLAS",
+    "description": "Dallas",
+    "overlayId": -1,
+    "automationId": "DALLAS",
+    "dateLastModified": "2015-12-04T23:19:24.663",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -4,
+    "id": 1911,
+    "name": "DENVER",
+    "description": "Denver",
+    "overlayId": -1,
+    "automationId": "DENVER",
+    "dateLastModified": "2015-12-04T23:19:24.68",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -4,
+    "id": 1912,
+    "name": "HARTFORD",
+    "description": "Hartford",
+    "overlayId": -1,
+    "automationId": "HARTFORD",
+    "dateLastModified": "2017-02-25T00:23:05.247",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -4,
+    "id": 1913,
+    "name": "HOUSTON",
+    "description": "Houston",
+    "overlayId": -1,
+    "automationId": "HOUSTON",
+    "dateLastModified": "2015-12-04T23:19:24.743",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -4,
+    "id": 1914,
+    "name": "JACKSONV",
+    "description": "Jacksonville",
+    "overlayId": -1,
+    "automationId": "JACKSONV",
+    "dateLastModified": "2015-12-04T23:19:24.773",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -4,
+    "id": 1915,
+    "name": "LA",
+    "description": "Los Angeles",
+    "overlayId": -1,
+    "automationId": "LA",
+    "dateLastModified": "2015-12-04T23:19:24.79",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -4,
+    "id": 1916,
+    "name": "MINN",
+    "description": "Minneapolis",
+    "overlayId": -1,
+    "automationId": "MINN",
+    "dateLastModified": "2015-12-04T23:19:24.79",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -4,
+    "id": 1917,
+    "name": "NASHVILL",
+    "description": "Nashville",
+    "overlayId": -1,
+    "automationId": "NASHVILL",
+    "dateLastModified": "2015-12-04T23:19:24.803",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -4,
+    "id": 1918,
+    "name": "NY",
+    "description": "New York",
+    "overlayId": -1,
+    "automationId": "NY",
+    "dateLastModified": "2015-12-04T23:19:24.82",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -4,
+    "id": 1919,
+    "name": "OC",
+    "description": "Orange County",
+    "overlayId": -1,
+    "automationId": "OC",
+    "dateLastModified": "2015-12-04T23:19:24.837",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -4,
+    "id": 1920,
+    "name": "PHILLY",
+    "description": "Philadelphia",
+    "overlayId": -1,
+    "automationId": "PHILLY",
+    "dateLastModified": "2015-12-04T23:19:24.837",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -4,
+    "id": 1921,
+    "name": "SANDIEGO",
+    "description": "San Diego",
+    "overlayId": -1,
+    "automationId": "SANDIEGO",
+    "dateLastModified": "2015-12-04T23:19:24.85",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -4,
+    "id": 1922,
+    "name": "SANFRAN",
+    "description": "San Francisco",
+    "overlayId": -1,
+    "automationId": "SANFRAN",
+    "dateLastModified": "2015-12-04T23:19:24.897",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -4,
+    "id": 1923,
+    "name": "SCOTTSDA",
+    "description": "Scottsdale",
+    "overlayId": -1,
+    "automationId": "SCOTTSDA",
+    "dateLastModified": "2015-12-04T23:19:24.897",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -4,
+    "id": 1924,
+    "name": "SEATTLE",
+    "description": "Seattle",
+    "overlayId": -1,
+    "automationId": "SEATTLE",
+    "dateLastModified": "2015-12-04T23:19:24.913",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -4,
+    "id": 1925,
+    "name": "WPB",
+    "description": "West Palm Beach",
+    "overlayId": -1,
+    "automationId": "WPB",
+    "dateLastModified": "2015-12-04T23:19:24.96",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -4,
+    "id": 1931,
+    "name": "FRESNO",
+    "description": "Fresno",
+    "overlayId": -1,
+    "automationId": "FRESNO",
+    "dateLastModified": "2015-12-04T23:19:24.697",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -4,
+    "id": 2334,
+    "name": "Accounting",
+    "description": "RT Premium Accounting",
+    "overlayId": -1,
+    "automationId": "Accounting",
+    "dateLastModified": "2015-12-04T23:19:24.633",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -4,
+    "id": 2344,
+    "name": "TAX",
+    "description": "RT Surplus Lines",
+    "overlayId": -1,
+    "automationId": "TAX",
+    "dateLastModified": "2015-12-04T23:19:24.93",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -4,
+    "id": 2376,
+    "name": "TRAINING",
+    "description": "TRAINING",
+    "overlayId": -1,
+    "automationId": "TRAINING",
+    "dateLastModified": "2015-12-04T23:19:24.947",
+    "effectivePermissions": 2147483647
+  }],
+  "rawHeaders": ["Content-Length", "4811", "Content-Type", "application/json; charset=utf-8", "Server", "Microsoft-HTTPAPI/2.0", "Date", "Fri, 17 Mar 2017 22:04:23 GMT", "Connection", "close"]
+}, {
+  "scope": "https://localhost:8093",
+  "method": "get",
+  "path": "/api/objecttypes/File",
+  "body": "",
+  "status": 200,
+  "response": [{
+    "classId": -3,
+    "id": 112,
+    "name": "DO NOT USE",
+    "description": "DISABLED",
+    "overlayId": -1,
+    "automationId": "WorkComp",
+    "dateLastModified": "2015-12-04T23:19:24.977",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -3,
+    "id": 1886,
+    "name": "RT",
+    "description": "Broker / BA",
+    "overlayId": -1,
+    "automationId": "RT",
+    "dateLastModified": "2017-02-23T20:36:32.787",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -3,
+    "id": 2333,
+    "name": "Accounting",
+    "description": "Premium Accounting",
+    "overlayId": -1,
+    "automationId": "Accounting",
+    "dateLastModified": "2016-12-21T23:16:48.727",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -3,
+    "id": 2338,
+    "name": "Tax",
+    "description": "Surplus Lines",
+    "overlayId": -1,
+    "automationId": "Tax",
+    "dateLastModified": "2015-12-04T23:19:25.007",
+    "effectivePermissions": 2147483647
+  }],
+  "rawHeaders": ["Content-Length", "754", "Content-Type", "application/json; charset=utf-8", "Server", "Microsoft-HTTPAPI/2.0", "Date", "Fri, 17 Mar 2017 22:04:23 GMT", "Connection", "close"]
+}, {
+  "scope": "https://localhost:8093",
+  "method": "get",
+  "path": "/api/objecttypes/Folder",
+  "body": "",
+  "status": 200,
+  "response": [{
+    "classId": -2,
+    "id": 90,
+    "name": "Policy",
+    "description": "Policy",
+    "overlayId": -1,
+    "automationId": "Policy",
+    "dateLastModified": "2015-12-04T23:19:25.243",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -2,
+    "id": 91,
+    "name": "Correspondence",
+    "description": "Correspondence",
+    "overlayId": -1,
+    "automationId": "Correspondence",
+    "dateLastModified": "2015-12-04T23:19:25.133",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -2,
+    "id": 102,
+    "name": "Contracts",
+    "description": "Contracts",
+    "overlayId": -1,
+    "automationId": "Contracts",
+    "dateLastModified": "2015-12-04T23:19:25.133",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -2,
+    "id": 103,
+    "name": "Prospects",
+    "description": "Prospects",
+    "overlayId": -1,
+    "automationId": "Prospects",
+    "dateLastModified": "2015-12-04T23:19:25.257",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -2,
+    "id": 106,
+    "name": "Vendor Payable",
+    "description": "Vendor Payable",
+    "overlayId": -1,
+    "automationId": "Vendor Payable",
+    "dateLastModified": "2015-12-04T23:19:25.32",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -2,
+    "id": 107,
+    "name": "Company Payable",
+    "description": "Company Payable",
+    "overlayId": -1,
+    "automationId": "Company Payable",
+    "dateLastModified": "2015-12-04T23:19:25.133",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -2,
+    "id": 108,
+    "name": "Accounts Receivable",
+    "description": "Accounts Receivable",
+    "overlayId": -1,
+    "automationId": "Accounts Receivable",
+    "dateLastModified": "2015-12-04T23:19:25.007",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -2,
+    "id": 109,
+    "name": "Bank Statements",
+    "description": "Bank Statements",
+    "overlayId": -1,
+    "automationId": "Bank Statements",
+    "dateLastModified": "2015-12-04T23:19:25.053",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -2,
+    "id": 110,
+    "name": "Stamping Office",
+    "description": "Stamping Office",
+    "overlayId": -1,
+    "automationId": "Stamping Office",
+    "dateLastModified": "2015-12-04T23:19:25.273",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -2,
+    "id": 111,
+    "name": "Annual Tax Reporting",
+    "description": "Annual Tax Reporting",
+    "overlayId": -1,
+    "automationId": "Annual Tax Reporting",
+    "dateLastModified": "2015-12-04T23:19:25.023",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -2,
+    "id": 458,
+    "name": "New Mail",
+    "description": "New Mail",
+    "overlayId": -1,
+    "automationId": "New Mail",
+    "dateLastModified": "2015-12-04T23:19:25.227",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -2,
+    "id": 459,
+    "name": "Permanent Info",
+    "description": "Permanent Info",
+    "overlayId": -1,
+    "automationId": "Permanent Info",
+    "dateLastModified": "2015-12-04T23:19:25.243",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -2,
+    "id": 460,
+    "name": "Submissions",
+    "description": "Submissions (Folder Notes)",
+    "overlayId": -1,
+    "automationId": "Submissions",
+    "dateLastModified": "2015-12-04T23:19:25.303",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -2,
+    "id": 461,
+    "name": "Quotes",
+    "description": "Quotes (Folder Notes)",
+    "overlayId": -1,
+    "automationId": "Quotes",
+    "dateLastModified": "2015-12-04T23:19:25.273",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -2,
+    "id": 462,
+    "name": "Billing/Accounting",
+    "description": "Billing/Accounting",
+    "overlayId": -1,
+    "automationId": "Billing/Accounting",
+    "dateLastModified": "2015-12-04T23:19:25.07",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -2,
+    "id": 1764,
+    "name": "Archived Documents",
+    "description": "Archived Documents",
+    "overlayId": -1,
+    "automationId": "Archived Documents",
+    "dateLastModified": "2015-12-08T13:29:05.627",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -2,
+    "id": 1767,
+    "name": "Year",
+    "description": "Year",
+    "overlayId": -1,
+    "automationId": "Year",
+    "dateLastModified": "2015-12-04T23:19:25.337",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -2,
+    "id": 1877,
+    "name": "Submission/Marketing",
+    "description": "Submission/Marketing",
+    "overlayId": -1,
+    "automationId": "Submission/Marketing",
+    "dateLastModified": "2015-12-04T23:19:25.29",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -2,
+    "id": 1878,
+    "name": "Inspection",
+    "description": "Inspection",
+    "overlayId": -1,
+    "automationId": "Inspection",
+    "dateLastModified": "2015-12-04T23:19:25.197",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -2,
+    "id": 1879,
+    "name": "SL Tax Filings",
+    "description": "SL Tax Filings",
+    "overlayId": -1,
+    "automationId": "SL Tax Filings",
+    "dateLastModified": "2015-12-04T23:19:25.273",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -2,
+    "id": 1880,
+    "name": "Claims",
+    "description": "Claims",
+    "overlayId": -1,
+    "automationId": "Claims",
+    "dateLastModified": "2015-12-04T23:19:25.117",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -2,
+    "id": 1881,
+    "name": "Claim",
+    "description": "Claim - Date of Loss/Claim#",
+    "overlayId": -1,
+    "automationId": "Claim",
+    "dateLastModified": "2015-12-04T23:19:25.117",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -2,
+    "id": 1882,
+    "name": "Subjectivities",
+    "description": "Subjectivities",
+    "overlayId": -1,
+    "automationId": "Subjectivities",
+    "dateLastModified": "2015-12-04T23:19:25.29",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -2,
+    "id": 1883,
+    "name": "Notices",
+    "description": "Notices",
+    "overlayId": -1,
+    "automationId": "Notices",
+    "dateLastModified": "2015-12-04T23:19:25.227",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -2,
+    "id": 1884,
+    "name": "BOR",
+    "description": "BOR",
+    "overlayId": -1,
+    "automationId": "BOR",
+    "dateLastModified": "2015-12-04T23:19:25.087",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -2,
+    "id": 1885,
+    "name": "Certificates",
+    "description": "Certificates",
+    "overlayId": -1,
+    "automationId": "Certificates",
+    "dateLastModified": "2015-12-04T23:19:25.1",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -2,
+    "id": 2323,
+    "name": "Direct Bill",
+    "description": "Direct Bill",
+    "overlayId": -1,
+    "automationId": "Direct Bill",
+    "dateLastModified": "2015-12-04T23:19:25.163",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -2,
+    "id": 2324,
+    "name": "Cash Application",
+    "description": "Cash Application",
+    "overlayId": -1,
+    "automationId": "Cash Application",
+    "dateLastModified": "2015-12-04T23:19:25.1",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -2,
+    "id": 2325,
+    "name": "Carrier",
+    "description": "Carrier",
+    "overlayId": -1,
+    "automationId": "Carrier",
+    "dateLastModified": "2015-12-04T23:19:25.087",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -2,
+    "id": 2326,
+    "name": "Producer Payables",
+    "description": "Producer Payables",
+    "overlayId": -1,
+    "automationId": "Producer Payables",
+    "dateLastModified": "2015-12-04T23:19:25.257",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -2,
+    "id": 2327,
+    "name": "Month",
+    "description": "Month",
+    "overlayId": -1,
+    "automationId": "Month",
+    "dateLastModified": "2015-12-04T23:19:25.21",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -2,
+    "id": 2328,
+    "name": "Deposits",
+    "description": "Deposits",
+    "overlayId": -1,
+    "automationId": "Deposits",
+    "dateLastModified": "2015-12-04T23:19:25.163",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -2,
+    "id": 2329,
+    "name": "Transfers",
+    "description": "Transfers",
+    "overlayId": -1,
+    "automationId": "Transfers",
+    "dateLastModified": "2015-12-04T23:19:25.303",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -2,
+    "id": 2330,
+    "name": "Loss Fund Deposits",
+    "description": "Loss Fund Deposits",
+    "overlayId": -1,
+    "automationId": "Loss Fund Deposits",
+    "dateLastModified": "2015-12-04T23:19:25.21",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -2,
+    "id": 2332,
+    "name": "Banking",
+    "description": "Banking",
+    "overlayId": -1,
+    "automationId": "Banking",
+    "dateLastModified": "2015-12-04T23:19:25.07",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -2,
+    "id": 3046,
+    "name": "Endorsements",
+    "description": "Endorsements",
+    "overlayId": -1,
+    "automationId": "Endorsements",
+    "dateLastModified": "2015-12-04T23:19:25.18",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -2,
+    "id": 3047,
+    "name": "MVR",
+    "description": "MVR",
+    "overlayId": -1,
+    "automationId": "MVR",
+    "dateLastModified": "2015-12-04T23:19:25.227",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -2,
+    "id": 189991,
+    "name": "Filings",
+    "description": "Filings",
+    "overlayId": -1,
+    "automationId": "Filings",
+    "dateLastModified": "2015-12-04T23:19:25.197",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -2,
+    "id": 3147070,
+    "name": "Database",
+    "description": "Database",
+    "overlayId": -1,
+    "automationId": "Database",
+    "dateLastModified": "2015-12-04T23:19:25.147",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -2,
+    "id": 4225452,
+    "name": "X-Mod",
+    "description": "X-Mod",
+    "overlayId": -1,
+    "automationId": "X-Mod",
+    "dateLastModified": "2015-12-04T23:19:25.337",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -2,
+    "id": 5615332,
+    "name": "File Note",
+    "description": "File Note",
+    "overlayId": -1,
+    "automationId": "File Note",
+    "dateLastModified": "2015-12-09T02:26:45.363",
+    "effectivePermissions": 2147483647
+  }],
+  "rawHeaders": ["Content-Length", "8103", "Content-Type", "application/json; charset=utf-8", "Server", "Microsoft-HTTPAPI/2.0", "Date", "Fri, 17 Mar 2017 22:04:23 GMT", "Connection", "close"]
+}, {
+  "scope": "https://localhost:8093",
+  "method": "get",
+  "path": "/api/objecttypes/Document",
+  "body": "",
+  "status": 200,
+  "response": [{
+    "classId": -1,
+    "id": 60,
+    "name": "Policy",
+    "description": "Policy",
+    "overlayId": -1,
+    "automationId": "Policy",
+    "dateLastModified": "2015-12-04T23:19:25.943",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 62,
+    "name": "Renewal",
+    "description": "Renewal",
+    "overlayId": -1,
+    "automationId": "Renewal",
+    "dateLastModified": "2015-12-04T23:19:26.023",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 63,
+    "name": "Endorsement",
+    "description": "Endorsement",
+    "overlayId": -1,
+    "automationId": "Endorsement",
+    "dateLastModified": "2015-12-04T23:19:25.663",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 64,
+    "name": "Correspondence",
+    "description": "Correspondence",
+    "overlayId": -1,
+    "automationId": "Correspondence",
+    "dateLastModified": "2015-12-04T23:19:25.617",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 67,
+    "name": "Binder",
+    "description": "Binder from Carrier",
+    "overlayId": -1,
+    "automationId": "Binder",
+    "dateLastModified": "2015-12-04T23:19:25.493",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 78,
+    "name": "Loss Runs",
+    "description": "Loss Runs",
+    "overlayId": -1,
+    "automationId": "Loss Runs",
+    "dateLastModified": "2015-12-04T23:19:25.837",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 80,
+    "name": "Contracts",
+    "description": "Contracts",
+    "overlayId": -1,
+    "automationId": "Contracts",
+    "dateLastModified": "2015-12-04T23:19:25.617",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 81,
+    "name": "Prospects",
+    "description": "Prospects",
+    "overlayId": -1,
+    "automationId": "Prospects",
+    "dateLastModified": "2015-12-04T23:19:25.977",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 84,
+    "name": "Vendor Payable",
+    "description": "Vendor Payable",
+    "overlayId": -1,
+    "automationId": "Vendor Payable",
+    "dateLastModified": "2015-12-04T23:19:26.18",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 85,
+    "name": "Company Payable",
+    "description": "Company Payable",
+    "overlayId": -1,
+    "automationId": "Company Payable",
+    "dateLastModified": "2015-12-04T23:19:25.6",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 86,
+    "name": "Accounts Receivable",
+    "description": "Accounts Receivable",
+    "overlayId": -1,
+    "automationId": "Accounts Receivable",
+    "dateLastModified": "2015-12-04T23:19:25.35",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 87,
+    "name": "Bank Statements",
+    "description": "Bank Statements",
+    "overlayId": -1,
+    "automationId": "Bank Statements",
+    "dateLastModified": "2015-12-04T23:19:25.46",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 88,
+    "name": "Stamping Office",
+    "description": "Stamping Office",
+    "overlayId": -1,
+    "automationId": "Stamping Office",
+    "dateLastModified": "2015-12-04T23:19:26.1",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 89,
+    "name": "Annual Tax Reporting",
+    "description": "Annual Tax Reporting",
+    "overlayId": -1,
+    "automationId": "Annual Tax Reporting",
+    "dateLastModified": "2015-12-04T23:19:25.397",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 437,
+    "name": "BOR",
+    "description": "BOR",
+    "overlayId": -1,
+    "automationId": "BOR",
+    "dateLastModified": "2015-12-04T23:19:25.523",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 438,
+    "name": "New Mail",
+    "description": "New Mail",
+    "overlayId": -1,
+    "automationId": "New Mail",
+    "dateLastModified": "2015-12-04T23:19:25.897",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 439,
+    "name": "Bus Info",
+    "description": "Bus Info",
+    "overlayId": -1,
+    "automationId": "Bus Info",
+    "dateLastModified": "2015-12-04T23:19:25.54",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 440,
+    "name": "Misc",
+    "description": "Misc",
+    "overlayId": -1,
+    "automationId": "Misc",
+    "dateLastModified": "2017-01-30T17:13:20.07",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 441,
+    "name": "Website",
+    "description": "Website",
+    "overlayId": -1,
+    "automationId": "Website",
+    "dateLastModified": "2015-12-04T23:19:26.193",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 442,
+    "name": "Complete Submission",
+    "description": "Complete Submission",
+    "overlayId": -1,
+    "automationId": "Complete Submission",
+    "dateLastModified": "2015-12-04T23:19:25.6",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 443,
+    "name": "XMod Worksheet",
+    "description": "XMod Worksheet",
+    "overlayId": -1,
+    "automationId": "XMod Worksheet",
+    "dateLastModified": "2015-12-04T23:19:26.243",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 444,
+    "name": "Financial Statement",
+    "description": "Financial Statement",
+    "overlayId": -1,
+    "automationId": "Financial Statement",
+    "dateLastModified": "2015-12-04T23:19:25.697",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 445,
+    "name": "Supplemental",
+    "description": "Supplemental",
+    "overlayId": -1,
+    "automationId": "Supplemental",
+    "dateLastModified": "2015-12-04T23:19:26.147",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 446,
+    "name": "Carrier Quote",
+    "description": "Labeled by Carrier",
+    "overlayId": -1,
+    "automationId": "Carrier Quote",
+    "dateLastModified": "2015-12-04T23:19:25.553",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 447,
+    "name": "RT Quote",
+    "description": "Labeled by Carrier",
+    "overlayId": -1,
+    "automationId": "RT Quote",
+    "dateLastModified": "2015-12-04T23:19:26.07",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 448,
+    "name": "Bind Request",
+    "description": "Bind Request",
+    "overlayId": -1,
+    "automationId": "Bind Request",
+    "dateLastModified": "2015-12-04T23:19:25.493",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 449,
+    "name": "RT Binder",
+    "description": "RT Binder to Agent",
+    "overlayId": -1,
+    "automationId": "RT Binder",
+    "dateLastModified": "2015-12-04T23:19:26.053",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 450,
+    "name": "Cancel/Reinstate/Non-Renew",
+    "description": "Cancel/Reinstate/Non-Renew",
+    "overlayId": -1,
+    "automationId": "Cancel/Reinstate/Non-Renew",
+    "dateLastModified": "2015-12-04T23:19:25.54",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 451,
+    "name": "Audit/Rept",
+    "description": "Audit/Rept",
+    "overlayId": -1,
+    "automationId": "Audit/Rept",
+    "dateLastModified": "2015-12-04T23:19:25.46",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 452,
+    "name": "Audit Dispute",
+    "description": "Audit Dispute",
+    "overlayId": -1,
+    "automationId": "Audit Dispute",
+    "dateLastModified": "2015-12-04T23:19:25.447",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 453,
+    "name": "Loss Control Reports",
+    "description": "Loss Control Reports",
+    "overlayId": -1,
+    "automationId": "Loss Control Reports",
+    "dateLastModified": "2015-12-04T23:19:25.837",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 454,
+    "name": "WCIRB Reports",
+    "description": "WCIRB Reports",
+    "overlayId": -1,
+    "automationId": "WCIRB Reports",
+    "dateLastModified": "2015-12-04T23:19:26.193",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 455,
+    "name": "Invoice",
+    "description": "Invoice",
+    "overlayId": -1,
+    "automationId": "Invoice",
+    "dateLastModified": "2015-12-04T23:19:25.79",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 456,
+    "name": "Audit Invoice",
+    "description": "Audit Invoice",
+    "overlayId": -1,
+    "automationId": "Audit Invoice",
+    "dateLastModified": "2015-12-04T23:19:25.447",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 457,
+    "name": "Payment/Check",
+    "description": "Payment/Check",
+    "overlayId": -1,
+    "automationId": "Payment/Check",
+    "dateLastModified": "2015-12-04T23:19:25.93",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 1765,
+    "name": "Submission",
+    "description": "Submission",
+    "overlayId": -1,
+    "automationId": "Submission",
+    "dateLastModified": "2015-12-04T23:19:26.117",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 1769,
+    "name": "ARCH",
+    "description": "Archived Document",
+    "overlayId": -1,
+    "automationId": "ARCH",
+    "dateLastModified": "2015-12-04T23:19:25.413",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 1844,
+    "name": "Renewal Cert",
+    "description": "Renewal Cert",
+    "overlayId": -1,
+    "automationId": "Renewal Cert",
+    "dateLastModified": "2015-12-04T23:19:26.04",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 1845,
+    "name": "Binder from Market",
+    "description": "Binder from Market",
+    "overlayId": -1,
+    "automationId": "Binder from Market",
+    "dateLastModified": "2015-12-04T23:19:25.507",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 1846,
+    "name": "Binder to Agent",
+    "description": "Binder to Agent",
+    "overlayId": -1,
+    "automationId": "Binder to Agent",
+    "dateLastModified": "2015-12-04T23:19:25.507",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 1847,
+    "name": "Policy Checklist",
+    "description": "Policy Checklist",
+    "overlayId": -1,
+    "automationId": "Policy Checklist",
+    "dateLastModified": "2015-12-04T23:19:25.943",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 1848,
+    "name": "Binding Schedule",
+    "description": "Binding Schedule",
+    "overlayId": -1,
+    "automationId": "Binding Schedule",
+    "dateLastModified": "2015-12-04T23:19:25.523",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 1849,
+    "name": "Bind Req from Agent",
+    "description": "Bind Req from Agent",
+    "overlayId": -1,
+    "automationId": "Bind Req from Agent",
+    "dateLastModified": "2015-12-04T23:19:25.477",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 1850,
+    "name": "Bind Req to Market",
+    "description": "Bind Req to Market",
+    "overlayId": -1,
+    "automationId": "Bind Req to Market",
+    "dateLastModified": "2015-12-04T23:19:25.477",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 1851,
+    "name": "Quote to Agent",
+    "description": "Quote to Agent",
+    "overlayId": -1,
+    "automationId": "Quote to Agent",
+    "dateLastModified": "2017-02-08T20:25:15.26",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 1852,
+    "name": "Quote from Market",
+    "description": "Quote from Market",
+    "overlayId": -1,
+    "automationId": "Quote from Market",
+    "dateLastModified": "2015-12-04T23:19:25.993",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 1853,
+    "name": "Rating",
+    "description": "Rating",
+    "overlayId": -1,
+    "automationId": "Rating",
+    "dateLastModified": "2015-12-04T23:19:26.007",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 1854,
+    "name": "Program Structure",
+    "description": "Program Structure",
+    "overlayId": -1,
+    "automationId": "Program Structure",
+    "dateLastModified": "2015-12-04T23:19:25.977",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 1855,
+    "name": "General",
+    "description": "General",
+    "overlayId": -1,
+    "automationId": "General",
+    "dateLastModified": "2017-01-30T16:36:31.943",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 1856,
+    "name": "Audit",
+    "description": "Audit",
+    "overlayId": -1,
+    "automationId": "Audit",
+    "dateLastModified": "2015-12-04T23:19:25.43",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 1857,
+    "name": "Billing",
+    "description": "Billing",
+    "overlayId": -1,
+    "automationId": "Billing",
+    "dateLastModified": "2015-12-04T23:19:25.46",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 1858,
+    "name": "Inspection",
+    "description": "Inspection",
+    "overlayId": -1,
+    "automationId": "Inspection",
+    "dateLastModified": "2015-12-04T23:19:25.79",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 1859,
+    "name": "Report",
+    "description": "Report",
+    "overlayId": -1,
+    "automationId": "Report",
+    "dateLastModified": "2015-12-04T23:19:26.053",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 1860,
+    "name": "Affidavit",
+    "description": "Affidavit",
+    "overlayId": -1,
+    "automationId": "Affidavit",
+    "dateLastModified": "2015-12-04T23:19:25.383",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 1861,
+    "name": "FNOL",
+    "description": "FNOL",
+    "overlayId": -1,
+    "automationId": "FNOL",
+    "dateLastModified": "2015-12-04T23:19:25.727",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 1862,
+    "name": "Acknowledgements",
+    "description": "Acknowledgements",
+    "overlayId": -1,
+    "automationId": "Acknowledgements",
+    "dateLastModified": "2015-12-04T23:19:25.367",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 1863,
+    "name": "Subrogation",
+    "description": "Subrogation",
+    "overlayId": -1,
+    "automationId": "Subrogation",
+    "dateLastModified": "2015-12-04T23:19:26.133",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 1864,
+    "name": "Deductible",
+    "description": "Deductible",
+    "overlayId": -1,
+    "automationId": "Deductible",
+    "dateLastModified": "2015-12-04T23:19:25.663",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 1865,
+    "name": "Adjuster Reports",
+    "description": "Adjuster Reports",
+    "overlayId": -1,
+    "automationId": "Adjuster Reports",
+    "dateLastModified": "2015-12-04T23:19:25.383",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 1866,
+    "name": "Adjuster Assignment",
+    "description": "Adjuster Assignment",
+    "overlayId": -1,
+    "automationId": "Adjuster Assignment",
+    "dateLastModified": "2015-12-04T23:19:25.367",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 1867,
+    "name": "Status",
+    "description": "Status",
+    "overlayId": -1,
+    "automationId": "Status",
+    "dateLastModified": "2015-12-04T23:19:26.1",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 1868,
+    "name": "Payments",
+    "description": "Payments",
+    "overlayId": -1,
+    "automationId": "Payments",
+    "dateLastModified": "2015-12-04T23:19:25.93",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 1869,
+    "name": "Premium Finance",
+    "description": "Premium Finance",
+    "overlayId": -1,
+    "automationId": "Premium Finance",
+    "dateLastModified": "2015-12-04T23:19:25.96",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 1870,
+    "name": "Signed Forms",
+    "description": "Signed Forms",
+    "overlayId": -1,
+    "automationId": "Signed Forms",
+    "dateLastModified": "2015-12-04T23:19:26.087",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 1871,
+    "name": "UL Policies",
+    "description": "UL Policies",
+    "overlayId": -1,
+    "automationId": "UL Policies",
+    "dateLastModified": "2015-12-04T23:19:26.163",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 1872,
+    "name": "Cancellations",
+    "description": "Cancellations",
+    "overlayId": -1,
+    "automationId": "Cancellations",
+    "dateLastModified": "2015-12-04T23:19:25.553",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 1873,
+    "name": "Reinstatement",
+    "description": "Reinstatement",
+    "overlayId": -1,
+    "automationId": "Reinstatement",
+    "dateLastModified": "2015-12-04T23:19:26.023",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 1874,
+    "name": "Non-Renewal",
+    "description": "Non-Renewal",
+    "overlayId": -1,
+    "automationId": "Non-Renewal",
+    "dateLastModified": "2015-12-04T23:19:25.913",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 1875,
+    "name": "Letter",
+    "description": "Letter",
+    "overlayId": -1,
+    "automationId": "Letter",
+    "dateLastModified": "2015-12-04T23:19:25.82",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 1876,
+    "name": "Certificate",
+    "description": "Certificate",
+    "overlayId": -1,
+    "automationId": "Certificate",
+    "dateLastModified": "2015-12-04T23:19:25.57",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 2312,
+    "name": "Check Payments",
+    "description": "Check Payments",
+    "overlayId": -1,
+    "automationId": "Check Payments",
+    "dateLastModified": "2015-12-04T23:19:25.587",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 2313,
+    "name": "Wire Payments",
+    "description": "Wire Payments",
+    "overlayId": -1,
+    "automationId": "Wire Payments",
+    "dateLastModified": "2015-12-04T23:19:26.227",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 2314,
+    "name": "ACH & EFT Payments",
+    "description": "ACH & EFT Payments",
+    "overlayId": -1,
+    "automationId": "ACH Payments",
+    "dateLastModified": "2016-12-21T23:14:33.64",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 2315,
+    "name": "Transfers",
+    "description": "Transfers",
+    "overlayId": -1,
+    "automationId": "Transfers",
+    "dateLastModified": "2015-12-04T23:19:26.147",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 2316,
+    "name": "Deposits",
+    "description": "Deposits",
+    "overlayId": -1,
+    "automationId": "Deposits",
+    "dateLastModified": "2015-12-04T23:19:25.663",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 2317,
+    "name": "Refunds",
+    "description": "Refunds",
+    "overlayId": -1,
+    "automationId": "Refunds",
+    "dateLastModified": "2015-12-04T23:19:26.023",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 2318,
+    "name": "IFIS/IFIN Deposit",
+    "description": "IFIS/IFIN Deposit",
+    "overlayId": -1,
+    "automationId": "IFIS/IFIN Deposit",
+    "dateLastModified": "2015-12-04T23:19:25.773",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 2319,
+    "name": "Producer Payables",
+    "description": "Producer Payables",
+    "overlayId": -1,
+    "automationId": "Producer Payables",
+    "dateLastModified": "2015-12-04T23:19:25.977",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 2320,
+    "name": "Legacy Refunds/Transfers",
+    "description": "Legacy Refunds/Transfers",
+    "overlayId": -1,
+    "automationId": "Legacy Refunds/Transfers",
+    "dateLastModified": "2015-12-04T23:19:25.82",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 2321,
+    "name": "Voided Checks",
+    "description": "Voided Checks",
+    "overlayId": -1,
+    "automationId": "Voided Checks",
+    "dateLastModified": "2015-12-04T23:19:26.18",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 2336,
+    "name": "Filing/Payments",
+    "description": "Filing/Payments",
+    "overlayId": -1,
+    "automationId": "Filing/Payments",
+    "dateLastModified": "2015-12-04T23:19:25.68",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 2337,
+    "name": "Forms",
+    "description": "Forms",
+    "overlayId": -1,
+    "automationId": "Forms",
+    "dateLastModified": "2015-12-04T23:19:25.743",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 5004,
+    "name": "Legacy Deposit",
+    "description": "Legacy Deposit",
+    "overlayId": -1,
+    "automationId": "Legacy Deposit",
+    "dateLastModified": "2015-12-04T23:19:25.803",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 38759,
+    "name": "Legacy Company Payables",
+    "description": "Legacy Company Payables",
+    "overlayId": -1,
+    "automationId": "Legacy Company Payables",
+    "dateLastModified": "2015-12-04T23:19:25.803",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 133020,
+    "name": "Application",
+    "description": "Application",
+    "overlayId": -1,
+    "automationId": "Application",
+    "dateLastModified": "2015-12-04T23:19:25.397",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 189990,
+    "name": "Filings",
+    "description": "Filings",
+    "overlayId": -1,
+    "automationId": "Filings",
+    "dateLastModified": "2015-12-04T23:19:25.697",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 3021862,
+    "name": "IFTAS",
+    "description": "IFTAS",
+    "overlayId": -1,
+    "automationId": "IFTAS",
+    "dateLastModified": "2015-12-04T23:19:25.79",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 3021879,
+    "name": "Financials",
+    "description": "Financials",
+    "overlayId": -1,
+    "automationId": "Financials",
+    "dateLastModified": "2015-12-04T23:19:25.71",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 3021894,
+    "name": "DB Deposits",
+    "description": "DB Deposits",
+    "overlayId": -1,
+    "automationId": "DB Deposits",
+    "dateLastModified": "2015-12-04T23:19:25.633",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 3021895,
+    "name": "DB Transfers",
+    "description": "DB Transfers",
+    "overlayId": -1,
+    "automationId": "DB Transfers",
+    "dateLastModified": "2015-12-04T23:19:25.647",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 3021896,
+    "name": "DB Refunds",
+    "description": "DB Refunds",
+    "overlayId": -1,
+    "automationId": "DB Refunds",
+    "dateLastModified": "2015-12-04T23:19:25.633",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 3021897,
+    "name": "AR Refunds",
+    "description": "AR Refunds",
+    "overlayId": -1,
+    "automationId": "AR Refunds",
+    "dateLastModified": "2015-12-04T23:19:25.413",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 3021898,
+    "name": "AR Transfers",
+    "description": "AR Transfers",
+    "overlayId": -1,
+    "automationId": "AR Transfers",
+    "dateLastModified": "2015-12-04T23:19:25.413",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 3021899,
+    "name": "Loss Fund Deposits",
+    "description": "Loss Fund Deposits",
+    "overlayId": -1,
+    "automationId": "Loss Fund Deposits",
+    "dateLastModified": "2015-12-04T23:19:25.837",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 3147066,
+    "name": "Other Deposits",
+    "description": "Other Deposits",
+    "overlayId": -1,
+    "automationId": "Other Deposits",
+    "dateLastModified": "2015-12-04T23:19:25.913",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 3147067,
+    "name": "Check Deposits",
+    "description": "Check Deposits",
+    "overlayId": -1,
+    "automationId": "Check Deposits",
+    "dateLastModified": "2015-12-04T23:19:25.57",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 3147068,
+    "name": "Wire Deposits",
+    "description": "Wire Deposits",
+    "overlayId": -1,
+    "automationId": "Wire Deposits",
+    "dateLastModified": "2015-12-04T23:19:26.21",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 3147069,
+    "name": "ACH Deposits",
+    "description": "ACH Deposits",
+    "overlayId": -1,
+    "automationId": "ACH Deposits",
+    "dateLastModified": "2015-12-04T23:19:25.35",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 4205186,
+    "name": "Archive",
+    "description": "Archive",
+    "overlayId": -1,
+    "automationId": "Archive",
+    "dateLastModified": "2015-12-04T23:19:25.43",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 5051913,
+    "name": "Declinations",
+    "description": "Declinations",
+    "overlayId": -1,
+    "automationId": "Declinations",
+    "dateLastModified": "2015-12-04T23:19:25.647",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 5051914,
+    "name": "Referrals",
+    "description": "Referrals",
+    "overlayId": -1,
+    "automationId": "Referrals",
+    "dateLastModified": "2015-12-04T23:19:26.007",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 5496180,
+    "name": "Claims",
+    "description": "Claims",
+    "overlayId": -1,
+    "automationId": "Claims",
+    "dateLastModified": "2015-12-04T23:19:25.6",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 5496181,
+    "name": "Policy Issuance",
+    "description": "Policy Issuance",
+    "overlayId": -1,
+    "automationId": "Policy Issuance",
+    "dateLastModified": "2015-12-04T23:19:25.96",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 5496182,
+    "name": "Marketing",
+    "description": "Marketing",
+    "overlayId": -1,
+    "automationId": "Marketing",
+    "dateLastModified": "2015-12-04T23:19:25.85",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 5496183,
+    "name": "NOC",
+    "description": "NOC",
+    "overlayId": -1,
+    "automationId": "NOC",
+    "dateLastModified": "2015-12-04T23:19:25.913",
+    "effectivePermissions": 2147483647
+  }, {
+    "classId": -1,
+    "id": 5615333,
+    "name": "File Note",
+    "description": "File Note",
+    "overlayId": -1,
+    "automationId": "File Note",
+    "dateLastModified": "2015-12-09T02:27:12.113",
+    "effectivePermissions": 2147483647
+  }],
+  "rawHeaders": ["Content-Length", "21166", "Content-Type", "application/json; charset=utf-8", "Server", "Microsoft-HTTPAPI/2.0", "Date", "Fri, 17 Mar 2017 22:04:23 GMT", "Connection", "close"]
 }]

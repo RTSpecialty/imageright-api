@@ -1,5 +1,5 @@
 export function getAllowedTypes(api, typeId) {
-  return api.get(`api/objecttypes/allowedtypes?type=${typeId}`)
+  return api.get(`api/objecttypes/allowedtypes?typeId=${typeId}`)
     .then(res => Promise.resolve(res.data));
 }
 

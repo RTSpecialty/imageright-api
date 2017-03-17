@@ -1469,7 +1469,7 @@ function getImageById(api, imageId, version) {
 }
 
 function getAllowedTypes(api, typeId) {
-  return api.get("api/objecttypes/allowedtypes?type=" + typeId).then(function (res) {
+  return api.get("api/objecttypes/allowedtypes?typeId=" + typeId).then(function (res) {
     return _Promise.resolve(res.data);
   });
 }
@@ -1820,7 +1820,7 @@ var ImageRight = function () {
   return ImageRight;
 }();
 
-var VERSION = '0.0.2';
+var VERSION = '0.0.3';
 
 var Library = function () {
   function Library(baseUrl) {

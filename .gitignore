@@ -38,6 +38,3 @@ jspm_packages
 
 # Environment variables
 .env
-
-# Webpack builds
-lib
