@@ -1,6 +1,6 @@
 {
   "name": "imageright-api",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "apiVersion": "6.2.23.1417",
   "description": "JavaScript Library for the ImageRight API",
   "main": "index.js",
@@ -10,8 +10,8 @@
   "keywords": [],
   "jsnext:main": "src/index.js",
   "dependencies": {
-    "axios": "^0.15.3",
-    "babel-runtime": "^6.22.0",
-    "form-data": "^2.1.2"
+    "@babel/runtime": "^7.0.0",
+    "axios": "^0.18.0",
+    "form-data": "^2.3.3"
   }
 }

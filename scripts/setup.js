@@ -3,7 +3,7 @@
 /* eslint-disable import/no-extraneous-dependencies */
 
 // Register babel to transpile before our tests run.
-require('babel-register')();
+require('@babel/register')();
 require('dotenv').load();
 
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';

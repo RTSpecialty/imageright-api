@@ -1,6 +1,6 @@
 import { expect } from 'chai'; // eslint-disable-line import/no-extraneous-dependencies
-import Library from '../../src';
-import Recorder from '../../scripts/recorder';
+import Library from '../../../src';
+import Recorder from '../../../scripts/recorder';
 
 const rec = new Recorder('containers');
 
@@ -23,11 +23,13 @@ describe('ImageRight API - Containers', () => {
   });
 
   describe('the method getContainers', () => {
-    it('should return an array of container objects when passed a valid containerId, recursive = false',
-      () => lib.then(api => api.getContainers(containerId, false)
-        .then(data => expect(data).to.exist)));
-    it('should return an array of container objects when passed a valid containerId, recursive = true',
-      () => lib.then(api => api.getContainers(containerId, true)
-        .then(data => expect(data).to.exist)));
+    it('should return an array of container objects when passed a valid containerId, recursive = false', () =>
+      lib.then((api) =>
+        api.getContainers(containerId, false).then((data) => expect(data).to.exist)
+      ));
+    it('should return an array of container objects when passed a valid containerId, recursive = true', () =>
+      lib.then((api) =>
+        api.getContainers(containerId, true).then((data) => expect(data).to.exist)
+      ));
   });
 });

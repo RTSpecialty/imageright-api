@@ -1,6 +1,6 @@
 import ImageRight, { authenticate } from './imageright';
 
-const VERSION = '0.0.3';
+const VERSION = '0.0.4';
 
 class Library {
   constructor(baseUrl) {
@@ -14,10 +14,8 @@ class Library {
   }
 
   connect(username, password) {
-    return authenticate(this.baseUrl, username, password)
-      .then(this.createAPI.bind(this));
+    return authenticate(this.baseUrl, username, password).then(this.createAPI.bind(this));
   }
-
 }
 
 export default Library;

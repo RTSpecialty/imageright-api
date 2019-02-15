@@ -1,6 +1,6 @@
 import { expect } from 'chai'; // eslint-disable-line import/no-extraneous-dependencies
-import Library from '../../src';
-import Recorder from '../../scripts/recorder';
+import Library from '../../../src';
+import Recorder from '../../../scripts/recorder';
 
 const rec = new Recorder('attributes');
 
@@ -31,14 +31,16 @@ describe('ImageRight API - Attributes', () => {
   // });
 
   describe('the method getAttributeByName', () => {
-    it('should return an attibute object given a valid object ID and attribute name',
-      () => lib.then(api => api.getAttributeByName(objId, attName)
-        .then(data => expect(data).to.exist)));
+    it('should return an attibute object given a valid object ID and attribute name', () =>
+      lib.then((api) =>
+        api.getAttributeByName(objId, attName).then((data) => expect(data).to.exist)
+      ));
   });
 
   describe('the method getAttributeByObject', () => {
-    it('should return an array of attribute objects given a valid object ID',
-      () => lib.then(api => api.getAttributeByObject(objId)
-        .then(data => expect(data).to.be.instanceof(Array))));
+    it('should return an array of attribute objects given a valid object ID', () =>
+      lib.then((api) =>
+        api.getAttributeByObject(objId).then((data) => expect(data).to.be.instanceof(Array))
+      ));
   });
 });

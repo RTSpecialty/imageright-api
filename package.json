@@ -1,22 +1,17 @@
 {
   "name": "imageright-api",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "apiVersion": "6.2.23.1417",
   "description": "JavaScript Library for the ImageRight API",
   "main": "index.js",
   "scripts": {
-    "prebuild": "npm-run-all --parallel security-check lint test",
+    "prebuild": "npm-run-all --parallel eslint test",
     "build": "babel-node scripts/build",
-    "build:webpack": "webpack --progress --colors",
-    "build:watch": "webpack --progress --colors --watch",
     "clean": "rimraf lib",
-    "coveralls": "cat ./coverage/lcov.info | coveralls",
-    "lint": "eslint scripts src test",
-    "security-check": "nsp check",
+    "eslint": "eslint scripts src test",
     "start": "npm-run-all --parallel build:watch test:watch",
-    "test": "mocha --colors scripts/setup.js \"test/**/*.spec.js\"",
-    "test:watch": "yarn run test -- --reporter progress --watch",
-    "test:cover": "babel-node ./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha"
+    "test": "nyc mocha --colors scripts/setup.js \"test/**/*.spec.js\"",
+    "test:watch": "yarn run test -- --reporter progress --watch"
   },
   "repository": "git@github.com:RTSpecialty/imageright-api.git",
   "author": "Jeremy Fowler <jeremy.f76@gmail.com>",
@@ -25,11 +20,12 @@
   "jsnext:main": "src/index.js",
   "babel": {
     "presets": [
-      "latest",
-      "stage-0"
+      "@babel/preset-env"
     ],
     "plugins": [
-      "transform-runtime"
+      "@babel/plugin-transform-runtime",
+      "@babel/plugin-syntax-dynamic-import",
+      "@babel/plugin-syntax-import-meta"
     ]
   },
   "eslintConfig": {
@@ -37,47 +33,48 @@
     "extends": "airbnb-base"
   },
   "dependencies": {
-    "axios": "^0.15.3",
-    "babel-runtime": "^6.22.0",
-    "form-data": "^2.1.2"
+    "@babel/runtime": "^7.0.0",
+    "axios": "^0.18.0",
+    "form-data": "^2.3.3"
   },
   "devDependencies": {
-    "babel-cli": "^6.22.2",
-    "babel-core": "^6.22.1",
-    "babel-eslint": "^7.1.1",
-    "babel-loader": "^6.2.10",
-    "babel-plugin-add-module-exports": "^0.2.1",
-    "babel-plugin-transform-object-rest-spread": "^6.22.0",
-    "babel-plugin-transform-runtime": "^6.22.0",
-    "babel-preset-latest": "^6.22.0",
-    "babel-preset-stage-0": "^6.22.0",
-    "babel-register": "^6.22.0",
-    "chai": "^3.5.0",
-    "concat-stream": "^1.6.0",
-    "coveralls": "^2.11.16",
-    "del": "^2.2.2",
-    "dotenv": "^4.0.0",
-    "eslint": "^3.14.1",
-    "eslint-config-airbnb-base": "^11.0.1",
-    "eslint-loader": "^1.6.1",
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.2.2",
+    "@babel/node": "^7.0.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/plugin-syntax-import-meta": "^7.2.0",
+    "@babel/plugin-transform-runtime": "^7.0.0",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/register": "^7.0.0",
+    "acorn": "^6.1.0",
+    "babel-eslint": "^10.0.1",
+    "babel-plugin-add-module-exports": "^1.0.0",
+    "chai": "^4.2.0",
+    "concat-stream": "^2.0.0",
+    "del": "^3.0.0",
+    "dotenv": "^6.2.0",
+    "eslint": "^5.13.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-prettier": "^4.0.0",
     "eslint-plugin-import": "^2.2.0",
-    "eslint-watch": "^2.1.14",
-    "istanbul": "^0.4.5",
-    "mocha": "^3.2.0",
-    "nock": "^9.0.3",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-watch": "^4.0.2",
+    "mocha": "^5.2.0",
+    "nock": "^10.0.6",
     "npm-run-all": "^4.0.1",
-    "nsp": "^2.6.2",
+    "nyc": "^13.2.0",
+    "prettier": "^1.16.4",
     "rimraf": "^2.5.4",
-    "rollup": "^0.41.4",
-    "rollup-plugin-babel": "^2.7.1",
-    "rollup-plugin-commonjs": "^7.0.0",
-    "rollup-plugin-eslint": "^3.0.0",
-    "rollup-plugin-node-resolve": "^2.0.0",
+    "rollup": "^1.1.2",
+    "rollup-plugin-babel": "^4.0.1",
+    "rollup-plugin-commonjs": "^9.2.0",
+    "rollup-plugin-eslint": "^5.0.0",
+    "rollup-plugin-node-resolve": "^4.0.0",
     "rollup-plugin-npm": "^2.0.0",
-    "rollup-plugin-replace": "^1.1.1",
-    "rollup-plugin-uglify": "^1.0.1",
-    "sinon": "^1.17.7",
-    "webpack": "^2.2.1",
-    "yargs": "^6.6.0"
+    "rollup-plugin-replace": "^2.1.0",
+    "rollup-plugin-uglify": "^6.0.2",
+    "sinon": "^7.2.3",
+    "yargs": "^13.1.0"
   }
 }

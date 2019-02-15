@@ -5,7 +5,7 @@ import fs from 'fs';
 let recording = false;
 let fixture = null;
 
-function cleanse(obj) {
+export function cleanse(obj) {
   const clean = { ...obj };
   clean.scope = 'https://localhost:8093';
   if (clean.path === '/api/authenticate') {
@@ -15,7 +15,7 @@ function cleanse(obj) {
   return clean;
 }
 
-function replace(obj) {
+export function replace(obj) {
   const restored = { ...obj };
   restored.scope = process.env.IMAGERIGHT_BASEURL || 'https://localhost:8093';
   if (restored.path === '/api/authenticate') {
@@ -29,14 +29,15 @@ function replace(obj) {
 }
 
 // starts recording, one fixture at a time
-function record(name, reqheaders) {
+export function record(name, reqheaders) {
   if (recording) return recording;
   recording = true;
   fixture = name;
   nock.recorder.rec({
     output_objects: true,
     dont_print: true,
-    enable_reqheaders_recording: reqheaders });
+    enable_reqheaders_recording: reqheaders,
+  });
   return recording;
 }
 

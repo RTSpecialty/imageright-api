@@ -2,8 +2,8 @@ import { expect } from 'chai'; // eslint-disable-line import/no-extraneous-depen
 // import FormData from 'form-data';
 // import concat from 'concat-stream'; // eslint-disable-line import/no-extraneous-dependencies
 // import fs from 'fs';
-import Library from '../../src';
-import Recorder from '../../scripts/recorder';
+import Library from '../../../src';
+import Recorder from '../../../scripts/recorder';
 
 // const rec = new Recorder('pages', { reset: true, reqheaders: true });
 const rec = new Recorder('pages');
@@ -35,9 +35,8 @@ describe('ImageRight API - Pages', () => {
   });
 
   describe('the method checkReadPermissions', () => {
-    it('should return a permission object',
-      () => lib.then(api => api.checkReadPermissions(pageId)
-        .then(data => expect(data).to.exist)));
+    it('should return a permission object', () =>
+      lib.then((api) => api.checkReadPermissions(pageId).then((data) => expect(data).to.exist)));
   });
 
   // describe('the method createPage', () => {
@@ -47,8 +46,9 @@ describe('ImageRight API - Pages', () => {
   // });
 
   describe('the method getAllPagesFromDocument', () => {
-    it('should return an array of page objects',
-      () => lib.then(api => api.getAllPagesFromDocument(docId)
-        .then(data => expect(data).to.be.instanceof(Array))));
+    it('should return an array of page objects', () =>
+      lib.then((api) =>
+        api.getAllPagesFromDocument(docId).then((data) => expect(data).to.be.instanceof(Array))
+      ));
   });
 });

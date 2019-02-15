@@ -10,6 +10,9 @@ import * as folders from './api/folders';
 import * as images from './api/images';
 import * as objecttypes from './api/objecttypes';
 import * as pages from './api/pages';
+import * as tasks from './api/tasks';
+import * as users from './api/users';
+import * as workflows from './api/workflows';
 
 export { authenticate } from './api/authentication';
 
@@ -201,6 +204,142 @@ class ImageRight {
     return pages.getAllPagesFromDocument(this.api(), docId);
   }
 
+  // Tasks Actions
+  killTask(taskId) {
+    return tasks.killTask(this.api(), taskId);
+  }
+
+  lockTask(taskId, options) {
+    return tasks.lockTask(this.api(), taskId, options);
+  }
+
+  refreshTaskLock(taskId) {
+    return tasks.refreshTaskLock(this.api(), taskId);
+  }
+
+  releaseTask(taskId, options) {
+    return tasks.releaseTask(this.api(), taskId, options);
+  }
+
+  releaseTaskByAnchor(taskId, anchor, options) {
+    return tasks.releaseTaskByAnchor(this.api(), taskId, anchor, options);
+  }
+
+  releaseTaskSplitStep(taskId, options) {
+    return tasks.releaseTaskSplitStep(this.api(), taskId, options);
+  }
+
+  routeTask(taskId, options) {
+    return tasks.routeTask(this.api(), taskId, options);
+  }
+
+  unlockTask(taskId) {
+    return tasks.unlockTask(this.api(), taskId);
+  }
+
+  // Task Attributes
+  getTaskAttributeById(taskId, id) {
+    return tasks.getTaskAttributeById(this.api(), taskId, id);
+  }
+
+  getTaskAttributeByName(taskId, name) {
+    return tasks.getTaskAttributeByName(this.api(), taskId, name);
+  }
+
+  getTaskAttributes(taskId) {
+    return tasks.getTaskAttributes(this.api(), taskId);
+  }
+
+  setTaskAttributeById(taskId, id, content) {
+    return tasks.setTaskAttributeById(this.api(), taskId, id, content);
+  }
+
+  setTaskAttributeByName(taskId, name, content) {
+    return tasks.setTaskAttributeByName(this.api(), taskId, name, content);
+  }
+
+  // Tasks
+  createTask(content) {
+    return tasks.createTask(this.api(), content);
+  }
+
+  getPostTasks(options) {
+    return tasks.getPostTasks(this.api(), options);
+  }
+
+  getTasks(options) {
+    return tasks.getTasks(this.api(), options);
+  }
+
+  getTasksByFileId(fileId, options) {
+    return tasks.getTasksByFileId(this.api(), fileId, options);
+  }
+
+  getTasksByFileIdPost(fileId, options) {
+    return tasks.getTasksByFileIdPost(this.api(), fileId, options);
+  }
+
+  updateTask(taskId, content) {
+    return tasks.updateTask(this.api(), taskId, content);
+  }
+
+  // Users
+  changeUserPassword(content) {
+    return users.changeUserPassword(this.api(), content);
+  }
+
+  getCurrentUser() {
+    return users.getCurrentUser(this.api());
+  }
+
+  getCurrentUserData() {
+    return users.getCurrentUserData(this.api());
+  }
+
+  getUserData(userId) {
+    return users.getUserData(this.api(), userId);
+  }
+
+  // Workflows
+  getDefaultStepLink(stepId, options) {
+    return workflows.getDefaultStepLink(this.api(), stepId, options);
+  }
+
+  getPriorityList(stepId) {
+    return workflows.getPriorityList(this.api(), stepId);
+  }
+
+  getSplitLinkParameters(stepId, options) {
+    return workflows.getSplitLinkParameters(this.api(), stepId, options);
+  }
+
+  getStepAttributeById(stepId, id) {
+    return workflows.getStepAttributeById(this.api(), stepId, id);
+  }
+
+  getStepAttributeByName(stepId, name) {
+    return workflows.getStepAttributeByName(this.api(), stepId, name);
+  }
+
+  getStepAttributes(stepId) {
+    return workflows.getStepAttributes(this.api(), stepId);
+  }
+
+  getStepLinks(srcStepId, options) {
+    return workflows.getStepLinks(this.api(), srcStepId, options);
+  }
+
+  getSteps(flowId, options) {
+    return workflows.getSteps(this.api(), flowId, options);
+  }
+
+  getUsersToAssign(stepId) {
+    return workflows.getUsersToAssign(this.api(), stepId);
+  }
+
+  getWorkflows(options) {
+    return workflows.getWorkflows(this.api(), options);
+  }
 }
 
 export default ImageRight;

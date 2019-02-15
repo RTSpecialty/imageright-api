@@ -4,16 +4,15 @@
     "eslint:recommended",
     "plugin:import/errors",
     "plugin:import/warnings",
-    "airbnb-base"
+    "airbnb-base",
+    "prettier"
   ],
-  "plugins": [],
+  "plugins": [
+    "prettier"
+  ],
   "parserOptions": {
-    "ecmaVersion": 7,
+    "ecmaVersion": 2018,
     "sourceType": "module"
-  },
-  "ecmaFeatures": {
-    "globalReturn": true,
-    "modules": true
   },
   "env": {
     "es6": true,
@@ -36,6 +35,48 @@
   "rules": {
     "no-console": 1,
     "no-debugger": 1,
-    "no-var": 1
+    "no-var": 1,
+    "comma-dangle": [
+      "error",
+      "always-multiline",
+      {
+        "functions": "never"
+      }
+    ],
+    "indent": [
+      "error",
+      2,
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "linebreak-style": [
+      "error",
+      "unix"
+    ],
+    "quotes": [
+      "error",
+      "single",
+      {
+        "avoidEscape": true
+      }
+    ],
+    "semi": [
+      "error",
+      "always"
+    ],
+    "newline-per-chained-call": 0,
+    "object-curly-newline": [
+      "off"
+    ],
+    "prettier/prettier": [
+      "error",
+      {
+        "trailingComma": "es5",
+        "singleQuote": true,
+        "printWidth": 100,
+        "arrowParens": "always"
+      }
+    ]
   }
 }
