@@ -22,10 +22,38 @@ describe('ImageRight API - Documents', () => {
     rec.after(done);
   });
 
+  describe('the method createDocument', () => {
+    it('should create a document');
+  });
+
   describe('the method findDocuments', () => {
     it('should return an array of document objects', () =>
       lib.then((api) =>
         api.findDocuments(search).then((data) => expect(data).to.be.instanceof(Array))
       ));
+  });
+
+  describe('the method getDocumentById', () => {
+    it('should get a document by id');
+  });
+
+  describe('the method moveDocument', () => {
+    it('should move a document');
+  });
+
+  describe('the method updateProperties', () => {
+    it('should update properties of a document');
+  });
+
+  describe('the method copyDocument', () => {
+    it('should copy a document');
+  });
+
+  describe('the method deleteDocument', () => {
+    it('should delete a document');
+  });
+
+  describe('the method moveDocumentV2', () => {
+    it('should move a document');
   });
 });

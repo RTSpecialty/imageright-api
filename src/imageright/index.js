@@ -1,6 +1,7 @@
 import axios from 'axios';
 import * as accounts from './api/accounts';
 import * as attributes from './api/attributes';
+import * as authentication from './api/authentication';
 import * as batches from './api/batches';
 import * as containers from './api/containers';
 import * as documents from './api/documents';
@@ -64,6 +65,14 @@ class ImageRight {
 
   getAttributeByObject(objId) {
     return attributes.getAttributeByObject(this.api(), objId);
+  }
+
+  // Authentication
+  authenticate(UserName, Password) {
+    return authentication.authenticate(this.baseURL, UserName, Password).then((accessToken) => {
+      this.accessToken = accessToken;
+      return accessToken;
+    });
   }
 
   // Batches

@@ -5,13 +5,14 @@
   "description": "JavaScript Library for the ImageRight API",
   "main": "index.js",
   "scripts": {
-    "prebuild": "npm-run-all --parallel eslint test",
+    "prebuild": "npm test",
     "build": "babel-node scripts/build",
     "clean": "rimraf lib",
     "eslint": "eslint scripts src test",
     "start": "npm-run-all --parallel build:watch test:watch",
-    "test": "nyc mocha --colors scripts/setup.js \"test/**/*.spec.js\"",
-    "test:watch": "yarn run test -- --reporter progress --watch"
+    "test": "npm-run-all --parallel eslint mocha",
+    "mocha": "nyc mocha --colors scripts/setup.js \"test/**/*.spec.js\"",
+    "mocha:watch": "yarn run test -- --reporter progress --watch"
   },
   "repository": "git@github.com:RTSpecialty/imageright-api.git",
   "author": "Jeremy Fowler <jeremy.f76@gmail.com>",

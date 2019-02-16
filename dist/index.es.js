@@ -70,6 +70,21 @@ function getAttributeByObject(api, objId) {
 }
 
 /* eslint-disable import/prefer-default-export */
+function authenticate(baseURL, UserName, Password) {
+  var config = {
+    baseURL: baseURL
+  };
+  return axios.post('api/authenticate', {
+    UserName: UserName,
+    Password: Password
+  }, config).then(function (res) {
+    return {
+      AccessToken: res.data
+    };
+  });
+}
+
+/* eslint-disable import/prefer-default-export */
 function createBatch(api, batch) {
   return api.post('api/batches', batch).then(function (res) {
     return Promise.resolve(res.data);
@@ -586,21 +601,6 @@ function getWorkflows(api) {
   });
 }
 
-/* eslint-disable import/prefer-default-export */
-function authenticate(baseURL, UserName, Password) {
-  var config = {
-    baseURL: baseURL
-  };
-  return axios.post('api/authenticate', {
-    UserName: UserName,
-    Password: Password
-  }, config).then(function (res) {
-    return {
-      AccessToken: res.data
-    };
-  });
-}
-
 var VERSION = '6.2.23.1417';
 
 var ImageRight =
@@ -665,6 +665,17 @@ function () {
     key: "getAttributeByObject",
     value: function getAttributeByObject$$1(objId) {
       return getAttributeByObject(this.api(), objId);
+    } // Authentication
+
+  }, {
+    key: "authenticate",
+    value: function authenticate$$1(UserName, Password) {
+      var _this = this;
+
+      return authenticate(this.baseURL, UserName, Password).then(function (accessToken) {
+        _this.accessToken = accessToken;
+        return accessToken;
+      });
     } // Batches
 
   }, {

@@ -22,10 +22,18 @@ describe('ImageRight API - Folders', () => {
     rec.after(done);
   });
 
+  describe('the method createFolder', () => {
+    it('should create a folder');
+  });
+
   describe('the method findFolders', () => {
     it('should return an array of file objects', () =>
       lib.then((api) =>
         api.findFolders(search).then((data) => expect(data).to.be.instanceof(Array))
       ));
+  });
+
+  describe('the method getFolderById', () => {
+    it('should get a folder');
   });
 });

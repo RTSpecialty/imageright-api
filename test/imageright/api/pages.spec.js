@@ -39,6 +39,10 @@ describe('ImageRight API - Pages', () => {
       lib.then((api) => api.checkReadPermissions(pageId).then((data) => expect(data).to.exist)));
   });
 
+  describe('the method createPage', () => {
+    it('should return a... ');
+  });
+
   // describe('the method createPage', () => {
   //   it('should return a page object',
   //     () => lib.then(api => newPage.then(page => api.createPage(page))
@@ -50,5 +54,47 @@ describe('ImageRight API - Pages', () => {
       lib.then((api) =>
         api.getAllPagesFromDocument(docId).then((data) => expect(data).to.be.instanceof(Array))
       ));
+  });
+
+  describe('the method getPageById', () => {
+    it('should return a... ');
+  });
+
+  describe('the method getPageImageMetadata', () => {
+    it('should return a... ');
+  });
+  describe('the method lockPage', () => {
+    it('should return a... ');
+  });
+  describe('the method movePage', () => {
+    it('should return a... ');
+  });
+  describe('the method rotatePage', () => {
+    it('should return a... ');
+  });
+  describe('the method unlockPage', () => {
+    it('should return a... ');
+  });
+  describe('the method updatePageContent', () => {
+    it('should return a... ');
+  });
+  describe('the method updatePageProperties', () => {
+    it('should return a... ');
+  });
+
+  describe('the method copyPageV2', () => {
+    it('should return a... ');
+  });
+  describe('the method createPageV2', () => {
+    it('should return a... ');
+  });
+  describe('the method mergeToDocument', () => {
+    it('should return a... ');
+  });
+  describe('the method movePageV2', () => {
+    it('should return a... ');
+  });
+  describe('the method updatePageContentV2', () => {
+    it('should return a... ');
   });
 });

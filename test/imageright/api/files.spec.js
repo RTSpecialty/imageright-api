@@ -22,10 +22,22 @@ describe('ImageRight API - Files', () => {
     rec.after(done);
   });
 
+  describe('the method createFile', () => {
+    it('should create a file');
+  });
+
   describe('the method findFiles', () => {
     it('should return an array of file objects', () =>
       lib.then((api) =>
         api.findFiles(search).then((data) => expect(data).to.be.instanceof(Array))
       ));
+  });
+
+  describe('the method getFileById', () => {
+    it('should get a file');
+  });
+
+  describe('the method getRelatedFiles', () => {
+    it('should get an array of related files');
   });
 });

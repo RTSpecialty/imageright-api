@@ -25,13 +25,16 @@ describe('ImageRight API - Attributes', () => {
   });
 
   // describe('the method getAttributeById', () => {
-  //   it('should return an attibute object given a valid object ID and attribute ID',
+  //   it('should return an attribute object given a valid object ID and attribute ID',
   //     () => lib.then(api => api.getAttributeById(objId, attId)
   //       .then(data => expect(data).to.exist)));
   // });
+  describe('the method getAttributeById', () => {
+    it('should return an attribute object given a valid object ID and attribute ID');
+  });
 
   describe('the method getAttributeByName', () => {
-    it('should return an attibute object given a valid object ID and attribute name', () =>
+    it('should return an attribute object given a valid object ID and attribute name', () =>
       lib.then((api) =>
         api.getAttributeByName(objId, attName).then((data) => expect(data).to.exist)
       ));

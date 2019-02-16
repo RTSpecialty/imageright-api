@@ -24,7 +24,7 @@ describe('ImageRight API - Images', () => {
   });
 
   describe('the method getImageById', () => {
-    it('should return a image object', () =>
+    it('should return an image object', () =>
       lib.then((api) => api.getImageById(imageId, version).then((data) => expect(data).to.exist)));
   });
 });

@@ -24,14 +24,14 @@ describe('ImageRight API - Drawers', () => {
     rec.after(done);
   });
 
-  describe('the method getDrawers', () => {
-    it('should return an array of drawer objects', () =>
-      lib.then((api) => api.getDrawers().then((data) => expect(data).to.be.instanceof(Array))));
-  });
-
   describe('the method getDrawerById', () => {
     it('should return a drawer object when passed a valid drawer id', () =>
       lib.then((api) => api.getDrawerById(drawerId).then((data) => expect(data).to.exist)));
+  });
+
+  describe('the method getDrawers', () => {
+    it('should return an array of drawer objects', () =>
+      lib.then((api) => api.getDrawers().then((data) => expect(data).to.be.instanceof(Array))));
   });
 
   describe('the method getDrawerByName', () => {
