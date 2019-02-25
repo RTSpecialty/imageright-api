@@ -268,6 +268,76 @@ function getAllPagesFromDocument(api, docId) {
     return Promise.resolve(res.data);
   });
 }
+function getPageById(api, pageId) {
+  return api.get("api/pages/".concat(pageId)).then(function (res) {
+    return Promise.resolve(res.data);
+  });
+}
+function getPageImageMetadata(api, pageId) {
+  return api.get("api/pages/".concat(pageId, "/imagemetadata")).then(function (res) {
+    return Promise.resolve(res.data);
+  });
+}
+function lockPage(api, pageId) {
+  return api.get("api/pages/".concat(pageId, "/lock")).then(function (res) {
+    return Promise.resolve(res.data);
+  });
+}
+function movePage(api, moveObj) {
+  return api.post('api/pages/move', moveObj.toJSON()).then(function (res) {
+    return Promise.resolve(res.data);
+  });
+}
+function rotatePage(api, pageId, rotationAngle) {
+  return api.post("api/pages/".concat(pageId, "/rotate?rotationAngle=").concat(rotationAngle)).then(function (res) {
+    return Promise.resolve(res.data);
+  });
+}
+function unlockPage(api, pageId) {
+  return api.get("api/pages/".concat(pageId, "/unlock")).then(function (res) {
+    return Promise.resolve(res.data);
+  });
+}
+function updatePageContent(api, pageId, content) {
+  return api.post("api/pages/".concat(pageId, "/content"), content).then(function (res) {
+    return Promise.resolve(res.data);
+  });
+}
+function updatePageProperties(api, pageId, properties) {
+  return api.post("api/pages/".concat(pageId, "/properties"), properties).then(function (res) {
+    return Promise.resolve(res.data);
+  });
+} // V2
+
+function copyPage(api, copyObj) {
+  return api.post('api/v2/pages/copy', copyObj.toJSON()).then(function (res) {
+    return Promise.resolve(res.data);
+  });
+}
+function createPageV2(api, page, targetPageId, before) {
+  var qstrs = [];
+  if (targetPageId) qstrs.push("targetPageId=".concat(targetPageId));
+  if (before) qstrs.push("before=".concat(before));
+  var qstr = qstrs.length ? "?".concat(qstrs.join('&')) : '';
+  return api.post("api/v2/pages".concat(qstr), page).then(function (res) {
+    return Promise.resolve(res.data);
+  });
+}
+function mergeToDocument(api, mergeObj) {
+  return api.post('api/v2/pages/merge', mergeObj.toJSON()).then(function (res) {
+    return Promise.resolve(res.data);
+  });
+}
+function movePageV2(api, moveObj) {
+  return api.post('api/v2/pages/move', moveObj.toJSON()).then(function (res) {
+    return Promise.resolve(res.data);
+  });
+}
+function updatePageContentV2(api, pageId, content) {
+  return api.post("api/v2/pages/".concat(pageId, "/content"), content).then(function (res) {
+    return Promise.resolve(res.data);
+  });
+}
 
 // TaskActions
 function killTask(api, taskId) {
@@ -847,6 +917,72 @@ function () {
     key: "getAllPagesFromDocument",
     value: function getAllPagesFromDocument$$1(docId) {
       return getAllPagesFromDocument(this.api(), docId);
+    }
+  }, {
+    key: "getPageById",
+    value: function getPageById$$1(pageId) {
+      return getPageById(this.api(), pageId);
+    }
+  }, {
+    key: "getPageImageMetadata",
+    value: function getPageImageMetadata$$1(pageId) {
+      return getPageImageMetadata(this.api(), pageId);
+    }
+  }, {
+    key: "lockPage",
+    value: function lockPage$$1(pageId) {
+      return lockPage(this.api(), pageId);
+    }
+  }, {
+    key: "movePage",
+    value: function movePage$$1(moveObj) {
+      return movePage(this.api(), moveObj);
+    }
+  }, {
+    key: "rotatePage",
+    value: function rotatePage$$1(pageId, rotationAngle) {
+      return rotatePage(this.api(), pageId, rotationAngle);
+    }
+  }, {
+    key: "unlockPage",
+    value: function unlockPage$$1(pageId) {
+      return unlockPage(this.api(), pageId);
+    }
+  }, {
+    key: "updatePageContent",
+    value: function updatePageContent$$1(pageId, content) {
+      return updatePageContent(this.api(), pageId, content);
+    }
+  }, {
+    key: "updatePageProperties",
+    value: function updatePageProperties$$1(pageId, properties) {
+      return updatePageProperties(this.api(), pageId, properties);
+    } // V2 Pages
+
+  }, {
+    key: "copyPage",
+    value: function copyPage$$1(copyObj) {
+      return copyPage(this.api(), copyObj);
+    }
+  }, {
+    key: "createPageV2",
+    value: function createPageV2$$1(page, targetPageId, before) {
+      return createPageV2(this.api(), page, targetPageId, before);
+    }
+  }, {
+    key: "mergeToDocument",
+    value: function mergeToDocument$$1(mergeObj) {
+      return mergeToDocument(this.api(), mergeObj);
+    }
+  }, {
+    key: "movePageV2",
+    value: function movePageV2$$1(moveObj) {
+      return movePageV2(this.api(), moveObj);
+    }
+  }, {
+    key: "updatePageContentV2",
+    value: function updatePageContentV2$$1(pageId, content) {
+      return updatePageContentV2(this.api(), pageId, content);
     } // Tasks Actions
 
   }, {
@@ -1023,7 +1159,7 @@ function () {
   return ImageRight;
 }();
 
-var VERSION$1 = '0.0.4';
+var VERSION$1 = '0.0.5';
 
 var Library =
 /*#__PURE__*/

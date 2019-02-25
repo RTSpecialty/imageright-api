@@ -1,6 +1,6 @@
 {
   "name": "imageright-api",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "apiVersion": "6.2.23.1417",
   "description": "JavaScript Library for the ImageRight API",
   "main": "index.js",
