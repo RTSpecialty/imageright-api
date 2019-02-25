@@ -209,7 +209,10 @@ function getFolderById(api, folderId, includeHasNotes) {
 /* eslint-disable import/prefer-default-export */
 function getImageById(api, imageId, version) {
   var qstr = version ? "?version=".concat(version) : '?version=0';
-  return api.get("api/images/".concat(imageId).concat(qstr)).then(function (res) {
+  var options = {
+    responseType: 'arraybuffer'
+  };
+  return api.get("api/images/".concat(imageId).concat(qstr), options).then(function (res) {
     return Promise.resolve(res.data);
   });
 }
