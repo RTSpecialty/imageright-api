@@ -213,6 +213,60 @@ class ImageRight {
     return pages.getAllPagesFromDocument(this.api(), docId);
   }
 
+  getPageById(pageId) {
+    return pages.getPageById(this.api(), pageId);
+  }
+
+  getPageImageMetadata(pageId) {
+    return pages.getPageImageMetadata(this.api(), pageId);
+  }
+
+  lockPage(pageId) {
+    return pages.lockPage(this.api(), pageId);
+  }
+
+  movePage(moveObj) {
+    return pages.movePage(this.api(), moveObj);
+  }
+
+  rotatePage(pageId, rotationAngle) {
+    return pages.rotatePage(this.api(), pageId, rotationAngle);
+  }
+
+  unlockPage(pageId) {
+    return pages.unlockPage(this.api(), pageId);
+  }
+
+  updatePageContent(pageId, content) {
+    return pages.updatePageContent(this.api(), pageId, content);
+  }
+
+  updatePageProperties(pageId, properties) {
+    return pages.updatePageProperties(this.api(), pageId, properties);
+  }
+
+  // V2 Pages
+
+  copyPage(copyObj) {
+    return pages.copyPage(this.api(), copyObj);
+  }
+
+  createPageV2(page, targetPageId, before) {
+    return pages.createPageV2(this.api(), page, targetPageId, before);
+  }
+
+  mergeToDocument(mergeObj) {
+    return pages.mergeToDocument(this.api(), mergeObj);
+  }
+
+  movePageV2(moveObj) {
+    return pages.movePageV2(this.api(), moveObj);
+  }
+
+  updatePageContentV2(pageId, content) {
+    return pages.updatePageContentV2(this.api(), pageId, content);
+  }
+
   // Tasks Actions
   killTask(taskId) {
     return tasks.killTask(this.api(), taskId);
