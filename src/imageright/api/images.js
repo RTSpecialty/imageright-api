@@ -2,5 +2,6 @@
 
 export function getImageById(api, imageId, version) {
   const qstr = version ? `?version=${version}` : '?version=0';
-  return api.get(`api/images/${imageId}${qstr}`).then((res) => Promise.resolve(res.data));
+  const options = { responseType: 'arraybuffer' };
+  return api.get(`api/images/${imageId}${qstr}`, options).then((res) => Promise.resolve(res.data));
 }
