@@ -2,10 +2,9 @@ export function checkReadPermissions(api, pageId) {
   return api.get(`api/pages/${pageId}/readpermissions`).then((res) => Promise.resolve(res.data));
 }
 
-export function createPage(api, page) {
-  return api
-    .post('api/pages', page.data, { headers: page.headers })
-    .then((res) => Promise.resolve(res.data));
+export function createPage(api, content) {
+  const { formdata, headers } = content;
+  return api.post('api/pages', formdata, { headers }).then((res) => Promise.resolve(res.data));
 }
 
 export function getAllPagesFromDocument(api, docId) {
@@ -54,12 +53,10 @@ export function copyPage(api, copyObj) {
   return api.post('api/v2/pages/copy', copyObj.toJSON()).then((res) => Promise.resolve(res.data));
 }
 
-export function createPageV2(api, page, targetPageId, before) {
-  const qstrs = [];
-  if (targetPageId) qstrs.push(`targetPageId=${targetPageId}`);
-  if (before) qstrs.push(`before=${before}`);
-  const qstr = qstrs.length ? `?${qstrs.join('&')}` : '';
-  return api.post(`api/v2/pages${qstr}`, page).then((res) => Promise.resolve(res.data));
+export function createPageV2(api, content, params = {}) {
+  const { formdata, headers } = content;
+  const options = { headers, params };
+  return api.post('api/v2/pages', formdata, options).then((res) => Promise.resolve(res.data));
 }
 
 export function mergeToDocument(api, mergeObj) {

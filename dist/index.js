@@ -136,7 +136,7 @@ function copyDocument(api, copyObj) {
 }
 function deleteDocument(api, docId, force) {
   var qstr = force ? '?force=true' : '';
-  return api.delete("api/v2/documents/".concat(docId).concat(qstr)).then(function (res) {
+  return api["delete"]("api/v2/documents/".concat(docId).concat(qstr)).then(function (res) {
     return Promise.resolve(res.data);
   });
 }
@@ -263,9 +263,11 @@ function checkReadPermissions(api, pageId) {
     return Promise.resolve(res.data);
   });
 }
-function createPage(api, page) {
-  return api.post('api/pages', page.data, {
-    headers: page.headers
+function createPage(api, content) {
+  var formdata = content.formdata,
+      headers = content.headers;
+  return api.post('api/pages', formdata, {
+    headers: headers
   }).then(function (res) {
     return Promise.resolve(res.data);
   });
@@ -321,12 +323,15 @@ function copyPage(api, copyObj) {
     return Promise.resolve(res.data);
   });
 }
-function createPageV2(api, page, targetPageId, before) {
-  var qstrs = [];
-  if (targetPageId) qstrs.push("targetPageId=".concat(targetPageId));
-  if (before) qstrs.push("before=".concat(before));
-  var qstr = qstrs.length ? "?".concat(qstrs.join('&')) : '';
-  return api.post("api/v2/pages".concat(qstr), page).then(function (res) {
+function createPageV2(api, content) {
+  var params = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
+  var formdata = content.formdata,
+      headers = content.headers;
+  var options = {
+    headers: headers,
+    params: params
+  };
+  return api.post('api/v2/pages', formdata, options).then(function (res) {
     return Promise.resolve(res.data);
   });
 }
@@ -704,49 +709,49 @@ function () {
 
   }, {
     key: "getAccount",
-    value: function getAccount$$1(accountId, type) {
+    value: function getAccount$1(accountId, type) {
       return getAccount(this.api(), accountId, type);
     }
   }, {
     key: "getAccountGroups",
-    value: function getAccountGroups$$1(accountId) {
+    value: function getAccountGroups$1(accountId) {
       return getAccountGroups(this.api(), accountId);
     }
   }, {
     key: "getAllAccounts",
-    value: function getAllAccounts$$1() {
+    value: function getAllAccounts$1() {
       return getAllAccounts(this.api());
     }
   }, {
     key: "getCurrentUserAccount",
-    value: function getCurrentUserAccount$$1() {
+    value: function getCurrentUserAccount$1() {
       return getCurrentUserAccount(this.api());
     }
   }, {
     key: "getCurrentUserGroups",
-    value: function getCurrentUserGroups$$1() {
+    value: function getCurrentUserGroups$1() {
       return getCurrentUserGroups(this.api());
     } // Attributes
 
   }, {
     key: "getAttributeById",
-    value: function getAttributeById$$1(objId, attId) {
+    value: function getAttributeById$1(objId, attId) {
       return getAttributeById(this.api(), objId, attId);
     }
   }, {
     key: "getAttributeByName",
-    value: function getAttributeByName$$1(objId, attName) {
+    value: function getAttributeByName$1(objId, attName) {
       return getAttributeByName(this.api(), objId, attName);
     }
   }, {
     key: "getAttributeByObject",
-    value: function getAttributeByObject$$1(objId) {
+    value: function getAttributeByObject$1(objId) {
       return getAttributeByObject(this.api(), objId);
     } // Authentication
 
   }, {
     key: "authenticate",
-    value: function authenticate$$1(UserName, Password) {
+    value: function authenticate$1(UserName, Password) {
       var _this = this;
 
       return authenticate(this.baseURL, UserName, Password).then(function (accessToken) {
@@ -757,408 +762,408 @@ function () {
 
   }, {
     key: "createBatch",
-    value: function createBatch$$1(batch) {
+    value: function createBatch$1(batch) {
       return createBatch(this.api(), batch);
     } // Containers
 
   }, {
     key: "getContainers",
-    value: function getContainers$$1(containerId, recursive) {
+    value: function getContainers$1(containerId, recursive) {
       return getContainers(this.api(), containerId, recursive);
     } // Documents
 
   }, {
     key: "createDocument",
-    value: function createDocument$$1(doc) {
+    value: function createDocument$1(doc) {
       return createDocument(this.api(), doc);
     }
   }, {
     key: "findDocuments",
-    value: function findDocuments$$1(search) {
+    value: function findDocuments$1(search) {
       return findDocuments(this.api(), search);
     }
   }, {
     key: "getDocumentById",
-    value: function getDocumentById$$1(docId) {
+    value: function getDocumentById$1(docId) {
       return getDocumentById(this.api(), docId);
     }
   }, {
     key: "moveDocument",
-    value: function moveDocument$$1(move) {
+    value: function moveDocument$1(move) {
       var ver = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 2;
       if (ver === 2) return moveDocumentV2(this.api(), move);
       return moveDocument(this.api(), move);
     }
   }, {
     key: "updateProperties",
-    value: function updateProperties$$1(docId, props) {
+    value: function updateProperties$1(docId, props) {
       return updateProperties(this.api(), docId, props);
     }
   }, {
     key: "copyDocument",
-    value: function copyDocument$$1(copy) {
+    value: function copyDocument$1(copy) {
       return copyDocument(this.api(), copy);
     }
   }, {
     key: "deleteDocument",
-    value: function deleteDocument$$1(docId, force) {
+    value: function deleteDocument$1(docId, force) {
       return deleteDocument(this.api(), docId, force);
     } // Drawers
 
   }, {
     key: "getDrawers",
-    value: function getDrawers$$1() {
+    value: function getDrawers$1() {
       return getDrawers(this.api());
     }
   }, {
     key: "getDrawerById",
-    value: function getDrawerById$$1(id) {
+    value: function getDrawerById$1(id) {
       return getDrawerById(this.api(), id);
     }
   }, {
     key: "getDrawerByName",
-    value: function getDrawerByName$$1(name) {
+    value: function getDrawerByName$1(name) {
       return getDrawerByName(this.api(), name);
     }
   }, {
     key: "getDrawersInContainer",
-    value: function getDrawersInContainer$$1(containerId) {
+    value: function getDrawersInContainer$1(containerId) {
       return getDrawersInContainer(this.api(), containerId);
     }
   }, {
     key: "getDrawersInContainerByName",
-    value: function getDrawersInContainerByName$$1(containerId, name) {
+    value: function getDrawersInContainerByName$1(containerId, name) {
       return getDrawersInContainerByName(this.api(), containerId, name);
     } // Files
 
   }, {
     key: "createFile",
-    value: function createFile$$1(file) {
+    value: function createFile$1(file) {
       return createFile(this.api(), file);
     }
   }, {
     key: "findFiles",
-    value: function findFiles$$1(search) {
+    value: function findFiles$1(search) {
       return findFiles(this.api(), search);
     }
   }, {
     key: "getFileById",
-    value: function getFileById$$1(fileId, includeHasNotes) {
+    value: function getFileById$1(fileId, includeHasNotes) {
       return getFileById(this.api(), fileId, includeHasNotes);
     } // Folders
 
   }, {
     key: "createFolder",
-    value: function createFolder$$1(folder) {
+    value: function createFolder$1(folder) {
       return createFolder(this.api(), folder);
     }
   }, {
     key: "findFolders",
-    value: function findFolders$$1(search) {
+    value: function findFolders$1(search) {
       return findFolders(this.api(), search);
     }
   }, {
     key: "getFolderById",
-    value: function getFolderById$$1(folderId, includeHasNotes) {
+    value: function getFolderById$1(folderId, includeHasNotes) {
       return getFolderById(this.api(), folderId, includeHasNotes);
     } // Images
 
   }, {
     key: "getImageById",
-    value: function getImageById$$1(imageId, version) {
+    value: function getImageById$1(imageId, version) {
       return getImageById(this.api(), imageId, version);
     } // ObjectTypes
 
   }, {
     key: "getAllowedTypes",
-    value: function getAllowedTypes$$1(typeId) {
+    value: function getAllowedTypes$1(typeId) {
       return getAllowedTypes(this.api(), typeId);
     }
   }, {
     key: "getAllowedTypesForContainer",
-    value: function getAllowedTypesForContainer$$1(objectId) {
+    value: function getAllowedTypesForContainer$1(objectId) {
       return getAllowedTypesForContainer(this.api(), objectId);
     }
   }, {
     key: "getAttributeDefinitionsForType",
-    value: function getAttributeDefinitionsForType$$1(objectTypeId) {
+    value: function getAttributeDefinitionsForType$1(objectTypeId) {
       return getAttributeDefinitionsForType(this.api(), objectTypeId);
     }
   }, {
     key: "getFileTypeExtensions",
-    value: function getFileTypeExtensions$$1(fileTypeId) {
+    value: function getFileTypeExtensions$1(fileTypeId) {
       return getFileTypeExtensions(this.api(), fileTypeId);
     }
   }, {
     key: "getFileTypeTemplate",
-    value: function getFileTypeTemplate$$1(fileTypeId) {
+    value: function getFileTypeTemplate$1(fileTypeId) {
       return getFileTypeTemplate(this.api(), fileTypeId);
     }
   }, {
     key: "getObjectType",
-    value: function getObjectType$$1(objectTypeId) {
+    value: function getObjectType$1(objectTypeId) {
       return getObjectType(this.api(), objectTypeId);
     }
   }, {
     key: "getSortOptionsForType",
-    value: function getSortOptionsForType$$1(objectTypeId) {
+    value: function getSortOptionsForType$1(objectTypeId) {
       return getSortOptionsForType(this.api(), objectTypeId);
     }
   }, {
     key: "getTypesForClass",
-    value: function getTypesForClass$$1(standardObjectClass) {
+    value: function getTypesForClass$1(standardObjectClass) {
       return getTypesForClass(this.api(), standardObjectClass);
     } // Pages
 
   }, {
     key: "checkReadPermissions",
-    value: function checkReadPermissions$$1(pageId) {
+    value: function checkReadPermissions$1(pageId) {
       return checkReadPermissions(this.api(), pageId);
     }
   }, {
     key: "createPage",
-    value: function createPage$$1(page) {
+    value: function createPage$1(page) {
       return createPage(this.api(), page);
     }
   }, {
     key: "getAllPagesFromDocument",
-    value: function getAllPagesFromDocument$$1(docId) {
+    value: function getAllPagesFromDocument$1(docId) {
       return getAllPagesFromDocument(this.api(), docId);
     }
   }, {
     key: "getPageById",
-    value: function getPageById$$1(pageId) {
+    value: function getPageById$1(pageId) {
       return getPageById(this.api(), pageId);
     }
   }, {
     key: "getPageImageMetadata",
-    value: function getPageImageMetadata$$1(pageId) {
+    value: function getPageImageMetadata$1(pageId) {
       return getPageImageMetadata(this.api(), pageId);
     }
   }, {
     key: "lockPage",
-    value: function lockPage$$1(pageId) {
+    value: function lockPage$1(pageId) {
       return lockPage(this.api(), pageId);
     }
   }, {
     key: "movePage",
-    value: function movePage$$1(moveObj) {
+    value: function movePage$1(moveObj) {
       return movePage(this.api(), moveObj);
     }
   }, {
     key: "rotatePage",
-    value: function rotatePage$$1(pageId, rotationAngle) {
+    value: function rotatePage$1(pageId, rotationAngle) {
       return rotatePage(this.api(), pageId, rotationAngle);
     }
   }, {
     key: "unlockPage",
-    value: function unlockPage$$1(pageId) {
+    value: function unlockPage$1(pageId) {
       return unlockPage(this.api(), pageId);
     }
   }, {
     key: "updatePageContent",
-    value: function updatePageContent$$1(pageId, content) {
+    value: function updatePageContent$1(pageId, content) {
       return updatePageContent(this.api(), pageId, content);
     }
   }, {
     key: "updatePageProperties",
-    value: function updatePageProperties$$1(pageId, properties) {
+    value: function updatePageProperties$1(pageId, properties) {
       return updatePageProperties(this.api(), pageId, properties);
     } // V2 Pages
 
   }, {
     key: "copyPage",
-    value: function copyPage$$1(copyObj) {
+    value: function copyPage$1(copyObj) {
       return copyPage(this.api(), copyObj);
     }
   }, {
     key: "createPageV2",
-    value: function createPageV2$$1(page, targetPageId, before) {
+    value: function createPageV2$1(page, targetPageId, before) {
       return createPageV2(this.api(), page, targetPageId, before);
     }
   }, {
     key: "mergeToDocument",
-    value: function mergeToDocument$$1(mergeObj) {
+    value: function mergeToDocument$1(mergeObj) {
       return mergeToDocument(this.api(), mergeObj);
     }
   }, {
     key: "movePageV2",
-    value: function movePageV2$$1(moveObj) {
+    value: function movePageV2$1(moveObj) {
       return movePageV2(this.api(), moveObj);
     }
   }, {
     key: "updatePageContentV2",
-    value: function updatePageContentV2$$1(pageId, content) {
+    value: function updatePageContentV2$1(pageId, content) {
       return updatePageContentV2(this.api(), pageId, content);
     } // Tasks Actions
 
   }, {
     key: "killTask",
-    value: function killTask$$1(taskId) {
+    value: function killTask$1(taskId) {
       return killTask(this.api(), taskId);
     }
   }, {
     key: "lockTask",
-    value: function lockTask$$1(taskId, options) {
+    value: function lockTask$1(taskId, options) {
       return lockTask(this.api(), taskId, options);
     }
   }, {
     key: "refreshTaskLock",
-    value: function refreshTaskLock$$1(taskId) {
+    value: function refreshTaskLock$1(taskId) {
       return refreshTaskLock(this.api(), taskId);
     }
   }, {
     key: "releaseTask",
-    value: function releaseTask$$1(taskId, options) {
+    value: function releaseTask$1(taskId, options) {
       return releaseTask(this.api(), taskId, options);
     }
   }, {
     key: "releaseTaskByAnchor",
-    value: function releaseTaskByAnchor$$1(taskId, anchor, options) {
+    value: function releaseTaskByAnchor$1(taskId, anchor, options) {
       return releaseTaskByAnchor(this.api(), taskId, anchor, options);
     }
   }, {
     key: "releaseTaskSplitStep",
-    value: function releaseTaskSplitStep$$1(taskId, options) {
+    value: function releaseTaskSplitStep$1(taskId, options) {
       return releaseTaskSplitStep(this.api(), taskId, options);
     }
   }, {
     key: "routeTask",
-    value: function routeTask$$1(taskId, options) {
+    value: function routeTask$1(taskId, options) {
       return routeTask(this.api(), taskId, options);
     }
   }, {
     key: "unlockTask",
-    value: function unlockTask$$1(taskId) {
+    value: function unlockTask$1(taskId) {
       return unlockTask(this.api(), taskId);
     } // Task Attributes
 
   }, {
     key: "getTaskAttributeById",
-    value: function getTaskAttributeById$$1(taskId, id) {
+    value: function getTaskAttributeById$1(taskId, id) {
       return getTaskAttributeById(this.api(), taskId, id);
     }
   }, {
     key: "getTaskAttributeByName",
-    value: function getTaskAttributeByName$$1(taskId, name) {
+    value: function getTaskAttributeByName$1(taskId, name) {
       return getTaskAttributeByName(this.api(), taskId, name);
     }
   }, {
     key: "getTaskAttributes",
-    value: function getTaskAttributes$$1(taskId) {
+    value: function getTaskAttributes$1(taskId) {
       return getTaskAttributes(this.api(), taskId);
     }
   }, {
     key: "setTaskAttributeById",
-    value: function setTaskAttributeById$$1(taskId, id, content) {
+    value: function setTaskAttributeById$1(taskId, id, content) {
       return setTaskAttributeById(this.api(), taskId, id, content);
     }
   }, {
     key: "setTaskAttributeByName",
-    value: function setTaskAttributeByName$$1(taskId, name, content) {
+    value: function setTaskAttributeByName$1(taskId, name, content) {
       return setTaskAttributeByName(this.api(), taskId, name, content);
     } // Tasks
 
   }, {
     key: "createTask",
-    value: function createTask$$1(content) {
+    value: function createTask$1(content) {
       return createTask(this.api(), content);
     }
   }, {
     key: "getPostTasks",
-    value: function getPostTasks$$1(options) {
+    value: function getPostTasks$1(options) {
       return getPostTasks(this.api(), options);
     }
   }, {
     key: "getTasks",
-    value: function getTasks$$1(options) {
+    value: function getTasks$1(options) {
       return getTasks(this.api(), options);
     }
   }, {
     key: "getTasksByFileId",
-    value: function getTasksByFileId$$1(fileId, options) {
+    value: function getTasksByFileId$1(fileId, options) {
       return getTasksByFileId(this.api(), fileId, options);
     }
   }, {
     key: "getTasksByFileIdPost",
-    value: function getTasksByFileIdPost$$1(fileId, options) {
+    value: function getTasksByFileIdPost$1(fileId, options) {
       return getTasksByFileIdPost(this.api(), fileId, options);
     }
   }, {
     key: "updateTask",
-    value: function updateTask$$1(taskId, content) {
+    value: function updateTask$1(taskId, content) {
       return updateTask(this.api(), taskId, content);
     } // Users
 
   }, {
     key: "changeUserPassword",
-    value: function changeUserPassword$$1(content) {
+    value: function changeUserPassword$1(content) {
       return changeUserPassword(this.api(), content);
     }
   }, {
     key: "getCurrentUser",
-    value: function getCurrentUser$$1() {
+    value: function getCurrentUser$1() {
       return getCurrentUser(this.api());
     }
   }, {
     key: "getCurrentUserData",
-    value: function getCurrentUserData$$1() {
+    value: function getCurrentUserData$1() {
       return getCurrentUserData(this.api());
     }
   }, {
     key: "getUserData",
-    value: function getUserData$$1(userId) {
+    value: function getUserData$1(userId) {
       return getUserData(this.api(), userId);
     } // Workflows
 
   }, {
     key: "getDefaultStepLink",
-    value: function getDefaultStepLink$$1(stepId, options) {
+    value: function getDefaultStepLink$1(stepId, options) {
       return getDefaultStepLink(this.api(), stepId, options);
     }
   }, {
     key: "getPriorityList",
-    value: function getPriorityList$$1(stepId) {
+    value: function getPriorityList$1(stepId) {
       return getPriorityList(this.api(), stepId);
     }
   }, {
     key: "getSplitLinkParameters",
-    value: function getSplitLinkParameters$$1(stepId, options) {
+    value: function getSplitLinkParameters$1(stepId, options) {
       return getSplitLinkParameters(this.api(), stepId, options);
     }
   }, {
     key: "getStepAttributeById",
-    value: function getStepAttributeById$$1(stepId, id) {
+    value: function getStepAttributeById$1(stepId, id) {
       return getStepAttributeById(this.api(), stepId, id);
     }
   }, {
     key: "getStepAttributeByName",
-    value: function getStepAttributeByName$$1(stepId, name) {
+    value: function getStepAttributeByName$1(stepId, name) {
       return getStepAttributeByName(this.api(), stepId, name);
     }
   }, {
     key: "getStepAttributes",
-    value: function getStepAttributes$$1(stepId) {
+    value: function getStepAttributes$1(stepId) {
       return getStepAttributes(this.api(), stepId);
     }
   }, {
     key: "getStepLinks",
-    value: function getStepLinks$$1(srcStepId, options) {
+    value: function getStepLinks$1(srcStepId, options) {
       return getStepLinks(this.api(), srcStepId, options);
     }
   }, {
     key: "getSteps",
-    value: function getSteps$$1(flowId, options) {
+    value: function getSteps$1(flowId, options) {
       return getSteps(this.api(), flowId, options);
     }
   }, {
     key: "getUsersToAssign",
-    value: function getUsersToAssign$$1(stepId) {
+    value: function getUsersToAssign$1(stepId) {
       return getUsersToAssign(this.api(), stepId);
     }
   }, {
     key: "getWorkflows",
-    value: function getWorkflows$$1(options) {
+    value: function getWorkflows$1(options) {
       return getWorkflows(this.api(), options);
     }
   }]);
@@ -1166,7 +1171,7 @@ function () {
   return ImageRight;
 }();
 
-var VERSION$1 = '0.0.5';
+var VERSION$1 = '0.0.6';
 
 var Library =
 /*#__PURE__*/
